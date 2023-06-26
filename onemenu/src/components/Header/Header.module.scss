@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.header {
+    height: 5%;
+    min-height: 44px;
+    padding-top: 10px;
+    border-bottom: 1px solid $text_color;
+
+}
+
+.link {
+    margin: 0 10px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

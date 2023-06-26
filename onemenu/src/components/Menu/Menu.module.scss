@@ -1,0 +1,35 @@
+
+.title {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.choosing {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+    justify-content: center;
+
+}
+
+.choosing_link {
+    font-size: 20px;
+}
+
+.category {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.category_title {
+    font-size: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}

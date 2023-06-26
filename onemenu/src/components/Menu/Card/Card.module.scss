@@ -1,0 +1,20 @@
+@import "../../../variables";
+
+
+.card {
+    width: 48.648648648648648648648648648649%;
+    margin-bottom: 40px;
+}
+
+.card_image {
+    width: 100%;
+}
+
+.card_description {
+    display: flex;
+    margin-top: -5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary_bg_color;
+}
