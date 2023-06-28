@@ -25,7 +25,7 @@ const Menu = () => {
     ]
     
     return (
-        <div >
+        <div className={styles.menu}>
             <div className={styles.title}>
                 Menu
             </div>

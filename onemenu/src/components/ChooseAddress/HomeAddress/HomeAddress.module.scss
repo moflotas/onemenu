@@ -1,6 +1,36 @@
+@import "../../../variables";
+
+.address {
+    margin-top: 19.66824644549763033175355450237%;;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    color: $text_color;
+}
 
 .buttons {
+    position: absolute;
     display: flex;
     justify-content: center;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 10px;
+
+}
+
+.checkboxes {
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 82.972972972972972972972972972973%;
+    gap: 20px;
 }

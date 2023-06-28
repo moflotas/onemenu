@@ -1,10 +1,11 @@
 @import '../../variables';
 
 .header {
-    height: 5%;
-    min-height: 44px;
-    padding-top: 10px;
+    height: 5.213270142180094786729857819905%;
     border-bottom: 1px solid $text_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -15,5 +16,4 @@
 .links {
     display: flex;
     gap: 20px;
-    justify-content: center;
 }
