@@ -7,10 +7,10 @@ const Header = () => {
         <div className={styles.header}>
             <div className={styles.links}>
                 <Link to="/menu">
-                    <button>Menu</button>
+                    <button className={styles.links_button}>Menu</button>
                 </Link>
                 <Link to="/shopping-cart">
-                    <button>Shopping Cart</button>
+                    <button className={styles.links_button}>Shopping Cart</button>
                 </Link>
             </div>
         </div>

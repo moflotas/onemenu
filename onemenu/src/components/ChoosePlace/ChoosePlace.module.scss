@@ -1,0 +1,65 @@
+@import "../../variables";
+
+.block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose {
+    display: flex;
+    width: 100%;
+    height: 81.042654028436018957345971563981%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid $text_color;
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image {
+    color: $button_color;
+}
+
+.button_text {
+    color: $button_color;
+    font-size: 20px;
+    background-color: $bg_color;
+    border: none;
+    margin-top: 30px;
+}
+
+.labelBlock {
+    margin-top: 30px;
+}
+
+.label {
+    color: $link_color;
+    font-size: 20px;
+}
+
+.link {
+    transition: .2s linear;
+}
+
+.link:hover {
+    scale: 1.05;
+}

@@ -1,17 +1,21 @@
-import './App.css';
+import styles from './App.module.scss';
 import ChoosePlace from './components/ChoosePlace/ChoosePlace';
 import Header from './components/Header/Header';
 import HomeAddress from './components/ChooseAddress/HomeAddress/HomeAddress';
 import Menu from './components/Menu/Menu';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import RestaurantAddress from './components/ChooseAddress/RestaurantAddress/RestaurantAddress';
 
 
 function App() {
+
+  const location = useLocation()
+  const show = !location.pathname.includes("choose");
+
   return (
-    <div className="App">
-      <Header />
+    <div className={styles.App}>
+      {show && (<Header />)}
       <Routes>
         <Route path="/" element={<Navigate to="/choose-place" />} />
         <Route path="/choose-place" element={<ChoosePlace />} />

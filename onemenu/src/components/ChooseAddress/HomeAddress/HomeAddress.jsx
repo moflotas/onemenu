@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from './HomeAddress.module.scss'
+import cn from 'classnames';
 
 const HomeAddress = () => {
 
@@ -67,13 +68,15 @@ const HomeAddress = () => {
                 
             </div>
 
-            <div className={styles.buttons}>
-                <Link to="/choose-place">
-                    <button>Back</button>
-                </Link>
-                <Link to="/menu">
-                    <button>Next</button>
-                </Link>
+            <div className={styles.buttonsWrapper}>
+                <div className={styles.buttons}>
+                    <Link to="/choose-place">
+                        <button className={cn(styles.button, styles.backButton)}>Back</button>
+                    </Link>
+                    <Link to="/menu">
+                        <button className={styles.button}>Next</button>
+                    </Link>
+                </div>
             </div>
         </div>
     )

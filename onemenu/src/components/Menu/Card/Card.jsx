@@ -9,7 +9,7 @@ const Card = (props) => {
             <img className={styles.card_image} src={foodPicture} alt="" />
             <div className={styles.card_description}>
                 <span>{props.name}</span>
-                <span>{props.price} rub</span>
+                <span className={styles.card_price}>{props.price} rub</span>
             </div>
         </div>
     )

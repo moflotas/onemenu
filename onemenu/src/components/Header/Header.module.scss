@@ -17,3 +17,11 @@
     display: flex;
     gap: 20px;
 }
+
+.links_button {
+    background-color: $bg_color;
+    color: $button_text_color;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}

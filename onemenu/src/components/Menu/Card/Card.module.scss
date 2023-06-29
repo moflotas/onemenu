@@ -17,4 +17,9 @@
     justify-content: center;
     align-items: center;
     background-color: $secondary_bg_color;
+    color: $text_color;
+}
+
+.card_price {
+    color: $hint_color;
 }
