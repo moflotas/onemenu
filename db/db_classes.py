@@ -1,8 +1,5 @@
-from typing import List
-from typing import Optional
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column
-from sqlalchemy.orm import relationship
 from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import ForeignKey
 from sqlalchemy.dialects.postgresql import UUID, TEXT, VARCHAR, NUMERIC, TIMESTAMP, BOOLEAN, INTEGER, ENUM
@@ -115,7 +112,12 @@ class User(Base):
 
     user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name: Mapped[str] = mapped_column(VARCHAR(100), nullable=False)
+    user_type: Mapped[str] = mapped_column(VARCHAR(100), nullable=False)
 
+    __mapper_args__ = {
+        "polymorphic_on": "user_type",
+        "polymorphic_identity": "user"
+    }
 
 class Customer(User):
     __tablename__ = "customers"
@@ -138,3 +140,20 @@ class Employee(User):
     __mapper_args__ = {
         "polymorphic_identity": "employee"
     }
+
+
+class Address(Base):
+    __tablename__ = "addresses"
+
+    address_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    customer_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("customers.user_id"))
+
+
+
+class Cafe(Base):
+    __tablename__ = "cafes"
+
+    cafe_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+
+
+
