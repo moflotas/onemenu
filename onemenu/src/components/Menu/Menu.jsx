@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './Menu.module.scss'
 import Card from "./Card/Card";
+import TextCard from "./Card/textCard";
 
 
 
@@ -23,12 +24,28 @@ const Menu = () => {
             {name: "aaaa", price: 215}
         ], category_id: 2}
     ]
+
+    const [hasImage, setHasImage] = useState(true);
+
+    const changeTypeToText = () => {
+        setHasImage(false);
+      };
     
+      const changeTypeToImage = () => {
+        setHasImage(true);
+      };
+        
+
     return (
         <div className={styles.menu}>
             <div className={styles.title}>
                 Menu
             </div>
+            <div className={styles.type}>
+                <button onClick={changeTypeToImage} type="button">With Images</button>
+                <button onClick={changeTypeToText} type="button">Text</button>
+            </div>
+            
             <div className={styles.choosing}>
             {data.map((category) => (
                 <a className={styles.choosing_link} href={`#${category.category_id}`}>
@@ -42,12 +59,12 @@ const Menu = () => {
                     <span id={category.category_id} className={styles.category_title}>{category.category}</span>
                     <div className={styles.cards}>
                         {category.items.map((item) => (
-                            <Card name={item.name} price={item.price} />
+                            hasImage ? (<Card name={item.name} price={item.price}/>)
+                            : (<TextCard name={item.name} price={item.price} />)
                         ))}
                     </div>
                 </div>
             ))}
-
         </div>
     )
 }

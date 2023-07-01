@@ -14,7 +14,7 @@
 .choosing {
     display: flex;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     justify-content: center;
 
@@ -38,4 +38,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
 }

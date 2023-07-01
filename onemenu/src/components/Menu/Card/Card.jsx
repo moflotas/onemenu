@@ -6,9 +6,9 @@ import foodPicture from '../../../pictures/foodPicture.png'
 const Card = (props) => {
     return (
         <div className={styles.card}>
-            <img className={styles.card_image} src={foodPicture} alt="" />
+            <img className={styles.card_image} src={foodPicture} alt="please, wait" />
             <div className={styles.card_description}>
-                <span>{props.name}</span>
+                <span className={styles.card_title}>{props.name}</span>
                 <span className={styles.card_price}>{props.price} rub</span>
             </div>
         </div>
