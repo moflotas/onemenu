@@ -1,0 +1,96 @@
+@import "../../variables";
+
+.checkout {
+    margin-top: 42.266%;
+}
+
+.checkout_info {
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    color: $text_color;
+    letter-spacing: 2px;
+}
+
+.info_place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info_place_button {
+    background-color: $secondary_bg_color;
+    border: none;
+    border-radius: 20px;
+    width: 48.648648648648648648648648648649%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_place_label {
+    font-size: 15px;
+    color: $hint_color;
+    margin-top: 20px;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    color: $hint_color;
+}
+
+.colorful {
+    color: $button_color;
+}
+
+.info_block {
+    background-color: $secondary_bg_color;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.info_dishes {
+    background-color: $secondary_bg_color;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.info_title {
+    color: $hint_color;
+}
+
+.info_data {
+    color: $button_text_color;
+    margin-left: 5px;
+}
+
+.info_dish {
+    color: $button_text_color;
+}
+
+.info_amount {
+    color: $hint_color;
+    margin-left: 5px;
+}
+
+.info_block_line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: 700;
+}

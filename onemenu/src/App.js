@@ -6,6 +6,7 @@ import Menu from './components/Menu/Menu';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import RestaurantAddress from './components/ChooseAddress/RestaurantAddress/RestaurantAddress';
+import Checkout from './components/Checkout/Checkout';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/choose-address-home' element={<HomeAddress />} />
         <Route path='/choose-address-restaurant' element={<RestaurantAddress />} />
         <Route path='/shopping-cart' element={<ShoppingCart />} />
+        <Route path='/shopping-cart/checkout' element={<Checkout />} />
       </Routes>
     </div>
   );
