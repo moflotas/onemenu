@@ -1,0 +1,79 @@
+@import "../../variables";
+
+.cart {
+    margin-top: 42.266%;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    color: $text_color;
+}
+
+.dishes {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order {
+    padding: 10px;
+    background-color: $secondary_bg_color;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order_description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.order_text {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: $text_color;
+    font-weight: 100;
+    letter-spacing: 1px;
+    gap: 10px;
+}
+
+.order_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.order_price {
+    color: $hint_color;
+}
+
+.order_number {
+    font-size: 15px;
+    color: $text_color;
+    display: flex;
+    gap: 8px;
+}
+
+.order_button {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    border: none;
+    background-color: $button_color;
+    color: $button_text_color;
+}
+
+.order_total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: $text_color;
+}
