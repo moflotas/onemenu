@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from './HomeAddress.module.scss'
 import cn from 'classnames';
+import { arrowBackward, arrowForward } from "../../../pictures/svg";
+
 
 const HomeAddress = () => {
 
@@ -39,18 +41,22 @@ const HomeAddress = () => {
                 {selectedOption === "option2" && (
                     <div className={styles.inputs}>
                         <input 
+                            className={styles.input}
                             type="text"
                             placeholder="Enter your city"
                          />
                         <input 
+                            className={styles.input}
                             type="text"
                             placeholder="Enter your street" 
                         />
                         <input
+                            className={styles.input}
                             type="text"
                             placeholder="Enter your house"
                         />
                         <input 
+                            className={styles.input}
                             type="text"
                             placeholder="Enter your apartment" 
                         />
@@ -71,10 +77,18 @@ const HomeAddress = () => {
             <div className={styles.buttonsWrapper}>
                 <div className={styles.buttons}>
                     <Link to="/choose-place">
-                        <button className={cn(styles.button, styles.backButton)}>Back</button>
+                        <button className={cn(styles.button, styles.backButton)}>
+                            <svg className={styles.image} viewBox="0 0 24 24" >
+                                <path d={arrowBackward} fill="currentColor"/>
+                            </svg>
+                        </button>
                     </Link>
                     <Link to="/menu">
-                        <button className={styles.button}>Next</button>
+                        <button className={styles.button}>
+                            <svg className={styles.image} viewBox="0 0 24 24" >
+                                <path d={arrowForward} fill="currentColor"/>
+                            </svg>
+                        </button>
                     </Link>
                 </div>
             </div>

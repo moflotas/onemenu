@@ -15,6 +15,8 @@ const ShoppingCart = () => {
 
     const totalPrice = data.reduce((sum, item) => sum + item.price * item.amount, 0)
 
+    
+
     return (
         <div className={styles.cart}>
             <div className={styles.title}>

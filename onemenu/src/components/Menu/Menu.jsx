@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from './Menu.module.scss'
 import Card from "./Card/Card";
 import TextCard from "./Card/textCard";
+import cn from "classnames"
 
 
 
@@ -36,14 +37,11 @@ const Menu = () => {
       };
         
 
+
     return (
         <div className={styles.menu}>
             <div className={styles.title}>
                 Menu
-            </div>
-            <div className={styles.type}>
-                <button onClick={changeTypeToImage} type="button">With Images</button>
-                <button onClick={changeTypeToText} type="button">Text</button>
             </div>
             
             <div className={styles.choosing}>
@@ -52,6 +50,26 @@ const Menu = () => {
                     {category.category}
                 </a>
             ))}
+            </div>
+
+            <div className={styles.type}>
+                <button className={cn(styles.button_type, {[styles.active] : hasImage})} onClick={changeTypeToImage} type="button">
+                <svg className={styles.type_image} viewBox="0 0 22 22">
+                    <rect width="10" height="10" rx="2" fill="currentColor"/>
+                    <rect x="12" width="10" height="10" rx="2" fill="currentColor"/>
+                    <rect y="12" width="10" height="10" rx="2" fill="currentColor"/>
+                    <rect x="12" y="12" width="10" height="10" rx="2" fill="currentColor"/>
+                </svg>
+                </button>
+                <button className={cn(styles.button_type, {[styles.active] : !hasImage})} onClick={changeTypeToText} type="button">
+                <svg className={styles.type_image} viewBox="0 0 22 22">
+                    <rect width="22" height="4" rx="2" fill="currentColor"/>
+                    <rect y="6" width="22" height="4" rx="2" fill="currentColor"/>
+                    <rect y="12" width="22" height="4" rx="2" fill="currentColor"/>
+                    <rect y="18" width="22" height="4" rx="2" fill="currentColor"/>
+                </svg>
+
+                </button>
             </div>
 
             {data.map((category) => (

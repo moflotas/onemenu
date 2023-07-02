@@ -16,7 +16,7 @@
     display: flex;
     gap: 15px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     justify-content: center;
 
 }
@@ -43,7 +43,28 @@
 
 .type {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: start;
     gap: 10px;
+    margin-bottom: 15px;
+}
+
+.button_type {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary_bg_color;
+    border: none;
+    border-radius: 5px;
+}
+
+.type_image {
+    width: 22px;
+    height: 22px;
+    color: $text_color;
+}
+
+.active {
+    background-color: $button_color;
 }

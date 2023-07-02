@@ -14,17 +14,13 @@
 
 .buttons {
     width: 100%;
-    position: relative;
+    position: fixed;
     text-align: right;
-}
+    bottom: 0;
+    right: 2.564102564102564102564102564103%;
+    margin-bottom: 4.729668246445497630331753554502%;
 
-.buttonsWrapper {
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-    width: 100%;
 }
-
 
 .button {
     background-color: $button_color;
@@ -33,8 +29,9 @@
     height: 35px;
     border: none;
     width: 30%;
-    margin-right: 2.564102564102564102564102564103%;
     border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
 }
 
 .backButton {
@@ -59,4 +56,30 @@
     flex-direction: column;
     width: 82.972972972972972972972972972973%;
     gap: 20px;
+}
+
+.input {
+    height: 25px;
+    background-color: $bg_color;
+    border: none;
+    border-bottom: 2px solid $secondary_bg_color;
+    outline: none;
+    color: $text_color;
+    transition: .2s linear;
+}
+
+.input:focus {
+    border-color: $button_color;
+}
+
+::placeholder { 
+    color: $hint_color;
+    opacity: 1; 
+}
+
+.image {
+    width: 24px;
+    height: 24px;
+    color: $button_text_color;
+    padding-top: 3px;
 }
