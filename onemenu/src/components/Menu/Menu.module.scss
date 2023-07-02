@@ -43,7 +43,7 @@
 
 .type {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 10px;
     margin-bottom: 15px;
 }
@@ -67,4 +67,12 @@
 
 .active {
     background-color: $button_color;
+}
+
+.buttonCard {
+    background-color: $bg_color;
+    border: none;
+    outline: none;
+    width: 48.648648648648648648648648648649%;
+    padding: 0;
 }
