@@ -41,10 +41,12 @@
 }
 
 .title_block {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 8.886255924170616113744075829384%;
+    justify-content: center;
 }
 
 .title {
@@ -64,22 +66,28 @@
 .description {
     font-size: 14px;
     line-height: 18px;
-    margin-top: 10px;
+    margin-bottom: 20px;
     color: $text_color;
+    margin-left: 2.702702702702702702702702702703%;
     width: 94.594594594594594594594594594595%;
 }
 
 .base_ingredients {
-    margin-top: 20px;
     background-color: $bg_color;
     color: $text_color;
     font-size: 15px;
     width: 94.594594594594594594594594594595%;
-    margin: 20px auto 0;
+    margin: 0 auto 0;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     // padding: 10px;
+}
+
+.ingredient_block {
+    margin-top: 20px;
+    height: 41.796208530805687203791469194313%;
+    overflow-y: auto;
 }
 
 .base_title {
@@ -94,14 +102,43 @@
     margin-left: 10px;
 }
 
+.add_ingredients {
+    margin-top: 20px;
+}
+
 .footer {
-    // position: fixed;
-    // bottom: 0;
-    // margin-bottom: 8.886255924170616113744075829384%;
+    height: 6.924170616113744075829383886256%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .footer_price {
     font-size: 20px;
     letter-spacing: 2px;
     color: $hint_color;
+    margin-left: 20px;
 }
+
+.footer_number {
+    font-size: 20px;
+    color: $text_color;
+    margin: 0 10px;
+}
+
+.footer_choose {
+    margin-right: 20px;
+    display: flex;
+}
+
+.footer_button {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    border: none;
+    background-color: $button_color;
+    color: $button_text_color;
+}
+
