@@ -21,6 +21,11 @@ const Popup = (props) => {
                             <span className={styles.ingredient}>{ingredient.name}</span>
                         ))}
                     </div>
+                    <div className={styles.footer}>
+                        <div className={styles.footer_price}>
+                            {props.popupItem.price} rub
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
