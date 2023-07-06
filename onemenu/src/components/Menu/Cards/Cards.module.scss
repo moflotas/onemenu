@@ -2,19 +2,20 @@
 
 .category {
     text-align: left;
-    margin-top: 20px;
+    // margin-top: 20px;
     color: $text_color;
-    padding-bottom: 40px;
 }
 
 .category_title {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .buttonCard {
@@ -23,4 +24,8 @@
     outline: none;
     width: 48.648648648648648648648648648649%;
     padding: 0;
+}
+
+.mb {
+    margin-bottom: 10px;
 }
