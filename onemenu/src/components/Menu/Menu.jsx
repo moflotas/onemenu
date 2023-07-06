@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from './Menu.module.scss'
-import Card from "./Card/Card";
-import TextCard from "./Card/textCard";
 import cn from "classnames"
 import Popup from "./Popup/Popup";
+import MenuContainer from "./MenuContainer";
+import Category from "./Choose/Category/Category";
+import Cards from "./Cards/Cards";
+import Type from "./Choose/Type/Type";
 
 
 
 
 const Menu = () => {
+
+    const {
+        isOpen,
+        popupItem,
+        hasImage,
+        isFixed,
+        selectedCategory,
+        togglePopup,
+        menuRef,
+        changeTypeToText,
+        changeTypeToImage,
+        selectCategory,
+      } = MenuContainer();
 
     let data = [
         {category: "Fried fish", items: [
@@ -94,68 +109,6 @@ const Menu = () => {
         ], category_id: 4}
     ]
 
-    const [isOpen, setIsOpen] = useState(false)
-    const [popupItem, setPopupItem] = useState()
-    const [hasImage, setHasImage] = useState(true);
-    const [isFixed, setIsFixed] = useState(false);
-    const [originalPosition, setOriginalPosition] = useState(0);
-    const [selectedCategory, setSelectedCategory] = useState(null);
-    
-
-    const togglePopup = (item) => {
-        setIsOpen(!isOpen)
-        setPopupItem(item)
-        if (document.body.style.overflow !== "hidden") {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "scroll";
-        }
-    }
-
-    const menuRef = React.useRef(null);
-
-    React.useEffect(() => {
-        const handleScroll = () => {
-          const choosingElement = document.getElementById("choosing");
-          if (choosingElement) {
-            if (originalPosition === 0) {
-              setOriginalPosition(choosingElement.offsetTop);
-            }
-            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-            const isTopReached = scrollPosition >= originalPosition;
-            setIsFixed(isTopReached); 
-          }
-        };
-    
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-          window.removeEventListener("scroll", handleScroll);
-        };
-      }, [originalPosition]);
-
-
-    const changeTypeToText = () => {
-        setHasImage(false);
-      };
-    
-    const changeTypeToImage = () => {
-        setHasImage(true);
-    };
-
-    const selectCategory = (category) => {
-        setSelectedCategory(category);
-        setTimeout(() => {
-          const categoryElement = document.getElementById(category);
-          if (categoryElement) {
-            const { top } = categoryElement.getBoundingClientRect();
-            window.scrollTo({
-              top: window.pageYOffset + top - menuRef.current.offsetHeight - 10,
-              behavior: "smooth",
-            });
-          }
-        }, 10);
-      };
-
 
     return (
         <div className={styles.menu}>
@@ -163,64 +116,35 @@ const Menu = () => {
                 Menu
             </div>
 
-            <div className={styles.type}>
-                <button className={cn(styles.button_type, {[styles.active] : hasImage})} onClick={changeTypeToImage} type="button">
-                <svg className={styles.type_image} viewBox="0 0 22 22">
-                    <rect width="10" height="10" rx="2" fill="currentColor"/>
-                    <rect x="12" width="10" height="10" rx="2" fill="currentColor"/>
-                    <rect y="12" width="10" height="10" rx="2" fill="currentColor"/>
-                    <rect x="12" y="12" width="10" height="10" rx="2" fill="currentColor"/>
-                </svg>
-                </button>
-                <button className={cn(styles.button_type, {[styles.active] : !hasImage})} onClick={changeTypeToText} type="button">
-                <svg className={styles.type_image} viewBox="0 0 22 22">
-                    <rect width="22" height="4" rx="2" fill="currentColor"/>
-                    <rect y="6" width="22" height="4" rx="2" fill="currentColor"/>
-                    <rect y="12" width="22" height="4" rx="2" fill="currentColor"/>
-                    <rect y="18" width="22" height="4" rx="2" fill="currentColor"/>
-                </svg>
-                </button>
-            </div> 
+            <Type 
+                hasImage={hasImage}
+                changeTypeToImage={changeTypeToImage}
+                changeTypeToText={changeTypeToText}
+            />
             
             <div
-            className={cn(styles.sm, {[styles.fixedContainer]: isFixed})} 
-            id="choosing" 
-            ref={menuRef}>
-                <div className={styles.choosing}>
-                    {data.map((category) => (
-                        <a
-                            className={cn(styles.choosing_link, {
-                            [styles.choosing_link_clicked]: category.category_id === selectedCategory,
-                            })}
-                            href={`#${category.category_id}`}
-                            onClick={() => selectCategory(category.category_id)}
-                        >
-                            <span className={cn(styles.choosing_span)}>{category.category}</span>
-                        </a>
-                    ))}
-                </div>
+                className={cn(styles.sm, {[styles.fixedContainer]: isFixed})} 
+                id="choosing" 
+                ref={menuRef}
+            >
+                <Category 
+                    data={data} 
+                    selectCategory={selectCategory} 
+                    selectedCategory={selectedCategory} 
+                />
             </div>
 
-
             {isOpen && (
-                <Popup popupItem={popupItem} />
+                <Popup 
+                    popupItem={popupItem} 
+                />
             )}
 
-            {data.map((category) => (
-                <div className={styles.category}>
-                    <span id={category.category_id} className={styles.category_title}>{category.category}</span>
-                    <div className={styles.cards}>
-                        {category.items.map((item) => (
-                            hasImage ? 
-                            ( <button onClick={() => togglePopup(item)} className={styles.buttonCard}>
-                                <Card name={item.name} price={item.price}/>
-                            </button> )
-                            :
-                            (<TextCard item={item} togglePopup={togglePopup} /> )
-                        ))}
-                    </div>
-                </div>
-            ))}
+            <Cards 
+                data={data} 
+                togglePopup={togglePopup} 
+                hasImage={hasImage} 
+            />
         </div>
     )
 }
