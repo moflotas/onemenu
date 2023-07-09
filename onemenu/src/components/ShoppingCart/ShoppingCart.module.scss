@@ -54,6 +54,7 @@
 
 .order_price {
     color: $hint_color;
+    font-weight: 500;
 }
 
 .order_number {
@@ -81,25 +82,18 @@
     padding-bottom: 60px;
 }
 
-.button {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-right: 2.564102564102564102564102564103%;
-    margin-bottom: 4.729668246445497630331753554502%;
-    width: 100%;
-    text-align: right;
-}
-
 .button_order {
+    position: fixed;
+    bottom: 2.369668246445497630331753554502%;
+    right: 2.564102564102564102564102564103%;
     width: 30%;
     height: 35px;
-    border-radius: 10px;
+    background-color: $button_color;
     border: none;
+    color: $button_text_color;
+    border-radius: 10px;
     font-family: 'Open Sans';
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 500;
-    background-color: $button_color;
-    color: $button_text_color;
 }

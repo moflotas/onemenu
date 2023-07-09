@@ -23,8 +23,25 @@
     color: $button_text_color;
     outline: none;
     border: none;
-    font-size: 15px;
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.links_image {
+    width: 24px;
+    height: 24px;
+    color: $hint_color;
+}
+
+.links_span {
+    text-decoration: none;
     font-family: 'Open Sans';
     font-weight: 500;
     font-size: 16px;
+    color: $hint_color;
+}
+
+.chosen {
+    color: $text_color;
 }

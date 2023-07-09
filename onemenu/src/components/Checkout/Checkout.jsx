@@ -76,6 +76,7 @@ const Checkout = () => {
                     <span className={styles.info_title}>Payment: </span>
                     <span className={styles.info_data}>{data.payment}</span>
                 </div>
+
                 <div className={styles.info_dishes}>
                     {data.food.map((dish) => (
                         <div className={styles.info_block_line}>
@@ -96,6 +97,13 @@ const Checkout = () => {
                         <span className={cn(styles.info_dish, styles.bold)}>Total</span>
                         <span className={cn(styles.info_dish, styles.bold)}>{total} rub</span>
                     </div>
+                </div>
+
+                <div className={styles.footer_buttons}>
+                    {!isHome && (
+                        <button className={cn(styles.footer_button, styles.left)} type="button">Order</button>
+                    )}
+                    <button className={cn(styles.footer_button, styles.right)} type="button">Pay</button>
                 </div>
             </div>
         </div>

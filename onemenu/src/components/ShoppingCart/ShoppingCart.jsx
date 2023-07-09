@@ -44,7 +44,7 @@ const ShoppingCart = () => {
                 <span>Total sum: {totalPrice} rub</span>
             </div>
             <div className={styles.button}>
-                <Link to="/shopping-cart/checkout">
+                <Link to="/checkout">
                     <button className={styles.button_order}>Order</button>
                 </Link>
             </div>

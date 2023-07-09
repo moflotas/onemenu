@@ -63,6 +63,20 @@
     letter-spacing: 1px;
 }
 
+.label_image {
+    width: 20px;
+    height: 20px;
+    color: $link_color;
+    margin-left: 5px;
+}
+
+.label_link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .link {
     transition: .2s linear;
 }

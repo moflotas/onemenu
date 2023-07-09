@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from './ChoosePlace.module.scss'
-import { restaurant, home } from "../../pictures/svg.jsx"
+import { restaurant, home, arrowForward } from "../../pictures/svg.jsx"
 
 const ChoosePlace = () => {
     return (
@@ -27,8 +27,11 @@ const ChoosePlace = () => {
 
             </div>
             <div className={styles.labelBlock}>
-                    <Link to="/menu">
+                    <Link className={styles.label_link} to="/menu">
                         <span className={styles.label}> Go to menu</span>
+                        <svg className={styles.label_image} viewBox="0 0 24 24" >
+                            <path d={arrowForward} fill="currentColor"/>
+                        </svg>
                     </Link>
             </div>
         </div>

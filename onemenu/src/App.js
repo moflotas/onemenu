@@ -25,7 +25,7 @@ function App() {
         <Route path='/choose-address-home' element={<HomeAddress />} />
         <Route path='/choose-address-restaurant' element={<RestaurantAddress />} />
         <Route path='/shopping-cart' element={<ShoppingCart />} />
-        <Route path='/shopping-cart/checkout' element={<Checkout />} />
+        <Route path='/checkout' element={<Checkout />} />
       </Routes>
     </div>
   );
