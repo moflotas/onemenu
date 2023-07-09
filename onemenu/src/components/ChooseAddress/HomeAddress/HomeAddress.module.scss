@@ -6,7 +6,7 @@
 }
 
 .title {
-    font-size: 25px;
+    font-size: 24px;
     text-align: center;
     color: $text_color;
     letter-spacing: 2px;
@@ -66,6 +66,8 @@
     outline: none;
     color: $text_color;
     transition: .2s linear;
+    font-family: 'Open Sans';
+    font-weight: 300;
 }
 
 .input:focus {

@@ -7,6 +7,7 @@ import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import RestaurantAddress from './components/ChooseAddress/RestaurantAddress/RestaurantAddress';
 import Checkout from './components/Checkout/Checkout';
+<link rel="stylesheet" href="%PUBLIC_URL%/index.css"></link>
 
 
 function App() {

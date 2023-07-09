@@ -47,6 +47,9 @@
     background-color: $bg_color;
     border: none;
     margin-top: 30px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .labelBlock {
@@ -56,6 +59,8 @@
 .label {
     color: $link_color;
     font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .link {

@@ -9,7 +9,7 @@
 }
 
 .title {
-    font-size: 25px;
+    font-size: 24px;
     text-align: center;
     color: $text_color;
     letter-spacing: 2px;
@@ -34,7 +34,8 @@
 }
 
 .info_place_label {
-    font-size: 15px;
+    font-family: 'Open Sans';
+    font-size: 16px;
     color: $hint_color;
     margin-top: 20px;
 }
@@ -65,14 +66,19 @@
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .info_title {
     color: $hint_color;
+    font-size: 16px;
 }
 
 .info_data {
     color: $button_text_color;
+    font-size: 16px;
     margin-left: 5px;
 }
 

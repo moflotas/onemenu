@@ -29,7 +29,7 @@ const ShoppingCart = () => {
                             <img className={styles.order_image} src={food.picture} alt="" />
                             <div className={styles.order_text}>
                                 <span>{food.name}</span>
-                                <span className={styles.order_price}>{food.price}</span>
+                                <span className={styles.order_price}>{food.price} rub</span>
                             </div>
                         </div>
                         <div className={styles.order_number}>
