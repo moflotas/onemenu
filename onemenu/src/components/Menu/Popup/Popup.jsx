@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Popup.module.scss"
 import foodPicture from '../../../pictures/foodLarge.png'
 import cn from "classnames"
+import { close } from "../../../pictures/svg";
 
 const Popup = (props) => {
     return (
@@ -9,6 +10,11 @@ const Popup = (props) => {
             <div className={styles.content}>
                 <div className={styles.inside}>
                     <div className={styles.picture}>
+                        <button className={styles.close_button} onClick={props.togglePopup} type="button">
+                            <svg className={styles.svg} viewBox="0 0 24 24">
+                                <path d={close} fill="currentColor"/>
+                            </svg>
+                        </button>
                         <img className={styles.image} src={foodPicture} alt="" />
                     </div>
                     <div className={styles.title_block}>

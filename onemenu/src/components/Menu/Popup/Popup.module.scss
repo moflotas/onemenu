@@ -142,3 +142,28 @@
     color: $button_text_color;
 }
 
+.close_button {
+    position: absolute;
+    right: 5.128205128205128205128205128205%;
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 100px;
+    border: none;
+    background-color: $secondary_bg_color;
+    transition: .2s linear;
+}
+
+.close_button:hover {
+    scale: 1.1;
+}
+
+.svg {
+    width: 24px;
+    height: 24px;
+    color: $button_text_color;
+}

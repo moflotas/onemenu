@@ -137,6 +137,7 @@ const Menu = () => {
             {isOpen && (
                 <Popup 
                     popupItem={popupItem} 
+                    togglePopup={togglePopup}
                 />
             )}
 
