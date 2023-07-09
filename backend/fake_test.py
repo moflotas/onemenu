@@ -2,7 +2,6 @@ from faker import Faker
 from faker_food import FoodProvider
 from uuid import uuid4
 
-import db.db_classes as db_models
 
 fake = Faker()
 fake.add_provider(FoodProvider)
@@ -19,7 +18,7 @@ for i in range(3):
     print(fake.metric_measurement())
     print(fake.spice())
     print(fake.sushi())
-    print(fake.vegetable())
+    print(fake.vegetable())     
     print()
 
 

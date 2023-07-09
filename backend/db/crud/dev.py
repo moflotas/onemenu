@@ -1,6 +1,7 @@
-from session import engine
-import db_classes as models
-import asyncio
+from db.session import engine
+import db.models as models
+import api.schemas as schemas
+from sqlalchemy.ext.asyncio import AsyncSession
 
 
 async def _db_recreate():
@@ -10,5 +11,5 @@ async def _db_recreate():
     await engine.dispose()
 
 
-if __name__ == "__main__":
-    asyncio.run(_db_recreate())
+async def fill_with_data(db: AsyncSession):
+    pass

@@ -10,6 +10,7 @@ from sqlalchemy import (
     Enum,
     UUID,
     ForeignKeyConstraint,
+    UniqueConstraint,
 )
 from sqlalchemy.ext.asyncio import AsyncAttrs
 import uuid
@@ -36,9 +37,12 @@ class Dish(Base):
         default=uuid.uuid4,
     )
     cafe_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True),
-        ForeignKey("cafes.id"),
-        nullable=False,
+        UUID(as_uuid=True), ForeignKey("cafes.id"), nullable=False
+    )
+    cafe = relationship(
+        "Cafe",
+        back_populates="menu",
+        lazy=DEFAULT_LAZY,
     )
     name: Mapped[str] = mapped_column(String, nullable=False)
     description: Mapped[str] = mapped_column(String)
@@ -48,9 +52,14 @@ class Dish(Base):
         nullable=False,
         default=datetime.datetime.utcnow,
     )
-    end_date: Mapped[datetime.datetime] = mapped_column(DateTime)
+    end_date: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=True)
     traits: Mapped[list["DishTrait"]] = relationship(
         "DishTrait",
+        back_populates="dish",
+        lazy=DEFAULT_LAZY,
+    )
+    ingredients: Mapped[list["BaseIngredient"]] = relationship(
+        "BaseIngredient",
         back_populates="dish",
         lazy=DEFAULT_LAZY,
     )
@@ -59,7 +68,7 @@ class Dish(Base):
 class DishTrait(Base):
     __tablename__ = "dish_traits"
 
-    trait_id: Mapped[uuid.UUID] = mapped_column(
+    id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True),
         primary_key=True,
         default=uuid.uuid4,
@@ -72,14 +81,16 @@ class DishTrait(Base):
     )
     name: Mapped[str] = mapped_column(String, nullable=False)
     value: Mapped[str] = mapped_column(String, nullable=False)
+
+    ForeignKeyConstraint(
+        [dish_id, revision_id],
+        [Dish.id, Dish.revision_id],
+    )
+
     dish: Mapped[Dish] = relationship(
         "Dish",
         back_populates="traits",
         lazy=DEFAULT_LAZY,
-    )
-    ForeignKeyConstraint(
-        ["dish_id", "revision_id"],
-        ["dishes.id", "dishes.revision_id"],
     )
 
 
@@ -103,8 +114,14 @@ class BaseIngredient(Base):
     type: Mapped[IngredientType] = mapped_column(Enum(IngredientType), nullable=False)
 
     ForeignKeyConstraint(
-        ["dish_id", "revision_id"],
-        ["dishes.id", "dishes.revision_id"],
+        [dish_id, revision_id],
+        [Dish.id, Dish.revision_id],
+    )
+    
+    dish: Mapped[Dish] = relationship(
+        "Dish",
+        back_populates="ingredients",
+        lazy=DEFAULT_LAZY,
     )
 
     __mapper_args__ = {
@@ -138,6 +155,7 @@ class OptionalIngredient(BaseIngredient):
         primary_key=True,
         default=uuid.uuid4,
     )
+
     is_default: Mapped[bool] = mapped_column(Boolean, nullable=False)
     cost: Mapped[float] = mapped_column(Numeric(6, 2), nullable=False)
 
@@ -287,7 +305,7 @@ class Customer(User):
     __tablename__ = "customers"
 
     id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id"), primary_key=True)
-    birthday: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=False)
+    birthday: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=True)
 
     addresses: Mapped[list["Address"]] = relationship(
         "Address",
@@ -298,12 +316,17 @@ class Customer(User):
     __mapper_args__ = {"polymorphic_identity": UserTypes.CUSTOMER}
 
 
+class JobTitle(enum.Enum):
+    WAITER = "waiter"
+    ADMIN = "admin"
+
+
 class Employee(User):
     __tablename__ = "employee"
 
     id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id"), primary_key=True)
     cafe_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("cafes.id"))
-    job_position = mapped_column(Enum("", name="job_itle"), nullable=False)
+    job_position = mapped_column(Enum(JobTitle), nullable=False)
 
     __mapper_args__ = {"polymorphic_identity": UserTypes.EMPLOYEE}
 
@@ -332,4 +355,10 @@ class Cafe(Base):
         default=uuid.uuid4,
     )
     title: Mapped[str] = mapped_column(String, nullable=False)
-    description: Mapped[str] = mapped_column(String, nullable=False)
+    description: Mapped[str] = mapped_column(String, nullable=True)
+
+    menu: Mapped[list["Dish"]] = relationship(
+        "Dish",
+        back_populates="cafe",
+        lazy=DEFAULT_LAZY,
+    )
