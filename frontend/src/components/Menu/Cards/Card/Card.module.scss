@@ -1,0 +1,87 @@
+@import "../../../../variables";
+
+
+.card {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card_image {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.text_card_image {
+    width: 24px;
+    height: 24px;
+}
+
+.card_description {
+    display: flex;
+    margin-top: -5px;
+    height: 65px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary_bg_color;
+    color: $text_color;
+    border-radius: 0 0 20px 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.card_title {
+    color: $text_color;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.card_price {
+    margin-top: 3px;
+    color: $hint_color;
+    font-weight: 500;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+
+.textCard {
+    width: 100%;
+    background-color: $secondary_bg_color;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.textCard_title {
+    font-size: 15px;
+    letter-spacing: 5%;
+    color: $button_text_color;
+}
+
+.textCard_content {
+    display: flex;
+    align-items: center;
+}
+
+
+.textCard_content span {
+    color: $hint_color;
+    padding-right: 10px;
+}
+
+.textCard_content button {
+    width: 53px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: $button_color;
+    color: $button_text_color;
+}

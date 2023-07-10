@@ -1,0 +1,92 @@
+@import "../../../variables";
+
+.address {
+    position: absolute;
+    top: 25%;
+    width: 95%;
+}
+
+.title {
+    font-size: 24px;
+    color: $text_color;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+.buttons {
+    width: 100%;
+    position: fixed;
+    text-align: right;
+    bottom: 0;
+    right: 2.5%;
+    margin-bottom: 4.8%;
+
+}
+
+.button {
+    background-color: $button_color;
+    outline: none;
+    color: $button_text_color;
+    height: 35px;
+    border: none;
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.backButton {
+    background-color: $secondary_bg_color;
+    color: $text_color;
+    width: 13.5%;
+}
+
+.checkboxes {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.checkboxes label {
+    color: $text_color;
+    cursor: pointer;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    gap: 20px;
+}
+
+.input {
+    height: 25px;
+    background-color: $bg_color;
+    border: none;
+    border-bottom: 2px solid $secondary_bg_color;
+    outline: none;
+    color: $text_color;
+    transition: .2s linear;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+.input:focus {
+    border-color: $button_color;
+}
+
+::placeholder { 
+    color: $hint_color;
+    opacity: 1; 
+}
+
+.image {
+    width: 24px;
+    height: 24px;
+    color: $button_text_color;
+    padding-top: 3px;
+}

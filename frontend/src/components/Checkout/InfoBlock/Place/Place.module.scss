@@ -1,0 +1,36 @@
+@import '../../../../variables';
+
+.info_place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info_place_label {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: $hint_color;
+    margin-top: 20px;
+}
+
+.info_place_button {
+    background-color: $secondary_bg_color;
+    border: none;
+    border-radius: 20px;
+    width: 48.648648648648648648648648648649%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    color: $hint_color;
+}
+
+.colorful {
+    color: $button_color;
+}

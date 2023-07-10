@@ -1,0 +1,48 @@
+@import '../../variables';
+
+.header {
+    height: 10%;
+    max-height: 60px;
+    border-bottom: 1px solid $text_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link {
+    margin: 0 10px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links_button {
+    background-color: $bg_color;
+    color: $button_text_color;
+    outline: none;
+    border: none;
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.links_image {
+    width: 24px;
+    height: 24px;
+    color: $hint_color;
+}
+
+.links_span {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 16px;
+    color: $hint_color;
+}
+
+.chosen {
+    color: $text_color;
+}

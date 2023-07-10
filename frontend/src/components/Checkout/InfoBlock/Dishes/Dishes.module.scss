@@ -1,0 +1,30 @@
+@import "../../../../variables";
+
+.info_dishes {
+    background-color: $secondary_bg_color;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info_block_line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.info_dish {
+    color: $button_text_color;
+}
+
+.info_amount {
+    color: $hint_color;
+    margin-left: 5px;
+}
+
+.bold {
+    font-weight: 700;
+}

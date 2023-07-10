@@ -1,0 +1,101 @@
+@import "../../variables";
+
+.cart {
+    position: absolute;
+    top: 25%;
+    width: 95%;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    color: $text_color;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.dishes {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order {
+    padding: 10px;
+    background-color: $secondary_bg_color;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order_description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.order_text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: $text_color;
+    font-weight: 300;
+    letter-spacing: 1px;
+    gap: 4px;
+}
+
+.order_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.order_price {
+    color: $hint_color;
+    font-weight: 500;
+}
+
+.order_number {
+    font-size: 15px;
+    color: $text_color;
+    display: flex;
+    gap: 8px;
+}
+
+.order_button {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    border: none;
+    background-color: $button_color;
+    color: $button_text_color;
+}
+
+.order_total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: $text_color;
+    padding-bottom: 60px;
+}
+
+.button_order {
+    position: fixed;
+    bottom: 2.369668246445497630331753554502%;
+    right: 2.564102564102564102564102564103%;
+    width: 30%;
+    height: 35px;
+    background-color: $button_color;
+    border: none;
+    color: $button_text_color;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}

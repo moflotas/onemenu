@@ -1,0 +1,31 @@
+@import "../../../../variables";
+
+
+.type {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button_type {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary_bg_color;
+    border: none;
+    border-radius: 5px;
+}
+
+.type_image {
+    width: 22px;
+    height: 22px;
+    color: $text_color;
+}
+
+.active {
+    background-color: $button_color;
+}
