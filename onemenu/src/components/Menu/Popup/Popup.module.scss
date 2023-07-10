@@ -16,12 +16,12 @@
 }
 
 .content {
-    height: 88.151658767772511848341232227488%;
+    height: 90%;
 }
 
 .inside {
-    width: 94.871794871794871794871794871795%;
-    margin-left: 2.564102564102564102564102564103%;
+    width: 95%;
+    margin-left: 2.5%;
     background-color: $secondary_bg_color;
     height: 100%;
     border-radius: 20px;
@@ -29,7 +29,7 @@
 
 .picture {
     width: 100%;
-    height: 37.634408602150537634408602150538%;
+    height: 30%;
 }
 
 
@@ -41,12 +41,11 @@
 }
 
 .title_block {
-    margin-top: 10px;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 8.886255924170616113744075829384%;
-    justify-content: center;
+    gap: 2%;
 }
 
 .title {
@@ -62,16 +61,16 @@
     font-size: 16px;
     letter-spacing: 1px;
     color: $hint_color;
-    margin-top: 10px;
 }
 
 .description {
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 4%;
+    margin-top: 4%;
     color: $text_color;
-    margin-left: 2.702702702702702702702702702703%;
-    width: 94.594594594594594594594594594595%;
+    margin-left: 2.5%;
+    width: 95%;
     font-family: "Open Sans";
 }
 
@@ -81,7 +80,7 @@
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
-    width: 94.594594594594594594594594594595%;
+    width: 95%;
     margin: 0 auto 0;
     display: flex;
     flex-direction: column;
@@ -89,8 +88,9 @@
 }
 
 .ingredient_block {
-    margin-top: 20px;
-    height: 41.796208530805687203791469194313%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 58%;
     overflow-y: auto;
 }
 
@@ -111,7 +111,7 @@
 }
 
 .footer {
-    height: 6.924170616113744075829383886256%;
+    height: 6%;
     display: flex;
     align-items: center;
     justify-content: space-between;

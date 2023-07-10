@@ -17,11 +17,11 @@ const Popup = (props) => {
                         </button>
                         <img className={styles.image} src={foodPicture} alt="" />
                     </div>
-                    <div className={styles.title_block}>
-                        <span className={styles.title}>{props.popupItem.name}</span>
-                        <span className={styles.weight}>{props.popupItem.weight}g</span>
-                    </div>
                     <div className={styles.ingredient_block}>
+                        <div className={styles.title_block}>
+                            <span className={styles.title}>{props.popupItem.name}</span>
+                            <span className={styles.weight}>{props.popupItem.weight}g</span>
+                        </div>
                         <div className={styles.description}>
                             Here is the description of the product. Here is the description of the dish, and it states that this salad is not tasty. And it is definitely true.
                         </div>

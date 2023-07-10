@@ -124,6 +124,7 @@ const Menu = () => {
             
             <div
                 className={cn(styles.sm, {[styles.fixedContainer]: isFixed})} 
+                // className={styles.sm}
                 id="choosing" 
                 ref={menuRef}
             >

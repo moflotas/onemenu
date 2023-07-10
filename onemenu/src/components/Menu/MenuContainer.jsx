@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 const MenuContainer = () => {
+
   const [isOpen, setIsOpen] = useState(false);
   const [popupItem, setPopupItem] = useState();
   const [hasImage, setHasImage] = useState(true);
@@ -27,9 +28,8 @@ const MenuContainer = () => {
         if (originalPosition === 0) {
           setOriginalPosition(choosingElement.offsetTop);
         }
-        const scrollPosition =
-          window.pageYOffset || document.documentElement.scrollTop;
-        const isTopReached = scrollPosition >= originalPosition;
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        const isTopReached = scrollPosition >= originalPosition ;
         setIsFixed(isTopReached);
       }
     };
