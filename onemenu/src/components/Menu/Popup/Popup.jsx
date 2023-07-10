@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Popup.module.scss"
-import foodPicture from '../../../pictures/foodLarge.png'
-import cn from "classnames"
+import styles from "./Popup.module.scss";
+import foodPicture from '../../../pictures/foodLarge.png';
+import cn from "classnames";
 import { close } from "../../../pictures/svg";
 
 const Popup = (props) => {
@@ -18,8 +18,8 @@ const Popup = (props) => {
                         <img className={styles.image} src={foodPicture} alt="" />
                     </div>
                     <div className={styles.title_block}>
-                        <span className={styles.title}> {props.popupItem.name} </span>
-                        <span className={styles.weight}> {props.popupItem.weight}g </span>
+                        <span className={styles.title}>{props.popupItem.name}</span>
+                        <span className={styles.weight}>{props.popupItem.weight}g</span>
                     </div>
                     <div className={styles.ingredient_block}>
                         <div className={styles.description}>
@@ -27,14 +27,14 @@ const Popup = (props) => {
                         </div>
                         <div className={styles.base_ingredients}>
                             <span className={styles.base_title}>Base ingredients</span>
-                            {props.popupItem.ingredients.map((ingredient) => (
-                                <span className={styles.ingredient}>{ingredient.name}</span>
+                            {props.popupItem.ingredients.map((ingredient, index) => (
+                                <span key={index} className={styles.ingredient}>{ingredient.name}</span>
                             ))}
                         </div>
                         <div className={cn(styles.base_ingredients, styles.add_ingredients)}>
                             <span className={styles.base_title}>Additional ingredients</span>
-                            {props.popupItem.ingredients.map((ingredient) => (
-                                <span className={styles.ingredient}>{ingredient.name}</span>
+                            {props.popupItem.ingredients.map((ingredient, index) => (
+                                <span key={index} className={styles.ingredient}>{ingredient.name}</span>
                             ))}
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const Popup = (props) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Popup;

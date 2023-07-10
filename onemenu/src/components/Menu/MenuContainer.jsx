@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const useMenuLogic = () => {
+const MenuContainer = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [popupItem, setPopupItem] = useState();
   const [hasImage, setHasImage] = useState(true);
@@ -33,7 +33,6 @@ const useMenuLogic = () => {
         setIsFixed(isTopReached);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -50,16 +49,10 @@ const useMenuLogic = () => {
 
   const selectCategory = (category) => {
     setSelectedCategory(category);
-    setTimeout(() => {
-      const categoryElement = document.getElementById(category);
-      if (categoryElement) {
-        const { top } = categoryElement.getBoundingClientRect();
-        window.scrollTo({
-          top: window.pageYOffset + top - menuRef.current.offsetHeight - 10,
-          behavior: "smooth",
-        });
-      }
-    }, 10);
+    const categoryElement = document.getElementById(category);
+    if (categoryElement) {
+      categoryElement.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return {
@@ -76,4 +69,4 @@ const useMenuLogic = () => {
   };
 };
 
-export default useMenuLogic;
+export default MenuContainer;

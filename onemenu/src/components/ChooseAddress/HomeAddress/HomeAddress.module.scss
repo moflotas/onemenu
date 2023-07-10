@@ -1,15 +1,17 @@
 @import "../../../variables";
 
 .address {
-    padding-top: 42.266%;
-    width: 100%;
+    position: absolute;
+    top: 25%;
+    width: 96%;
 }
 
 .title {
     font-size: 24px;
-    text-align: center;
     color: $text_color;
     letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
 }
 
 .buttons {
@@ -32,6 +34,7 @@
     border-radius: 10px;
     margin-left: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 .backButton {
@@ -45,10 +48,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 80px;
 }
 
 .checkboxes label {
     color: $text_color;
+    cursor: pointer;
 }
 
 .inputs {
