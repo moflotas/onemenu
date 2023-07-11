@@ -23,7 +23,7 @@ const Menu = () => {
         changeTypeToText,
         changeTypeToImage,
         selectCategory,
-        addCafe
+        cafe
       } = MenuContainer();
 
     let data = [
@@ -109,17 +109,10 @@ const Menu = () => {
             ]}
         ], category_id: 4}
     ]
-
-
     return (
         <div className={styles.menu}>
             <div className={styles.title}>
                 Menu
-            </div>
-            <div>
-                <button onClick={addCafe} type="button">
-                    Click me
-                </button>
             </div>
 
             <Type 
@@ -130,7 +123,6 @@ const Menu = () => {
             
             <div
                 className={cn(styles.sm, {[styles.fixedContainer]: isFixed})} 
-                // className={styles.sm}
                 id="choosing" 
                 ref={menuRef}
             >
@@ -150,6 +142,7 @@ const Menu = () => {
 
             <Cards 
                 data={data} 
+                cafe={cafe}
                 togglePopup={togglePopup} 
                 hasImage={hasImage} 
             />

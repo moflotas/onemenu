@@ -4,10 +4,19 @@ import Card from "./Card/Card";
 import TextCard from "./Card/textCard";
 import cn from "classnames";
 
-const Cards = ({ data, hasImage, togglePopup }) => {
+const Cards = ({ data, hasImage, togglePopup, cafe }) => {
   return (
-    <div>
-      {data.map((category) => (
+    <div className={styles.cards} >
+      {cafe && cafe.menu && cafe.menu.map((item) => (
+          hasImage ? (
+            <button onClick={() => togglePopup(item)} key={item.id} className={styles.buttonCard}>
+              <Card name={item.name} price={item.cost} />
+            </button>
+          ) : (
+            <TextCard item={item} togglePopup={togglePopup} />
+          )
+      ))}
+      {/* {data.map((category) => (
         <div key={category.category_id} className={cn(styles.category, {[styles.mb] : !hasImage})}>
           <span id={category.category_id} className={styles.category_title}>
             {category.category}
@@ -25,7 +34,7 @@ const Cards = ({ data, hasImage, togglePopup }) => {
             ))}
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
