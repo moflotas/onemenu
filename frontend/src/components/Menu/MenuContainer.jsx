@@ -6,11 +6,12 @@ import axios from 'axios'
 const MenuContainer = () => {
 
   const [cafes, setCafes] = useState([]);
+  const [cafe, setCafe] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [popupItem, setPopupItem] = useState();
   const [hasImage, setHasImage] = useState(true);
   const [isFixed, setIsFixed] = useState(false);
-  const [originalPosition, setOriginalPosition] = useState(0);
+  // const [originalPosition, setOriginalPosition] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   useEffect(() => {
@@ -20,10 +21,21 @@ const MenuContainer = () => {
     .catch((e) => console.log(e));
   }, []);
 
+  function getCafe() {
+    axios.get(CAFES + '/' + cafes[1])
+    .then((r) => r.data)
+    .then((cafeInfo) => {
+      setCafe(cafeInfo)
+      console.log("Hi!")
+      console.log("API " + CAFES + "/" + cafes[0])
+    })
+    .catch((e) => console.log(e))
+  }
+
   function addCafe() {
     axios.post(CAFES, {
-      title: 'asdasda',
-      description: 'sadasdassd',
+      title: "Small Boss",
+      description: "The best cafe in the world",
       menu: []
     })
     .then((r) => r.data)
@@ -33,7 +45,6 @@ const MenuContainer = () => {
     })
     .catch((e) => console.log(e));
   }
-
 
   const togglePopup = (item) => {
     setIsOpen(!isOpen);
@@ -92,7 +103,9 @@ const MenuContainer = () => {
     changeTypeToText,
     changeTypeToImage,
     selectCategory,
-    addCafe
+    addCafe,
+    cafe,
+    getCafe
   };
 };
 
