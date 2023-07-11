@@ -3,20 +3,8 @@ import styles from './PlaceInfo.module.scss';
 import { reload } from "../../../../pictures/svg";
 import cn from "classnames";
 
-const PlaceInfo = ( {isHome, data } ) => {
-
-    const [isOpenAddress, setIsOpenAddress] = React.useState(false)
-
-    const openAddress = () => {
-        setIsOpenAddress(!isOpenAddress)
-    }
-
-    const [selectedOption, setSelectedOption] = React.useState('');
-
-    const handleOptionChange = (event) => {
-      setSelectedOption(event.target.value);
-    };
-
+const PlaceInfo = ( {isHome, data, isOpenAddress, openAddress, 
+                    handleOptionChange, selectedOption } ) => {
     return (
         <div>
             {isHome ? (

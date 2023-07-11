@@ -25,11 +25,26 @@ const Checkout = () => {
 
     const changeToRestaurant = () => {
         setIsHome(false)
+        setIsOpenAddress(false)
     }
 
     const changeToHome = () => {
         setIsHome(true)
+        setIsOpenAddress(false)
     }
+
+    const [isOpenAddress, setIsOpenAddress] = useState(false)
+
+    const openAddress = () => {
+        setIsOpenAddress(!isOpenAddress)
+    }
+
+    const [selectedOption, setSelectedOption] = useState('');
+
+    const handleOptionChange = (event) => {
+      setSelectedOption(event.target.value);
+    };
+
     
     return (
         <div className={styles.checkout}>
@@ -43,6 +58,10 @@ const Checkout = () => {
                 isHome={isHome}
                 data={data}
                 total={total}
+                isOpenAddress={isOpenAddress}
+                openAddress={openAddress}
+                handleOptionChange={handleOptionChange}
+                selectedOption={selectedOption}
             />
 
             <div className={styles.footer_buttons}>

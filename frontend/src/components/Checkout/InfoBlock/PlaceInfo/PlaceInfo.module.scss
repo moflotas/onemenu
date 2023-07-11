@@ -27,7 +27,12 @@
     width: 24px;
     height: 24px;
     color: $hint_color;
-    transition: transform 0.3s linear; 
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.info_image:hover {
+    color: $button_color;
 }
 
 .rotated {
@@ -74,4 +79,5 @@
 
 .checkboxes label {
     color: $text_color;
+    cursor: pointer;
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import styles from './InfoBlock.module.scss';
-import { home, reload, restaurant } from "../../../pictures/svg";
 import Dishes from "./Dishes/Dishes";
 import Place from "./Place/Place";
 import PlaceInfo from "./PlaceInfo/PlaceInfo";
 
-const InfoBlock = ({ changeToRestaurant, changeToHome, isHome, data, total }) => {
+const InfoBlock = ({ changeToRestaurant, changeToHome, isHome, data, total, 
+                    isOpenAddress, openAddress, handleOptionChange, selectedOption }) => {
     return (
         <div className={styles.checkout_info}>
             <Place 
@@ -14,9 +14,20 @@ const InfoBlock = ({ changeToRestaurant, changeToHome, isHome, data, total }) =>
                 isHome={isHome}
             />
 
-            <PlaceInfo isHome={isHome} data={data} />
+            <PlaceInfo 
+                isHome={isHome} 
+                data={data} 
+                isOpenAddress={isOpenAddress}
+                openAddress={openAddress} 
+                handleOptionChange={handleOptionChange}
+                selectedOption={selectedOption}
+            />
 
-            <Dishes data={data} isHome={isHome} total={total} />
+            <Dishes 
+                data={data} 
+                isHome={isHome} 
+                total={total} 
+            />
         </div>
     )
 }

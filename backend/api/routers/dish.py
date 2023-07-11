@@ -8,7 +8,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 
 dish_router = APIRouter(
-    prefix="/dish",
+    prefix="/api/dish",
     tags=["Dish"]
 )
 

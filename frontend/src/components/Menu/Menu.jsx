@@ -23,6 +23,7 @@ const Menu = () => {
         changeTypeToText,
         changeTypeToImage,
         selectCategory,
+        addCafe
       } = MenuContainer();
 
     let data = [
@@ -114,6 +115,11 @@ const Menu = () => {
         <div className={styles.menu}>
             <div className={styles.title}>
                 Menu
+            </div>
+            <div>
+                <button onClick={addCafe} type="button">
+                    Click me
+                </button>
             </div>
 
             <Type 
