@@ -82,6 +82,7 @@ class Dish(Base):
     name: str
     description: Optional[str] = None
     cost: Decimal
+    category: str
     traits: Optional[List[DishTrait]]
     mandatory_ingredients: Optional[List[MandatoryIngredient]]
     optional_ingredients: Optional[List[OptionalIngredient]]
@@ -94,6 +95,7 @@ class Dish(Base):
             name=schema.name,
             description=schema.description,
             cost=schema.cost,
+            category=schema.category,
             traits=[DishTrait.to_orm(trait) for trait in schema.traits],
             ingredients=[
                 MandatoryIngredient.to_orm(ingredient)
@@ -114,6 +116,7 @@ class Dish(Base):
             name=model.name,
             description=model.description,
             cost=model.cost,
+            category=model.category,
             traits=[DishTrait.from_orm(trait) for trait in model.traits],
             mandatory_ingredients=[
                 MandatoryIngredient.from_orm(ingredient)
@@ -134,13 +137,15 @@ class Dish(Base):
                     # "id": str(uuid4()),
                     # "revision_id": str(uuid4()),
                     "cafe_id": str(uuid4()),
-                    "name": "Sushi",
-                    "description": "Just Sushi",
+                    "name": "Philadelphia sushi",
+                    "description": "As simple as it is tasty!",
                     "cost": 12.50,
+                    "category": "sushi",
                     "traits": [{"name": "Size", "value": "Big"}],
-                    "mandatory_ingredients": [{"name": "Rice"}],
+                    "mandatory_ingredients": [{"name": "Rice"}, {"name": "Salmon"}],
                     "optional_ingredients": [
-                        {"name": "Soy", "is_default": True, "cost": 10.10}
+                        {"name": "Soy", "is_default": True, "cost": 10.10},
+                        {"name": "Wasabi", "is_default": False, "cost": 10.10},
                     ],
                 }
             ]
@@ -153,26 +158,6 @@ class Cafe(Base):
     title: str = "Small Boss"
     description: Optional[str] = "The best cafe in the world"
     menu: List[Dish]
-    
-    #  = [
-    #     Dish(
-    #         name=f"Kish_{i}",
-    #         description="Very tasty",
-    #         cost=Decimal(100),
-    #         traits=[DishTrait(name="Size", value="Big")],
-    #         mandatory_ingredients=[
-    #             MandatoryIngredient(name="Flour"),
-    #         ],
-    #         optional_ingredients=[
-    #             OptionalIngredient(
-    #                 name="Sugar",
-    #                 cost=Decimal(10),
-    #                 is_default=True,
-    #             )
-    #         ],
-    #     )
-    #     for i in range(3)
-    # ]
 
     @staticmethod
     def to_orm(schema: "Cafe"):
@@ -190,6 +175,34 @@ class Cafe(Base):
             description=model.description,
             menu=[Dish.from_orm(dish) for dish in model.menu],
         )
+
+    model_config = {
+        "json_schema_extra": {
+            "examples": [
+                {
+                    "title": "Small Boss",
+                    "description": "The best cafe in the world",
+                    "menu": [
+                        {
+                            "name": "Kish",
+                            "description": "Very tasty",
+                            "cost": 100,
+                            "category": "bakery",
+                            "traits": [{"name": "Size", "value": "Big"}],
+                            "mandatory_ingredients": [{"name": "Flour"}],
+                            "optional_ingredients": [
+                                {
+                                    "name": "Sugar",
+                                    "is_default": True,
+                                    "cost": 10,
+                                }
+                            ],
+                        }
+                    ],
+                }
+            ]
+        }
+    }
 
 
 class OrderItem(Base):
