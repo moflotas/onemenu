@@ -7,10 +7,6 @@ from db.session import get_session
 from sqlalchemy.ext.asyncio import AsyncSession
 
 
-# cafe_router = CrudRouter(
-#     db_models.Cafe, pd_models.Cafe, DAL.BaseRepository, prefix="/cafe"
-# )
-
 cafe_router = APIRouter(
     prefix="/api/cafes",
     tags=["Cafe"]
@@ -38,9 +34,9 @@ async def get_cafe(
     return schemas.Cafe.from_orm(db_cafe)
 
 
-@cafe_router.get("", response_model=list[UUID])
+@cafe_router.get("", response_model=list[schemas.Cafe])
 async def get_cafes(
     db: AsyncSession = Depends(get_session),
 ) -> schemas.Cafe:
-    ids = await crud.get_all(db)
-    return ids
+    cafes = await crud.get_all(db)
+    return [schemas.Cafe.from_orm(cafe) for cafe in cafes]

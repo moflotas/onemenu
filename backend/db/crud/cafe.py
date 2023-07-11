@@ -8,7 +8,7 @@ from uuid import UUID
 async def get_all(
     db: AsyncSession,
 ) -> models.Cafe | None:
-    query = select(models.Cafe.id)
+    query = select(models.Cafe)
     return (await db.execute(query)).scalars().unique().all()
 
 

@@ -13,7 +13,7 @@ dish_router = APIRouter(
 )
 
 
-@dish_router.post("/", response_model=schemas.Dish)
+@dish_router.post("", response_model=schemas.Dish)
 async def create_dish(
     dish: schemas.Dish,
     db: AsyncSession = Depends(get_session),

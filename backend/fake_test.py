@@ -18,7 +18,5 @@ for i in range(3):
     print(fake.metric_measurement())
     print(fake.spice())
     print(fake.sushi())
-    print(fake.vegetable())     
+    print(fake.vegetable())
     print()
-
-
