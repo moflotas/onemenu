@@ -13,7 +13,7 @@ const Cards = ({ data, hasImage, togglePopup, cafe }) => {
               <Card name={item.name} price={item.cost} />
             </button>
           ) : (
-            <TextCard item={item} togglePopup={togglePopup} />
+            <TextCard key={item.id} item={item} togglePopup={togglePopup} />
           )
       ))}
       {/* {data.map((category) => (
