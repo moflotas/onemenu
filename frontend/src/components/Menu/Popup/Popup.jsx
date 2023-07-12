@@ -20,7 +20,6 @@ const Popup = ({popupItem, togglePopup}) => {
                     <div className={styles.ingredient_block}>
                         <div className={styles.title_block}>
                             <span className={styles.title}>{popupItem && popupItem.name}</span>
-                            <span className={styles.weight}>{popupItem && popupItem && popupItem.traits[0].value} g</span>
                         </div>
                         <div className={styles.description}>
                             {popupItem && popupItem.description}
@@ -38,6 +37,15 @@ const Popup = ({popupItem, togglePopup}) => {
                                     <span className={styles.ingredient}>{ingredient.name}</span>
                                     <span className={styles.i_cost}>{ingredient.cost} rub</span>
                                 </div>                  
+                            ))}
+                        </div>
+                        <div className={cn(styles.base_ingredients, styles.add_ingredients)}>
+                            <span className={styles.base_title}>Food information</span>
+                            {popupItem && popupItem.traits.map((item) => (
+                                <div key={item.id} className={styles.additional_ingredients}>
+                                    <span className={styles.ingredient}> {item.name} </span>
+                                    <span className={styles.i_cost}> {item.value} </span>
+                                </div>
                             ))}
                         </div>
                     </div>

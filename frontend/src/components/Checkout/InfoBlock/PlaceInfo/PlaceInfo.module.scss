@@ -43,7 +43,7 @@
 .inputs {
     display: flex;
     flex-direction: column;
-    width: 82.972972972972972972972972972973%;
+    width: 100%;
     gap: 20px;
 }
 
@@ -56,6 +56,8 @@
     color: $text_color;
     transition: .2s linear;
     font-family: 'Open Sans';
+    letter-spacing: 1px;
+    font-size: 16px;
     font-weight: 300;
 }
 
