@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Category.module.scss";
 import cn from "classnames";
 
-const Category = ({ data, selectCategory, selectedCategory, groupedMenu }) => {
+const Category = ({ selectCategory, selectedCategory, groupedMenu }) => {
 	return (
 		<div className={styles.choosing}>
 			{Object.keys(groupedMenu).map((category) => (

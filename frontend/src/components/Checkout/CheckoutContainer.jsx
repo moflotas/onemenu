@@ -13,7 +13,7 @@ const CheckoutContainer = () => {
 
 	const changeToHome = () => {
 		setIsHome(true);
-		setIsOpenAddress(false);
+		setIsOpenTable(false)
 	};
 
 	const openAddress = () => {

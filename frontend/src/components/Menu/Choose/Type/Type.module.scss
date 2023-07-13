@@ -18,6 +18,12 @@
     background-color: $secondary_bg_color;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.button_type:hover {
+    scale: 1.05;
 }
 
 .type_image {

@@ -53,6 +53,7 @@
     font-weight: 300;
     letter-spacing: 1px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .labelBlock {
@@ -107,6 +108,7 @@
     flex-direction: column;
     transition: .2s linear;
     text-decoration: none;
+    align-items: center;
 }
 
 .link:hover {
