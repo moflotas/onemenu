@@ -4,19 +4,7 @@ import Card from "./Card/Card";
 import TextCard from "./Card/textCard";
 import cn from "classnames";
 
-const Cards = ({ hasImage, togglePopup, cafe }) => {
-	const groupedMenu =
-		cafe && cafe.menu
-			? cafe.menu.reduce((groups, item) => {
-					const category = item.category;
-					if (!groups[category]) {
-						groups[category] = [];
-					}
-					groups[category].push(item);
-					return groups;
-			  }, {})
-			: {};
-
+const Cards = ({ hasImage, togglePopup, groupedMenu }) => {
 	return (
 		<div>
 			{Object.keys(groupedMenu).map((category) => (
@@ -24,7 +12,7 @@ const Cards = ({ hasImage, togglePopup, cafe }) => {
 					key={category}
 					className={cn(styles.category, { [styles.mb]: !hasImage })}
 				>
-					<span className={styles.category_title}>{category}</span>
+					<span id={category} className={styles.category_title}>{category}</span>
 					<div
 						className={cn(styles.cards, {
 							[styles.no_gap]: !hasImage,

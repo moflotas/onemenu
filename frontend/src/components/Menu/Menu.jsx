@@ -20,7 +20,9 @@ const Menu = () => {
 		changeTypeToImage,
 		selectCategory,
 		cafe,
+		groupedMenu
 	} = MenuContainer();
+
 
 	let data = [
 		{
@@ -334,6 +336,7 @@ const Menu = () => {
 					data={data}
 					selectCategory={selectCategory}
 					selectedCategory={selectedCategory}
+					groupedMenu={groupedMenu}
 				/>
 			</div>
 
@@ -341,7 +344,12 @@ const Menu = () => {
 				<Popup popupItem={popupItem} togglePopup={togglePopup} />
 			)}
 
-			<Cards cafe={cafe} togglePopup={togglePopup} hasImage={hasImage} />
+			<Cards
+				cafe={cafe}
+				togglePopup={togglePopup}
+				hasImage={hasImage}
+				groupedMenu={groupedMenu}
+			/>
 		</div>
 	);
 };
