@@ -10,7 +10,7 @@ load_dotenv()
 USER = os.getenv("POSTGRES_USER", "postgres")
 PASSWORD = os.getenv("POSTGRES_PASSWORD", "postgres")
 HOST = os.getenv("POSTGRES_HOST", "localhost")
-PORT = os.getenv("POSTGRES_PORT", 2345)
+PORT = os.getenv("POSTGRES_PORT", 5432)
 DATABASE = os.getenv("POSTGRES_DB", "postgres")
 
 SQLALCHEMY_DATABASE_URL = (
