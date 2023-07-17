@@ -11,7 +11,6 @@ import Checkout from './components/Checkout/Checkout';
 
 
 function App() {
-
   const location = useLocation()
   const show = !location.pathname.includes("choose");
 

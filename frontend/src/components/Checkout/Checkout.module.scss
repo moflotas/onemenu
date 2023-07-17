@@ -3,7 +3,11 @@
 .checkout {
     position: absolute;
     top: 25%;
-    width: 95%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
 }
 
 .title {
@@ -15,23 +19,49 @@
 
 .footer_button {
     position: fixed;
-    bottom: 2.369668246445497630331753554502%;
-    width: 30%;
-    height: 35px;
+    bottom: 2.5%;
+    width: 15%;
+    height: 50px;
     background-color: $button_color;
     border: none;
     color: $button_text_color;
-    border-radius: 10px;
+    border-radius: 15px;
     font-family: 'Open Sans';
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 500;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.footer_button:hover {
+    scale: 1.05;
 }
 
 .right {
-    right: 2.564102564102564102564102564103%;
+    right: 25%;
 }
 
 .left {
-    left: 2.564102564102564102564102564103%;
+    left: 25%;
+}
+
+@media (max-width: 800px) {
+    .checkout {
+        width: 95%;
+    }
+
+    .footer_button {
+        height: 35px;
+        width: 30%;
+        border-radius: 10px;
+    }
+
+    .right {
+        right: 2.5%;
+    }
+
+    .left {
+        left: 2.5%;
+    }
 }

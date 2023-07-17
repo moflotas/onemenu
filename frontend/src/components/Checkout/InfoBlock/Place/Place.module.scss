@@ -17,12 +17,13 @@
     background-color: $secondary_bg_color;
     border: none;
     border-radius: 20px;
-    width: 48.648648648648648648648648648649%;
+    width: 48.5%;
     height: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .image {

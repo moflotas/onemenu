@@ -1,72 +1,91 @@
 import { useState, useEffect, useRef } from "react";
+import { CAFES } from "../../api";
+import axios from "axios";
 
 const MenuContainer = () => {
+	const [cafe, setCafe] = useState([]);
+	const [isOpen, setIsOpen] = useState(false);
+	const [popupItem, setPopupItem] = useState();
+	const [hasImage, setHasImage] = useState(true);
+	const [isFixed, setIsFixed] = useState(false);
+	const [selectedCategory, setSelectedCategory] = useState(null);
 
-  const [isOpen, setIsOpen] = useState(false);
-  const [popupItem, setPopupItem] = useState();
-  const [hasImage, setHasImage] = useState(true);
-  const [isFixed, setIsFixed] = useState(false);
-  const [originalPosition, setOriginalPosition] = useState(0);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+	useEffect(() => {
+		axios
+			.get(CAFES)
+			.then((r) => r.data)
+			.then((cafesArray) => {
+				getCafe(cafesArray);
+			})
+			.catch((e) => console.log(e));
+	}, []);
 
-  const togglePopup = (item) => {
-    setIsOpen(!isOpen);
-    setPopupItem(item);
-    if (document.body.style.overflow !== "hidden") {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "scroll";
-    }
-  };
+	function getCafe(cafesArray) {
+		if (cafesArray.length > 0) {
+			axios
+				.get(CAFES + "/" + cafesArray[0].id)
+				.then((r) => r.data)
+				.then((cafeInfo) => {
+					setCafe(cafeInfo);
+				})
+				.catch((e) => console.log(e));
+		}
+	}
 
-  const menuRef = useRef(null);
+	const togglePopup = (item) => {
+		setIsOpen(!isOpen);
+		setPopupItem(item);
+		if (document.body.style.overflow !== "hidden") {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "scroll";
+		}
+	};
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const choosingElement = document.getElementById("choosing");
-      if (choosingElement) {
-        if (originalPosition === 0) {
-          setOriginalPosition(choosingElement.offsetTop);
-        }
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-        const isTopReached = scrollPosition >= originalPosition ;
-        setIsFixed(isTopReached);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [originalPosition]);
+	const menuRef = useRef(null);
 
-  const changeTypeToText = () => {
-    setHasImage(false);
-  };
+	const changeTypeToText = () => {
+		setHasImage(false);
+	};
 
-  const changeTypeToImage = () => {
-    setHasImage(true);
-  };
+	const changeTypeToImage = () => {
+		setHasImage(true);
+	};
 
-  const selectCategory = (category) => {
-    setSelectedCategory(category);
-    const categoryElement = document.getElementById(category);
-    if (categoryElement) {
-      categoryElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+	const selectCategory = (category) => {
+		setSelectedCategory(category);
+		const categoryElement = document.getElementById(category);
+		if (categoryElement) {
+			categoryElement.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 
-  return {
-    isOpen,
-    popupItem,
-    hasImage,
-    isFixed,
-    selectedCategory,
-    togglePopup,
-    menuRef,
-    changeTypeToText,
-    changeTypeToImage,
-    selectCategory,
-  };
+	const groupedMenu =
+		cafe && cafe.menu
+			? cafe.menu.reduce((groups, item) => {
+					const category = item.category;
+					if (!groups[category]) {
+						groups[category] = [];
+					}
+					groups[category].push(item);
+					return groups;
+			  }, {})
+			: {};
+
+	return {
+		isOpen,
+		popupItem,
+		hasImage,
+		isFixed,
+		selectedCategory,
+		togglePopup,
+		menuRef,
+		changeTypeToText,
+		changeTypeToImage,
+		selectCategory,
+		cafe,
+		groupedMenu,
+	};
 };
 
 export default MenuContainer;

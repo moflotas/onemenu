@@ -14,7 +14,7 @@ app.include_router(dish_router)
 
 
 @app.on_event("startup")
-async def startup(db:AsyncSession =  Depends(get_session)):
+async def startup(db: AsyncSession = Depends(get_session)):
     await _db_recreate()
     await fill_with_data(db)
 

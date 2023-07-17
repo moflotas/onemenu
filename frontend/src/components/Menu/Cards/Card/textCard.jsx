@@ -11,7 +11,7 @@ const TextCard = ({item, togglePopup}) => {
                 <span>{item.name}</span>
             </div>
             <div className={styles.textCard_content}>
-                <span>({item.price} rub)</span>
+                <span>({item.cost} rub)</span>
                 <button onClick={() => togglePopup(item)}>
                     <svg className={styles.text_card_image} viewBox="0 0 24 24" >
                         <path d={arrowForward} fill="currentColor"/>
