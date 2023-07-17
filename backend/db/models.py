@@ -46,6 +46,7 @@ class Dish(Base):
     )
     name: Mapped[str] = mapped_column(String, nullable=False)
     description: Mapped[str] = mapped_column(String)
+    image_url: Mapped[str] = mapped_column(String)
     cost: Mapped[float] = mapped_column(Numeric(6, 2), nullable=False)
     category: Mapped[str] = mapped_column(String, nullable=False)
     start_date: Mapped[datetime.datetime] = mapped_column(
@@ -118,7 +119,7 @@ class BaseIngredient(Base):
         [dish_id, revision_id],
         [Dish.id, Dish.revision_id],
     )
-    
+
     dish: Mapped[Dish] = relationship(
         "Dish",
         back_populates="ingredients",
@@ -165,6 +166,90 @@ class OptionalIngredient(BaseIngredient):
     }
 
 
+class UserTypes(enum.Enum):
+    USER = "user"
+    CUSTOMER = "customer"
+    EMPLOYEE = "employee"
+
+
+class User(Base):
+    __tablename__ = "users"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4,
+    )
+    telegram_id: Mapped[str] = mapped_column(String, nullable=False)
+    name: Mapped[str] = mapped_column(String, nullable=True)
+    type: Mapped[UserTypes] = mapped_column(Enum(UserTypes), nullable=False)
+
+    __mapper_args__ = {
+        "polymorphic_identity": UserTypes.USER,
+        "polymorphic_on": type,
+        "with_polymorphic": "*",
+    }
+
+
+class Customer(User):
+    __tablename__ = "customers"
+
+    id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id"), primary_key=True)
+    birthday: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=True)
+
+    addresses: Mapped[list["Address"]] = relationship(
+        "Address",
+        back_populates="customer",
+        lazy=DEFAULT_LAZY,
+    )
+    orders: Mapped[list["Order"]] = relationship(
+        "Order",
+        back_populates="customer",
+        lazy=DEFAULT_LAZY,
+    )
+
+    __mapper_args__ = {
+        "polymorphic_identity": UserTypes.CUSTOMER,
+    }
+
+
+class JobTitle(enum.Enum):
+    WAITER = "waiter"
+    ADMIN = "admin"
+
+
+class Employee(User):
+    __tablename__ = "employee"
+
+    id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id"), primary_key=True)
+    cafe_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("cafes.id"))
+    job_position = mapped_column(Enum(JobTitle), nullable=False)
+    orders: Mapped[list["Order"]] = relationship(
+        "Order",
+        back_populates="employee",
+        lazy=DEFAULT_LAZY,
+    )
+
+    __mapper_args__ = {
+        "polymorphic_identity": UserTypes.EMPLOYEE,
+    }
+
+
+class Address(Base):
+    __tablename__ = "addresses"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    )
+    customer_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("customers.id"))
+    customer: Mapped[Customer] = relationship(
+        "Customer",
+        back_populates="addresses",
+        lazy=DEFAULT_LAZY,
+    )
+    address: Mapped[str] = mapped_column(String, nullable=False)
+
+
 class OrderStatus(enum.Enum):
     IN_PROGRESS = "in_progress"
     READY = "ready"
@@ -191,16 +276,33 @@ class Order(Base):
     )
     type: Mapped[OrderType] = mapped_column(Enum(OrderType), nullable=False)
     customer_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("customers.id"))
-    employee_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("employee.id"))
-    rating: Mapped[int] = mapped_column(Integer)
-    clients_num: Mapped[int] = mapped_column(Integer)
+    employee_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("employee.id"), nullable=True)
+    rating: Mapped[int] = mapped_column(Integer, nullable=True)
+    clients_num: Mapped[int] = mapped_column(Integer, nullable=True)
     status = mapped_column(
         Enum(OrderStatus),
         nullable=False,
+        default=OrderStatus.IN_PROGRESS,
     )
-    start_date: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=False)
-    end_date: Mapped[datetime.datetime] = mapped_column(DateTime)
-    payment_type: Mapped[PaymentType] = mapped_column(Enum(PaymentType))
+    start_date: Mapped[datetime.datetime] = mapped_column(DateTime, default=datetime.datetime.utcnow, nullable=False)
+    end_date: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=True)
+    payment_type: Mapped[PaymentType] = mapped_column(Enum(PaymentType), nullable=True)
+
+    customer: Mapped[Customer] = relationship(
+        "Customer",
+        back_populates="orders",
+        lazy=DEFAULT_LAZY,
+    )
+    employee: Mapped[Employee] = relationship(
+        "Employee",
+        back_populates="orders",
+        lazy=DEFAULT_LAZY,
+    )
+    items: Mapped[list["OrderItem"]] = relationship(
+        "OrderItem",
+        back_populates="order",
+        lazy=DEFAULT_LAZY,
+    )
 
     __mapper_args__ = {
         "polymorphic_identity": OrderType.BASE_ORDER,
@@ -215,28 +317,6 @@ class OrderItemStatus(enum.Enum):
     CANCELLED = "cancelled"
 
 
-class OrderItem(Base):
-    __tablename__ = "order_items"
-
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
-    )
-    order_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("orders.id"))
-    dish_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True))
-    revision_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True))
-    status: Mapped[OrderItemStatus] = mapped_column(
-        Enum(OrderItemStatus),
-        nullable=False,
-    )
-    start_date: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=False)
-    end_date: Mapped[datetime.datetime] = mapped_column(DateTime)
-
-    ForeignKeyConstraint(
-        ["dish_id", "revision_id"],
-        ["dishes.id", "dishes.revision_id"],
-    )
-
-
 class OrderOptional(Base):
     __tablename__ = "order_optionals"
 
@@ -249,6 +329,40 @@ class OrderOptional(Base):
         UUID(as_uuid=True),
         ForeignKey("optional_ingredients.id"),
         primary_key=True,
+    )
+
+
+class OrderItem(Base):
+    __tablename__ = "order_items"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    )
+    order_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("orders.id"))
+    dish_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True))
+    revision_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True))
+    quantity: Mapped[int] = mapped_column(Integer)
+    status: Mapped[OrderItemStatus] = mapped_column(
+        Enum(OrderItemStatus),
+        nullable=False,
+    )
+    start_date: Mapped[datetime.datetime] = mapped_column(DateTime, default=datetime.datetime.utcnow, nullable=False)
+    end_date: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=True)
+
+    order: Mapped[Order] = relationship(
+        "Order",
+        back_populates="items",
+        lazy=DEFAULT_LAZY,
+    )
+    optionals: Mapped[list[OptionalIngredient]] = relationship(
+        "OptionalIngredient",
+        secondary="order_optionals",
+        lazy=DEFAULT_LAZY,
+    )
+
+    ForeignKeyConstraint(
+        ["dish_id", "revision_id"],
+        ["dishes.id", "dishes.revision_id"],
     )
 
 
@@ -273,78 +387,14 @@ class OrdersHome(Order):
     )
     address_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("addresses.id"))
 
+    address: Mapped[Address] = relationship(
+        "Address",
+        lazy=DEFAULT_LAZY,
+    )
+
     __mapper_args__ = {
         "polymorphic_identity": OrderType.ORDER_HOME,
     }
-
-
-class UserTypes(enum.Enum):
-    USER = "user"
-    CUSTOMER = "customer"
-    EMPLOYEE = "employee"
-
-
-class User(Base):
-    __tablename__ = "users"
-
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True),
-        primary_key=True,
-        default=uuid.uuid4,
-    )
-    name: Mapped[str] = mapped_column(String, nullable=False)
-    type: Mapped[UserTypes] = mapped_column(Enum(UserTypes), nullable=False)
-
-    __mapper_args__ = {
-        "polymorphic_identity": UserTypes.USER,
-        "polymorphic_on": type,
-        "with_polymorphic": "*",
-    }
-
-
-class Customer(User):
-    __tablename__ = "customers"
-
-    id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id"), primary_key=True)
-    birthday: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=True)
-
-    addresses: Mapped[list["Address"]] = relationship(
-        "Address",
-        back_populates="customer",
-        lazy=DEFAULT_LAZY,
-    )
-
-    __mapper_args__ = {"polymorphic_identity": UserTypes.CUSTOMER}
-
-
-class JobTitle(enum.Enum):
-    WAITER = "waiter"
-    ADMIN = "admin"
-
-
-class Employee(User):
-    __tablename__ = "employee"
-
-    id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id"), primary_key=True)
-    cafe_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("cafes.id"))
-    job_position = mapped_column(Enum(JobTitle), nullable=False)
-
-    __mapper_args__ = {"polymorphic_identity": UserTypes.EMPLOYEE}
-
-
-class Address(Base):
-    __tablename__ = "addresses"
-
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
-    )
-    customer_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("customers.id"))
-    customer: Mapped[Customer] = relationship(
-        "Customer",
-        back_populates="addresses",
-        lazy=DEFAULT_LAZY,
-    )
-    address: Mapped[str] = mapped_column(String, nullable=False)
 
 
 class Cafe(Base):

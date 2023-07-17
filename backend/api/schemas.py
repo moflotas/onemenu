@@ -64,7 +64,10 @@ class DishTrait(Base):
 
     @staticmethod
     def to_orm(schema: "DishTrait"):
-        return models.DishTrait(name=schema.name, value=schema.value)
+        return models.DishTrait(
+            name=schema.name,
+            value=schema.value,
+        )
 
     @staticmethod
     def from_orm(model: models.DishTrait):
@@ -81,6 +84,7 @@ class Dish(Base):
     cafe_id: Optional[UUID] = None
     name: str
     description: Optional[str] = None
+    image_url: str
     cost: Decimal
     category: str
     traits: Optional[List[DishTrait]]
@@ -94,6 +98,7 @@ class Dish(Base):
             cafe_id=schema.cafe_id,
             name=schema.name,
             description=schema.description,
+            image_url=schema.image_url,
             cost=schema.cost,
             category=schema.category,
             traits=[DishTrait.to_orm(trait) for trait in schema.traits],
@@ -115,6 +120,7 @@ class Dish(Base):
             cafe_id=model.cafe_id,
             name=model.name,
             description=model.description,
+            image_url=model.image_url,
             cost=model.cost,
             category=model.category,
             traits=[DishTrait.from_orm(trait) for trait in model.traits],
@@ -134,11 +140,10 @@ class Dish(Base):
         "json_schema_extra": {
             "examples": [
                 {
-                    # "id": str(uuid4()),
-                    # "revision_id": str(uuid4()),
                     "cafe_id": str(uuid4()),
                     "name": "Philadelphia sushi",
                     "description": "As simple as it is tasty!",
+                    "image_url": "https://http.cat/200",
                     "cost": 12.50,
                     "category": "sushi",
                     "traits": [{"name": "Size", "value": "Big"}],
@@ -187,6 +192,7 @@ class Cafe(Base):
                             "name": "Kish",
                             "description": "Very tasty",
                             "cost": 100,
+                            "image_url": "https://http.cat/200",
                             "category": "bakery",
                             "traits": [{"name": "Size", "value": "Big"}],
                             "mandatory_ingredients": [{"name": "Flour"}],
@@ -205,59 +211,203 @@ class Cafe(Base):
     }
 
 
+class OrderOptional(Base):
+    order_item_id: UUID
+    optional_id: UUID
+
+    @staticmethod
+    def to_orm(schema):
+        return models.OrderOptional(
+            order_item_id=schema.order_item_id,
+            optional_id=schema.optional_id,
+        )
+
+    @staticmethod
+    def from_orm(model):
+        return OrderOptional(
+            order_item_id=model.order_item_id,
+            optional_id=model.optional_id,
+        )
+
+
 class OrderItem(Base):
-    id: UUID
-    status: models.OrderStatus
-    start_date: datetime
-    end_date: Optional[datetime]
+    id: Optional[UUID] = None
+    order_id: UUID
+    dish_id: UUID
+    revision_id: Optional[UUID] = None
+    quantity: int
+    status: models.OrderItemStatus = models.OrderItemStatus.IN_PROGRESS
+    start_date: Optional[datetime] = None
+    end_date: Optional[datetime] = None
+    optionals: Optional[list[OptionalIngredient]] = []
 
     @staticmethod
     def to_orm(schema):
         return models.OrderItem(
+            order_id=schema.order_id,
+            dish_id=schema.dish_id,
+            revision_id=schema.revision_id,
+            quantity=schema.quantity,
             status=schema.status,
             start_date=schema.start_date,
             end_date=schema.end_date,
+            optionals=[
+                OptionalIngredient.to_orm(optional) for optional in schema.optionals
+            ],
         )
+
+    @staticmethod
+    def from_orm(model):
+        return OrderItem(
+            id=model.id,
+            order_id=model.order_id,
+            dish_id=model.dish_id,
+            revision_id=model.revision_id,
+            quantity=model.quantity,
+            status=model.status,
+            start_date=model.start_date,
+            end_date=model.end_date,
+            optionals=[
+                OptionalIngredient.from_orm(optional) for optional in model.optionals
+            ],
+        )
+
+    model_config = {
+        "json_schema_extra": {
+            "examples": [
+                {
+                    "order_id": "",
+                    "dish_id": "",
+                    "quantity": 1
+                }
+            ]
+        }
+    }
 
 
 class User(Base):
-    id: UUID
+    id: Optional[UUID] = None
+    telegram_id: str
     name: Optional[str]
 
     @staticmethod
     def to_orm(schema):
-        return models.User(name=schema.name)
+        return models.User(
+            telegram_id=schema.telegram_id,
+            name=schema.name,
+        )
+
+    @staticmethod
+    def from_orm(model):
+        return User(
+            id=model.id,
+            telegram_id=model.telegram_id,
+            name=model.name,
+        )
+
+
+class Address(Base):
+    id: Optional[UUID] = None
+    address: str
+
+    @staticmethod
+    def to_orm(schema):
+        return models.Address(
+            address=schema.address,
+        )
+
+    @staticmethod
+    def from_orm(model):
+        return Address(
+            id=model.id,
+            address=model.address,
+        )
 
 
 class Customer(User):
-    birthday: Optional[datetime]
-    addresses: List[str]
+    birthday: Optional[datetime] = None
+    addresses: Optional[List[Address]] = []
 
     @staticmethod
     def to_orm(schema):
         return models.Customer(
-            name=schema.name, birthday=schema.birthday, addresses=schema.addresses
+            telegram_id=schema.telegram_id,
+            name=schema.name,
+            birthday=schema.birthday,
+            addresses=[Address.to_orm(address) for address in schema.addresses],
         )
+
+    @staticmethod
+    def from_orm(model):
+        return Customer(
+            id=model.id,
+            telegram_id=model.telegram_id,
+            name=model.name,
+            birthday=model.birthday,
+            addresses=[Address.from_orm(address) for address in model.addresses],
+        )
+
+    model_config = {
+        "json_schema_extra": {
+            "examples": [
+                {
+                    "name": "Cus",
+                    "telegram_id": "some id",
+                    "birthday": "2000-03-25T12:58:31.049",
+                    "addresses": [{"address": "Inno City"}],
+                }
+            ]
+        }
+    }
 
 
 class Employee(User):
-    job_position: models.JobTitle
+    job_position: Optional[models.JobTitle]
+    cafe_id: Optional[UUID] = None
 
     @staticmethod
     def to_orm(schema):
-        return models.Employee(name=schema.name, job_position=schema.job_position)
+        return models.Employee(
+            telegram_id=schema.telegram_id,
+            name=schema.name,
+            cafe_id=schema.cafe_id,
+            job_position=schema.job_position,
+        )
+
+    @staticmethod
+    def from_orm(model):
+        return Employee(
+            id=model.id,
+            telegram_id=model.telegram_id,
+            cafe_id=model.cafe_id,
+            name=model.name,
+            job_position=model.job_position,
+        )
+
+    model_config = {
+        "json_schema_extra": {
+            "examples": [
+                {
+                    "name": "Emp",
+                    "job_position": models.JobTitle.WAITER,
+                    "cafe_id": "",
+                }
+            ]
+        }
+    }
 
 
 class Order(Base):
-    id: UUID
-    rating: Optional[int]
-    clients_num: Optional[int]
-    status: models.OrderStatus
-    start_date: datetime
-    end_date: Optional[datetime]
-    payment_type: models.PaymentType
-    items: List[OrderItem]
-    customer: Customer
+    id: Optional[UUID] = None
+    rating: Optional[int] = None
+    clients_num: Optional[int] = None
+    status: models.OrderStatus = models.OrderStatus.IN_PROGRESS
+    start_date: Optional[datetime] = None
+    end_date: Optional[datetime] = None
+    payment_type: Optional[models.PaymentType] = None
+    items: List[OrderItem] = []
+    customer_id: UUID
+    employee_id: Optional[UUID] = None
 
     @staticmethod
     def to_orm(schema):
@@ -269,8 +419,34 @@ class Order(Base):
             end_date=schema.end_date,
             payment_type=schema.payment_type,
             items=[OrderItem.to_orm(item) for item in schema.items],
-            customer=schema.customer,
+            customer_id=schema.customer_id,
+            employee_id=schema.employee_id,
         )
+
+    @staticmethod
+    def from_orm(model):
+        return Order(
+            id=model.id,
+            rating=model.rating,
+            clients_num=model.clients_num,
+            status=model.status,
+            start_date=model.start_date,
+            end_date=model.end_date,
+            payment_type=model.payment_type,
+            items=[OrderItem.from_orm(item) for item in model.items],
+            customer_id=model.customer_id,
+            employee_id=model.employee_id,
+        )
+
+    model_config = {
+        "json_schema_extra": {
+            "examples": [
+                {
+                    "customer_id": "",
+                }
+            ]
+        }
+    }
 
 
 class OrdersRestaurant(Order):
