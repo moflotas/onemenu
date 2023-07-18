@@ -10,7 +10,7 @@ import Checkout from './components/Checkout/Checkout';
 <link rel="stylesheet" href="%PUBLIC_URL%/index.css"></link>
 
 
-function App() {
+function App(tg) {
   const location = useLocation()
   const show = !location.pathname.includes("choose");
 
@@ -19,7 +19,7 @@ function App() {
       {show && (<Header />)}
       <Routes>
         <Route path="/" element={<Navigate to="/choose-place" />} />
-        <Route path="/choose-place" element={<ChoosePlace />} />
+        <Route path="/choose-place" element={<ChoosePlace tg={tg}/>} />
         <Route path="/menu" element={<Menu />} />
         <Route path='/choose-address-home' element={<HomeAddress />} />
         <Route path='/choose-address-restaurant' element={<RestaurantAddress />} />
