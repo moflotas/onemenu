@@ -3,6 +3,7 @@
 
 .card {
     width: 100%;
+    height: 250px;
     margin-bottom: 20px;
     transition: .2s linear;
     border-radius: 20px;
@@ -14,6 +15,8 @@
 
 .card_image {
     width: 100%;
+    height: 63%;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
@@ -25,7 +28,7 @@
 .card_description {
     display: flex;
     margin-top: -5px;
-    height: 65px;
+    height: 37%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -33,6 +36,7 @@
     color: $text_color;
     border-radius: 0 0 20px 20px;
     letter-spacing: 1px;
+    padding: 0px 2px;
     font-size: 15px;
 }
 
@@ -90,4 +94,5 @@
     border-radius: 5px;
     background-color: $button_color;
     color: $button_text_color;
+    cursor: pointer;
 }

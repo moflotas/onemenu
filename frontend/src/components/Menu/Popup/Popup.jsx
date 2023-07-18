@@ -5,6 +5,9 @@ import cn from "classnames";
 import { close } from "../../../pictures/svg";
 
 const Popup = ({popupItem, togglePopup}) => {
+
+    console.log(popupItem)
+
     return (
         <div className={styles.popup}>
             <div className={styles.content}>
@@ -15,7 +18,7 @@ const Popup = ({popupItem, togglePopup}) => {
                                 <path d={close} fill="currentColor"/>
                             </svg>
                         </button>
-                        <img className={styles.image} src={foodPicture} alt="" />
+                        <img className={styles.image} src={popupItem && popupItem.image_url} alt="Please, wait" />
                     </div>
                     <div className={styles.ingredient_block}>
                         <div className={styles.title_block}>

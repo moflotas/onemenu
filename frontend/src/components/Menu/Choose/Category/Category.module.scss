@@ -6,11 +6,21 @@
     margin-bottom: 20px;
     background-color: $secondary_bg_color;
     align-items: center;
-    border-radius: 10px;
-    height: 50px;
+    border-radius: 15px;
+    height: 70px;
     padding-left: 10px;
     overflow-x: auto;
 }
+
+.choosing::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .choosing {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 .choosing_link:last-child {
     margin-right: 10px;
@@ -22,8 +32,8 @@
     width: 34.3%;
     min-width: 150px;
     background-color: $hint_color;
-    border-radius: 5px;
-    height: 30px;
+    border-radius: 10px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,4 +48,9 @@
     color: $button_text_color;
     font-weight: 300;
     text-transform: capitalize;
+    text-align: center;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // padding-left: 5px;
+    // padding-right: 5px;
 }

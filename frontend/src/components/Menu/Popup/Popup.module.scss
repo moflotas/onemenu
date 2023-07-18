@@ -55,12 +55,13 @@
 }
 
 .title {
+    text-align: center;
     font-size: 20px;
     color: $text_color;
     letter-spacing: 2px;
     font-family: 'Open Sans';
     font-weight: 300;
-
+    padding: 0px 5px;
 }
 
 .weight {

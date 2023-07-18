@@ -25,7 +25,7 @@ const Cards = ({ hasImage, togglePopup, groupedMenu }) => {
 									key={item.id}
 									className={styles.buttonCard}
 								>
-									<Card name={item.name} price={item.cost} />
+									<Card name={item.name} price={item.cost} image_url={item.image_url} />
 								</button>
 							) : (
 								<TextCard
