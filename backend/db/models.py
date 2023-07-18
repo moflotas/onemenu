@@ -46,7 +46,7 @@ class Dish(Base):
     )
     name: Mapped[str] = mapped_column(String, nullable=False)
     description: Mapped[str] = mapped_column(String)
-    image_url: Mapped[str] = mapped_column(String)
+    image_url: Mapped[str] = mapped_column(String, nullable=True)
     cost: Mapped[float] = mapped_column(Numeric(6, 2), nullable=False)
     category: Mapped[str] = mapped_column(String, nullable=False)
     start_date: Mapped[datetime.datetime] = mapped_column(

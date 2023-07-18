@@ -84,7 +84,7 @@ class Dish(Base):
     cafe_id: Optional[UUID] = None
     name: str
     description: Optional[str] = None
-    image_url: str
+    image_url: Optional[str] = "https://http.cat/200"
     cost: Decimal
     category: str
     traits: Optional[List[DishTrait]]
