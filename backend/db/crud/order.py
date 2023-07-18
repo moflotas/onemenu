@@ -38,8 +38,9 @@ async def get_active_order(
 async def get_item(
     db: AsyncSession,
     dish_id: UUID | int,
+    order_id: UUID | int,
 ) -> models.OrderItem | None:
-    query = select(models.OrderItem).filter(models.OrderItem.dish_id == dish_id)
+    query = select(models.OrderItem).filter(models.OrderItem.dish_id == dish_id, models.OrderItem.order_id == order_id)
     return (await db.execute(query)).scalars().unique().first()
 
 

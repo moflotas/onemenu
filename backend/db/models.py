@@ -175,12 +175,11 @@ class UserTypes(enum.Enum):
 class User(Base):
     __tablename__ = "users"
 
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True),
+    id: Mapped[int] = mapped_column(
+        Integer,
         primary_key=True,
-        default=uuid.uuid4,
+        default=126,
     )
-    telegram_id: Mapped[str] = mapped_column(String, nullable=False)
     name: Mapped[str] = mapped_column(String, nullable=True)
     type: Mapped[UserTypes] = mapped_column(Enum(UserTypes), nullable=False)
 
@@ -194,7 +193,7 @@ class User(Base):
 class Customer(User):
     __tablename__ = "customers"
 
-    id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id"), primary_key=True)
+    id: Mapped[int] = mapped_column(ForeignKey("users.id"), primary_key=True)
     birthday: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=True)
 
     addresses: Mapped[list["Address"]] = relationship(
@@ -221,7 +220,7 @@ class JobTitle(enum.Enum):
 class Employee(User):
     __tablename__ = "employee"
 
-    id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id"), primary_key=True)
+    id: Mapped[int] = mapped_column(ForeignKey("users.id"), primary_key=True)
     cafe_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("cafes.id"))
     job_position = mapped_column(Enum(JobTitle), nullable=False)
     orders: Mapped[list["Order"]] = relationship(
@@ -241,7 +240,7 @@ class Address(Base):
     id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
     )
-    customer_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("customers.id"))
+    customer_id: Mapped[int] = mapped_column(ForeignKey("customers.id"))
     customer: Mapped[Customer] = relationship(
         "Customer",
         back_populates="addresses",
@@ -275,8 +274,8 @@ class Order(Base):
         UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
     )
     type: Mapped[OrderType] = mapped_column(Enum(OrderType), nullable=False)
-    customer_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("customers.id"))
-    employee_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("employee.id"), nullable=True)
+    customer_id: Mapped[int] = mapped_column(ForeignKey("customers.id"))
+    employee_id: Mapped[int] = mapped_column(ForeignKey("employee.id"), nullable=True)
     rating: Mapped[int] = mapped_column(Integer, nullable=True)
     clients_num: Mapped[int] = mapped_column(Integer, nullable=True)
     status = mapped_column(
@@ -342,6 +341,9 @@ class OrderItem(Base):
     dish_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True))
     revision_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True))
     quantity: Mapped[int] = mapped_column(Integer)
+    cost: Mapped[float] = mapped_column(Numeric(6, 2))
+    image_url: Mapped[str] = mapped_column(String)
+    name: Mapped[str] = mapped_column(String)
     status: Mapped[OrderItemStatus] = mapped_column(
         Enum(OrderItemStatus),
         nullable=False,

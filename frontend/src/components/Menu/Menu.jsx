@@ -7,7 +7,7 @@ import Category from "./Choose/Category/Category";
 import Cards from "./Cards/Cards";
 import Type from "./Choose/Type/Type";
 
-const Menu = () => {
+const Menu = ({ tg }) => {
 	const {
 		isOpen,
 		popupItem,
@@ -20,7 +20,7 @@ const Menu = () => {
 		changeTypeToImage,
 		selectCategory,
 		cafe,
-		groupedMenu
+		groupedMenu,
 	} = MenuContainer();
 
 	return (
@@ -46,7 +46,11 @@ const Menu = () => {
 			</div>
 
 			{isOpen && (
-				<Popup popupItem={popupItem} togglePopup={togglePopup} />
+				<Popup
+					popupItem={popupItem}
+					togglePopup={togglePopup}
+					tg={tg}
+				/>
 			)}
 
 			<Cards

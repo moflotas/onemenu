@@ -20,10 +20,10 @@ function App(tg) {
       <Routes>
         <Route path="/" element={<Navigate to="/choose-place" />} />
         <Route path="/choose-place" element={<ChoosePlace tg={tg}/>} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/menu" element={<Menu tg={tg} />} />
         <Route path='/choose-address-home' element={<HomeAddress />} />
         <Route path='/choose-address-restaurant' element={<RestaurantAddress />} />
-        <Route path='/shopping-cart' element={<ShoppingCart />} />
+        <Route path='/shopping-cart' element={<ShoppingCart tg={tg} />} />
         <Route path='/checkout' element={<Checkout />} />
       </Routes>
     </div>

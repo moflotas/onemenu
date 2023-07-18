@@ -27,18 +27,18 @@ async def create_customer(
 
 @customer_router.get("/{customer_id}", response_model=schemas.Customer)
 async def get_customer(
-    customer_id: UUID,
+    customer_id: int,
     db: AsyncSession = Depends(get_session),
 ) -> schemas.Customer:
     db_customer = await crud.get(db, customer_id)
     return schemas.Customer.from_orm(db_customer)
 
 
-@customer_router.get("/login/{telegram_id}", response_model=schemas.Customer)
+@customer_router.get("/login/{customer_id}", response_model=schemas.Customer)
 async def login(
-    telegram_id: str,
+    customer_id: int,
     db: AsyncSession = Depends(get_session),
 ) -> schemas.Customer:
-    
-    db_customer = await crud.login(db, telegram_id)
+
+    db_customer = await crud.login(db, customer_id)
     return schemas.Customer.from_orm(db_customer)

@@ -236,6 +236,9 @@ class OrderItem(Base):
     dish_id: UUID
     revision_id: Optional[UUID] = None
     quantity: int
+    cost: Decimal
+    image_url: str
+    name: str
     status: models.OrderItemStatus = models.OrderItemStatus.IN_PROGRESS
     start_date: Optional[datetime] = None
     end_date: Optional[datetime] = None
@@ -248,6 +251,9 @@ class OrderItem(Base):
             dish_id=schema.dish_id,
             revision_id=schema.revision_id,
             quantity=schema.quantity,
+            cost=schema.cost,
+            image_url=schema.image_url,
+            name=schema.name,
             status=schema.status,
             start_date=schema.start_date,
             end_date=schema.end_date,
@@ -264,6 +270,9 @@ class OrderItem(Base):
             dish_id=model.dish_id,
             revision_id=model.revision_id,
             quantity=model.quantity,
+            cost=model.cost,
+            image_url=model.image_url,
+            name=model.name,
             status=model.status,
             start_date=model.start_date,
             end_date=model.end_date,
@@ -278,7 +287,10 @@ class OrderItem(Base):
                 {
                     "order_id": "",
                     "dish_id": "",
-                    "quantity": 1
+                    "quantity": 1,
+                    "cost": Decimal(126),
+                    "image_url": "",
+                    "name": "aaaaa",
                 }
             ]
         }
@@ -286,14 +298,12 @@ class OrderItem(Base):
 
 
 class User(Base):
-    id: Optional[UUID] = None
-    telegram_id: str
+    id: Optional[int] = None
     name: Optional[str]
 
     @staticmethod
     def to_orm(schema):
         return models.User(
-            telegram_id=schema.telegram_id,
             name=schema.name,
         )
 
@@ -301,7 +311,6 @@ class User(Base):
     def from_orm(model):
         return User(
             id=model.id,
-            telegram_id=model.telegram_id,
             name=model.name,
         )
 
@@ -331,7 +340,6 @@ class Customer(User):
     @staticmethod
     def to_orm(schema):
         return models.Customer(
-            telegram_id=schema.telegram_id,
             name=schema.name,
             birthday=schema.birthday,
             addresses=[Address.to_orm(address) for address in schema.addresses],
@@ -341,7 +349,6 @@ class Customer(User):
     def from_orm(model):
         return Customer(
             id=model.id,
-            telegram_id=model.telegram_id,
             name=model.name,
             birthday=model.birthday,
             addresses=[Address.from_orm(address) for address in model.addresses],
@@ -352,7 +359,6 @@ class Customer(User):
             "examples": [
                 {
                     "name": "Cus",
-                    "telegram_id": "some id",
                     "birthday": "2000-03-25T12:58:31.049",
                     "addresses": [{"address": "Inno City"}],
                 }
@@ -368,7 +374,6 @@ class Employee(User):
     @staticmethod
     def to_orm(schema):
         return models.Employee(
-            telegram_id=schema.telegram_id,
             name=schema.name,
             cafe_id=schema.cafe_id,
             job_position=schema.job_position,
@@ -378,7 +383,6 @@ class Employee(User):
     def from_orm(model):
         return Employee(
             id=model.id,
-            telegram_id=model.telegram_id,
             cafe_id=model.cafe_id,
             name=model.name,
             job_position=model.job_position,
@@ -406,8 +410,8 @@ class Order(Base):
     end_date: Optional[datetime] = None
     payment_type: Optional[models.PaymentType] = None
     items: List[OrderItem] = []
-    customer_id: UUID
-    employee_id: Optional[UUID] = None
+    customer_id: int
+    employee_id: Optional[int] = None
 
     @staticmethod
     def to_orm(schema):

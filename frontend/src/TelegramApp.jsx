@@ -3,8 +3,7 @@ import App from "./App";
 
 const TelegramApp = () => {
 	let tg = window.Telegram.WebApp;
-	
-	// const theme = tg.themeParams;
+	tg.expand();
 	return <App tg={tg} />;
 };
 

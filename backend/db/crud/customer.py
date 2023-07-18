@@ -14,13 +14,13 @@ async def get(
 
 async def login(
     db: AsyncSession,
-    id: str,
+    id: int,
 ) -> models.Customer | None:
-    query = select(models.Customer).filter(models.Customer.telegram_id == id)
+    query = select(models.Customer).filter(models.Customer.id == id)
     customer = (await db.execute(query)).scalars().unique().first()
 
     if customer is None:
-        customer = await create(db, models.Customer(telegram_id= id, addresses= []))
+        customer = await create(db, models.Customer(id= id, addresses= []))
 
     return customer
 

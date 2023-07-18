@@ -1,9 +1,15 @@
 import { useState, useEffect, useRef } from "react";
-import { CAFES } from "../../api";
+import { CAFES, ORDER } from "../../api";
 import axios from "axios";
+import { tg } from "../../getCafe";
+
+
+let cafe_global = undefined
+
 
 const MenuContainer = () => {
-	const [cafe, setCafe] = useState([]);
+	const [cafe, setCafe] = useState(undefined);
+	const [order, setOrder] = useState(null);
 	const [isOpen, setIsOpen] = useState(false);
 	const [popupItem, setPopupItem] = useState();
 	const [hasImage, setHasImage] = useState(true);
@@ -11,25 +17,67 @@ const MenuContainer = () => {
 	const [selectedCategory, setSelectedCategory] = useState(null);
 
 	useEffect(() => {
-		axios
-			.get(CAFES)
-			.then((r) => r.data)
-			.then((cafesArray) => {
-				getCafe(cafesArray);
-			})
-			.catch((e) => console.log(e));
+		if (cafe_global === undefined) {
+			axios
+				.get(CAFES)
+				.then((r) => r.data)
+				.then((cafesArray) => {
+					getCafe(cafesArray);
+				})
+				.catch((e) => console.log(e));
+		}
+		else {
+			setCafe(cafe_global);
+		}
 	}, []);
 
-	function getCafe(cafesArray) {
+	function getCafe(cafesArray) {	
 		if (cafesArray.length > 0) {
 			axios
 				.get(CAFES + "/" + cafesArray[0].id)
 				.then((r) => r.data)
 				.then((cafeInfo) => {
 					setCafe(cafeInfo);
+					cafe_global = cafeInfo;
 				})
 				.catch((e) => console.log(e));
 		}
+		return {
+			cafe
+		}
+	}
+
+	// function getCafe(cafesArray) {
+	// 	if (cafesArray.length > 0) {
+	// 		axios
+	// 			.get(CAFES + "/" + cafesArray[0].id)
+	// 			.then((r) => r.data)
+	// 			.then((cafeInfo) => {
+	// 				getOrder().then((orderO) => {
+	// 					const updatedMenu = cafeInfo.menu.map((dish) => {
+	// 						let quantity = 0;
+	// 						orderO.items.forEach((item) => {
+	// 							if (item.dish_id === dish.id) {
+	// 								quantity = item.quantity;
+	// 							}
+	// 						});
+	// 						dish.quantity = quantity;
+	// 						dish.order_id = orderO.id;
+	// 						return dish;
+	// 					});
+	// 					cafeInfo.menu = updatedMenu;
+	// 					setCafe(cafeInfo);
+	// 				});
+	// 			})
+	// 			.catch((e) => console.log(e));
+	// 	}
+	// }
+
+	function getOrder() {
+		return axios
+			.get(ORDER + "/active/" + tg.initDataUnsafe.user.id)
+			.then((r) => r.data)
+			.catch((e) => console.log(e));
 	}
 
 	const togglePopup = (item) => {

@@ -46,7 +46,7 @@ async def update_item(
         db_dish = await crud_dish.get(db, order_item.dish_id)
         order_item.revision_id = db_dish.revision_id
 
-    db_order_item = await crud.get_item(db, order_item.dish_id)
+    db_order_item = await crud.get_item(db, order_item.dish_id, order_item.order_id)
     
     if db_order_item is None:
         if order_item.quantity <= 0:
@@ -78,7 +78,7 @@ async def get_order(
 
 @order_router.get("/active/{customer_id}", response_model=schemas.Order)
 async def get_order(
-    customer_id: UUID,
+    customer_id: int,
     db: AsyncSession = Depends(get_session),
 ) -> schemas.Order:
     db_order = await crud.get_active_order(db, customer_id)

@@ -1,11 +1,61 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Popup.module.scss";
-import foodPicture from "../../../pictures/foodLarge.png";
 import cn from "classnames";
 import { close } from "../../../pictures/svg";
+import axios from "axios";
+import { ORDER } from "../../../api";
 
-const Popup = ({ popupItem, togglePopup }) => {
-	console.log(popupItem);
+const Popup = ({ popupItem, togglePopup, tg }) => {
+	let [order, setOrder] = useState(undefined)
+	let [number, setNumber] = useState('Wait');
+
+	function updateItem(isAdd) {
+		axios
+			.get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
+			.then((r) => r.data)
+			.then((order) => {
+				let quantity = getQuantity(popupItem.id, order) + (isAdd ? 1 : -1);
+				axios.post(ORDER + "/item", {
+					cost: popupItem.cost,
+					dish_id: popupItem.id,
+					image_url: popupItem.image_url,
+					name: popupItem.name,
+					order_id: order.id,
+					quantity: quantity,
+				});
+
+				return quantity
+			})
+			.then((quantity) => {
+				setNumber(quantity);
+			})
+			.catch((e) => console.log(e));
+	}
+
+	function getQuantity(id, order) {
+		for (let item of order.items) {
+			if (item.dish_id === id) {
+				return item.quantity;
+			}
+		}
+		return 0;
+	}
+
+	useEffect(() => {
+		getOrder().then((order) => {
+			setNumber(getQuantity(popupItem.id, order));
+		})
+	}, []);
+
+	function getOrder() {
+		return axios
+			.get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
+			.then((r) => r.data)
+			.then((order) => {
+				setOrder(order);
+				return order;
+			})
+	}
 
 	return (
 		<div className={styles.popup}>
@@ -135,13 +185,17 @@ const Popup = ({ popupItem, togglePopup }) => {
 							<button
 								className={styles.footer_button}
 								type="button"
+								onClick={() => updateItem(false)}
 							>
 								-
 							</button>
-							<span className={styles.footer_number}>0</span>
+							<span className={styles.footer_number}>
+								{number}
+							</span>
 							<button
 								className={styles.footer_button}
 								type="button"
+								onClick={() => updateItem(true)}
 							>
 								+
 							</button>

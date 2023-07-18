@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./ShoppingCart.module.scss";
 import foodPicture from '../../pictures/foodPicture.png';
+import axios from "axios";
+import { ORDER } from "../../api";
 
-const ShoppingCart = () => {
-    let data = [
-        {id: 1, name: "Fried fish", price: 154, amount: 2, picture: foodPicture},
-        {id: 2, name: "Shashlyk", price: 2000, amount: 1, picture: foodPicture},
-        {id: 3, name: "King of the food", price: 123, amount: 3, picture: foodPicture},
-        {id: 4, name: "Chicken meat", price: 243, amount: 5, picture: foodPicture},
-        {id: 5, name: "Water drink with ice", price: 2050, amount: 6, picture: foodPicture},
-    ];
+const ShoppingCart = ({ tg }) => {
+    let [data, setData] = useState([]);
 
-    const totalPrice = data.reduce((sum, item) => sum + item.price * item.amount, 0);
+
+    useEffect(() => {
+		axios
+			.get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
+			.then((r) => r.data)
+			.then((order) => {
+				setData(order.items);
+			})
+			.catch((e) => console.log(e));
+	}, []);
+
+    const totalPrice = data.reduce((sum, item) => sum + item.cost * item.quantity, 0);
 
     return (
         <div className={styles.cart}>
@@ -23,15 +30,15 @@ const ShoppingCart = () => {
                 {data.map((food) => (
                     <div className={styles.order} key={food.id}>
                         <div className={styles.order_description}>
-                            <img className={styles.order_image} src={food.picture} alt="" />
+                            <img className={styles.order_image} src={food.image_url} alt="" />
                             <div className={styles.order_text}>
                                 <span>{food.name}</span>
-                                <span className={styles.order_price}>{food.price} rub</span>
+                                <span className={styles.order_price}>{food.cost} rub</span>
                             </div>
                         </div>
                         <div className={styles.order_number}>
                             <button className={styles.order_button}>-</button>
-                            <span className={styles.order_number}>{food.amount}</span>
+                            <span className={styles.order_number}>{food.quantity}</span>
                             <button className={styles.order_button}>+</button>
                         </div>
                     </div>
