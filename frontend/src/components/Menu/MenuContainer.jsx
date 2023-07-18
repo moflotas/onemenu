@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { CAFES, ORDER } from "../../api";
 import axios from "axios";
-import { tg } from "../../getCafe";
+import { tg } from "../../updateItem";
 
 
 let cafe_global = undefined
@@ -46,32 +46,6 @@ const MenuContainer = () => {
 			cafe
 		}
 	}
-
-	// function getCafe(cafesArray) {
-	// 	if (cafesArray.length > 0) {
-	// 		axios
-	// 			.get(CAFES + "/" + cafesArray[0].id)
-	// 			.then((r) => r.data)
-	// 			.then((cafeInfo) => {
-	// 				getOrder().then((orderO) => {
-	// 					const updatedMenu = cafeInfo.menu.map((dish) => {
-	// 						let quantity = 0;
-	// 						orderO.items.forEach((item) => {
-	// 							if (item.dish_id === dish.id) {
-	// 								quantity = item.quantity;
-	// 							}
-	// 						});
-	// 						dish.quantity = quantity;
-	// 						dish.order_id = orderO.id;
-	// 						return dish;
-	// 					});
-	// 					cafeInfo.menu = updatedMenu;
-	// 					setCafe(cafeInfo);
-	// 				});
-	// 			})
-	// 			.catch((e) => console.log(e));
-	// 	}
-	// }
 
 	function getOrder() {
 		return axios

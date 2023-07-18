@@ -4,47 +4,48 @@ import cn from "classnames";
 import { close } from "../../../pictures/svg";
 import axios from "axios";
 import { ORDER } from "../../../api";
+import { getQuantity, updateItem } from "../../../updateItem";
 
 const Popup = ({ popupItem, togglePopup, tg }) => {
-	let [order, setOrder] = useState(undefined)
-	let [number, setNumber] = useState('Wait');
+	let [order, setOrder] = useState(undefined);
+	let [number, setNumber] = useState(0);
 
-	function updateItem(isAdd) {
-		axios
-			.get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
-			.then((r) => r.data)
-			.then((order) => {
-				let quantity = getQuantity(popupItem.id, order) + (isAdd ? 1 : -1);
-				axios.post(ORDER + "/item", {
-					cost: popupItem.cost,
-					dish_id: popupItem.id,
-					image_url: popupItem.image_url,
-					name: popupItem.name,
-					order_id: order.id,
-					quantity: quantity,
-				});
+	// function updateItem(isAdd, item) {
+	// 	axios
+	// 		.get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
+	// 		.then((r) => r.data)
+	// 		.then((order) => {
+	// 			let quantity = getQuantity(popupItem.id, order) + (isAdd ? 1 : -1);
+	// 			axios.post(ORDER + "/item", {
+	// 				cost: item.cost,
+	// 				dish_id: item.id,
+	// 				image_url: item.image_url,
+	// 				name: item.name,
+	// 				order_id: order.id,
+	// 				quantity: quantity,
+	// 			});
 
-				return quantity
-			})
-			.then((quantity) => {
-				setNumber(quantity);
-			})
-			.catch((e) => console.log(e));
-	}
+	// 			return quantity
+	// 		})
+	// 		.then((quantity) => {
+	// 			setNumber(quantity);
+	// 		})
+	// 		.catch((e) => console.log(e));
+	// }
 
-	function getQuantity(id, order) {
-		for (let item of order.items) {
-			if (item.dish_id === id) {
-				return item.quantity;
-			}
-		}
-		return 0;
-	}
+	// function getQuantity(id, order) {
+	// 	for (let item of order.items) {
+	// 		if (item.dish_id === id) {
+	// 			return item.quantity;
+	// 		}
+	// 	}
+	// 	return 0;
+	// }
 
 	useEffect(() => {
 		getOrder().then((order) => {
 			setNumber(getQuantity(popupItem.id, order));
-		})
+		});
 	}, []);
 
 	function getOrder() {
@@ -54,7 +55,7 @@ const Popup = ({ popupItem, togglePopup, tg }) => {
 			.then((order) => {
 				setOrder(order);
 				return order;
-			})
+			});
 	}
 
 	return (
@@ -185,7 +186,14 @@ const Popup = ({ popupItem, togglePopup, tg }) => {
 							<button
 								className={styles.footer_button}
 								type="button"
-								onClick={() => updateItem(false)}
+								onClick={() =>
+									updateItem(
+										false,
+										popupItem,
+										tg,
+										setNumber
+									)
+								}
 							>
 								-
 							</button>
@@ -195,7 +203,14 @@ const Popup = ({ popupItem, togglePopup, tg }) => {
 							<button
 								className={styles.footer_button}
 								type="button"
-								onClick={() => updateItem(true)}
+								onClick={() =>
+									updateItem(
+										true,
+										popupItem,
+										tg,
+										setNumber
+									)
+								}
 							>
 								+
 							</button>
