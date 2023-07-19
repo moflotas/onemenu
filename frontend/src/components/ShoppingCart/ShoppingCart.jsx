@@ -8,6 +8,7 @@ import { getQuantity, updateItem } from "../../updateItem";
 const ShoppingCart = ({ tg }) => {
 	let [data, setData] = useState([]);
 	let [numbers, setNumbers] = useState([]);
+	let [totalCost, setTotalCost] = useState()
 
 	useEffect(() => {
 		axios
