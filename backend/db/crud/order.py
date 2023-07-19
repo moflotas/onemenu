@@ -119,8 +119,8 @@ async def remove_item(
     return deleted == 1
 
 
-async def get_all_orders(
+async def get_all(
     db: AsyncSession,
 ) -> list[models.Order]:
     query = select(models.Order)
-    return (await db.execute(query)).scalars().all()
+    return (await db.execute(query)).scalars().unique().all()

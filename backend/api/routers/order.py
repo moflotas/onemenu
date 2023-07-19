@@ -14,7 +14,7 @@ order_router = APIRouter(
 )
 
 
-@order_router.post("/", response_model=schemas.Order)
+@order_router.post("", response_model=schemas.Order)
 async def create_order(
     order: schemas.Order,
     db: AsyncSession = Depends(get_session),
@@ -43,7 +43,6 @@ async def update_item(
 ) -> schemas.OrderItem | bool:
     if order_item.revision_id is None:
         db_dish = await crud_dish.get(db, order_item.dish_id)
-        print("Clown", db_dish)
         order_item.revision_id = db_dish.revision_id
 
     db_order_item = await crud.get_item(db, order_item.dish_id, order_item.order_id)
@@ -85,10 +84,9 @@ async def get_order(
     return schemas.Order.from_orm(db_order)
 
 
-@order_router.get("/all", response_model=list[schemas.Order])
+@order_router.get("/stats/all", response_model=list[schemas.Order])
 async def get_orders(
     db: AsyncSession = Depends(get_session),
 ) -> list[schemas.Order]:
     db_orders = await crud.get_all(db)
-    print("Aboba", len(db_orders))
     return [schemas.Order.from_orm(db_order) for db_order in db_orders]

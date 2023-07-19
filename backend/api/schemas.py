@@ -236,9 +236,10 @@ class OrderItem(Base):
     dish_id: UUID
     revision_id: Optional[UUID] = None
     quantity: int
-    cost: Optional[float] = 0
-    image_url: Optional[str] = "https://http.cat/200"
-    name: Optional[str] = "Kish"
+    dish: Optional[Dish] = None
+    # cost: Optional[float] = 0
+    # image_url: Optional[str] = "https://http.cat/200"
+    # name: Optional[str] = "Kish"
     status: models.OrderItemStatus = models.OrderItemStatus.IN_PROGRESS
     start_date: Optional[datetime] = None
     end_date: Optional[datetime] = None
@@ -251,9 +252,9 @@ class OrderItem(Base):
             dish_id=schema.dish_id,
             revision_id=schema.revision_id,
             quantity=schema.quantity,
-            cost=schema.cost,
-            image_url=schema.image_url,
-            name=schema.name,
+            # cost=schema.cost,
+            # image_url=schema.image_url,
+            # name=schema.name,
             status=schema.status,
             start_date=schema.start_date,
             end_date=schema.end_date,
@@ -270,9 +271,10 @@ class OrderItem(Base):
             dish_id=model.dish_id,
             revision_id=model.revision_id,
             quantity=model.quantity,
-            cost=model.cost,
-            image_url=model.image_url,
-            name=model.name,
+            # cost=model.cost,
+            # image_url=model.image_url,
+            # name=model.name,
+            dish=Dish.from_orm(model.dish),
             status=model.status,
             start_date=model.start_date,
             end_date=model.end_date,

@@ -31,7 +31,7 @@ const ShoppingCart = ({ tg }) => {
     
       useEffect(() => {
         const totalPrice = data.reduce(
-          (sum, item, index) => sum + item.cost * numbers[index],
+          (sum, item, index) => sum + item.dish.cost * numbers[index],
           0
         );
         setTotalCost(totalPrice.toFixed(2));
@@ -46,13 +46,13 @@ const ShoppingCart = ({ tg }) => {
 						<div className={styles.order_description}>
 							<img
 								className={styles.order_image}
-								src={food.image_url}
+								src={food.dish.image_url}
 								alt=""
 							/>
 							<div className={styles.order_text}>
-								<span>{food.name}</span>
+								<span>{food.dish.name}</span>
 								<span className={styles.order_price}>
-									{food.cost} rub
+									{food.dish.cost} rub
 								</span>
 							</div>
 						</div>
@@ -60,11 +60,11 @@ const ShoppingCart = ({ tg }) => {
 							<button
 								className={styles.order_button}
 								onClick={() => {
-									let foodCopy = { ...food };
-									foodCopy.id = food.dish_id;
+									// let foodCopy = { ...food };
+									// foodCopy.id = food.dish_id;
 									updateItem(
 										false,
-										foodCopy,
+										food.dish,
 										tg,
 										(quantity) => {
 											let numbers_local = [...numbers];
@@ -75,7 +75,7 @@ const ShoppingCart = ({ tg }) => {
 												.reduce(
 													(sum, item) =>
 														sum +
-														item.cost *
+														item.dish.cost *
 															item.quantity,
 													0
 												)
@@ -93,11 +93,11 @@ const ShoppingCart = ({ tg }) => {
 							<button
 								className={styles.order_button}
 								onClick={() => {
-									let foodCopy = { ...food };
-									foodCopy.id = food.dish_id;
+									// let foodCopy = { ...food };
+									// foodCopy.id = food.dish_id;
 									updateItem(
 										true,
-										foodCopy,
+										food.dish,
 										tg,
 										(quantity) => {
 											let numbers_local = [...numbers];

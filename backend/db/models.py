@@ -66,6 +66,12 @@ class Dish(Base):
         lazy=DEFAULT_LAZY,
     )
 
+    # order_items: Mapped[list["OrderItem"]] = relationship(
+    #     "OrderItem",
+    #     back_populates="dish",
+    #     lazy=DEFAULT_LAZY,
+    # )
+
 
 class DishTrait(Base):
     __tablename__ = "dish_traits"
@@ -283,7 +289,9 @@ class Order(Base):
         nullable=False,
         default=OrderStatus.IN_PROGRESS,
     )
-    start_date: Mapped[datetime.datetime] = mapped_column(DateTime, default=datetime.datetime.utcnow, nullable=False)
+    start_date: Mapped[datetime.datetime] = mapped_column(
+        DateTime, default=datetime.datetime.utcnow, nullable=False
+    )
     end_date: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=True)
     payment_type: Mapped[PaymentType] = mapped_column(Enum(PaymentType), nullable=True)
 
@@ -341,19 +349,27 @@ class OrderItem(Base):
     dish_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True))
     revision_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True))
     quantity: Mapped[int] = mapped_column(Integer)
-    cost: Mapped[float] = mapped_column(Numeric(6, 2))
-    image_url: Mapped[str] = mapped_column(String)
-    name: Mapped[str] = mapped_column(String)
+    # cost: Mapped[float] = mapped_column(Numeric(6, 2))
+    # image_url: Mapped[str] = mapped_column(String)
+    # name: Mapped[str] = mapped_column(String)
     status: Mapped[OrderItemStatus] = mapped_column(
         Enum(OrderItemStatus),
         nullable=False,
     )
-    start_date: Mapped[datetime.datetime] = mapped_column(DateTime, default=datetime.datetime.utcnow, nullable=False)
+    start_date: Mapped[datetime.datetime] = mapped_column(
+        DateTime,
+        default=datetime.datetime.utcnow,
+        nullable=False,
+    )
     end_date: Mapped[datetime.datetime] = mapped_column(DateTime, nullable=True)
 
     order: Mapped[Order] = relationship(
         "Order",
         back_populates="items",
+        lazy=DEFAULT_LAZY,
+    )
+    dish: Mapped[Dish] = relationship(
+        "Dish",
         lazy=DEFAULT_LAZY,
     )
     optionals: Mapped[list[OptionalIngredient]] = relationship(
@@ -363,8 +379,8 @@ class OrderItem(Base):
     )
 
     ForeignKeyConstraint(
-        ["dish_id", "revision_id"],
-        ["dishes.id", "dishes.revision_id"],
+        [dish_id, revision_id],
+        [Dish.id, Dish.revision_id],
     )
 
 

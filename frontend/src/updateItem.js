@@ -10,11 +10,13 @@ export function updateItem(isAdd, item, tg, setNumber) {
     .then((r) => r.data)
     .then((order) => {
       let quantity = getQuantity(item.id, order) + (isAdd ? 1 : -1);
+      if (quantity < 0)
+          quantity = 0;
       axios.post(ORDER + "/item", {
-        cost: item.cost,
+        // cost: item.cost,
         dish_id: item.id,
-        image_url: item.image_url,
-        name: item.name,
+        // image_url: item.image_url,
+        // name: item.name,
         order_id: order.id,
         quantity: quantity,
       });

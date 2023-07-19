@@ -11,7 +11,7 @@ from pyrogram.types import (
     ReplyKeyboardRemove,
 )
 import dotenv
-
+from db.session import get_session
 dotenv.load_dotenv()
 
 api_id = int(os.environ.get("API_ID"))
@@ -38,16 +38,16 @@ async def start_handler(client: Client, message):
     )
 
 
-# @app.on_message()
-# async def webapp_handler(client: Client, message: Message):
-#     await client.send_message(message.chat.id, message.text)
-#     # if message.chat.id in [685437812]:
-#     #     for user_id in user_ids:
-#     #         await client.forward_messages(
-#     #             chat_id=user_id,
-#     #             from_chat_id=message.chat.id,
-#     #             message_ids=message.id,
-#     #         )
+@app.on_message()
+async def webapp_handler(client: Client, message: Message):
+    # await client.send_message(message.chat.id, message.text)
+    if message.chat.id in [685437812]:
+        for user_id in user_ids:
+            await client.copy_message(
+                chat_id=user_id,
+                from_chat_id=message.chat.id,
+                message_id=message.id,
+            )
 
 
 # Start the bot
