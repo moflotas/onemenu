@@ -8,26 +8,34 @@ import { getQuantity, updateItem } from "../../updateItem";
 const ShoppingCart = ({ tg }) => {
 	let [data, setData] = useState([]);
 	let [numbers, setNumbers] = useState([]);
-	let [totalCost, setTotalCost] = useState()
+	let [totalCost, setTotalCost] = useState(0);
 
-	useEffect(() => {
-		axios
-			.get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
-			.then((r) => r.data)
-			.then((order) => {
-				setData(order.items);
-				let numbers = [];
-				for (let item of order.items) {
-					numbers.push(item.quantity);
-				}
-				setNumbers(numbers);
-			})
-			.catch((e) => console.log(e));
-	}, []);
+	// function calculateTotalCost() {
+	// 	let totalPrice = data
+	// 		.reduce((sum, item) => sum + item.cost * item.quantity, 0)
+	// 		.toFixed(2);
+	// 	setTotalCost(totalPrice);
+	// }
 
-	const totalPrice = data
-		.reduce((sum, item) => sum + item.cost * item.quantity, 0)
-		.toFixed(2);
+    useEffect(() => {
+        axios
+          .get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
+          .then((r) => r.data)
+          .then((order) => {
+            setData(order.items);
+            const numbers = order.items.map((item) => item.quantity);
+            setNumbers(numbers);
+          })
+          .catch((e) => console.log(e));
+      }, []);
+    
+      useEffect(() => {
+        const totalPrice = data.reduce(
+          (sum, item, index) => sum + item.cost * numbers[index],
+          0
+        );
+        setTotalCost(totalPrice.toFixed(2));
+      }, [data, numbers]);
 
 	return (
 		<div className={styles.cart}>
@@ -52,15 +60,30 @@ const ShoppingCart = ({ tg }) => {
 							<button
 								className={styles.order_button}
 								onClick={() => {
-									let foodCopy = {...food};
+									let foodCopy = { ...food };
 									foodCopy.id = food.dish_id;
-									updateItem(false, foodCopy, tg, (quantity) => {
-										let numbers_local = [...numbers];
-										numbers_local[index] = quantity;
-										setNumbers(numbers_local);
-									})
-								}
-								}
+									updateItem(
+										false,
+										foodCopy,
+										tg,
+										(quantity) => {
+											let numbers_local = [...numbers];
+											numbers_local[index] = quantity;
+											setNumbers(numbers_local);
+
+											let totalPrice = data
+												.reduce(
+													(sum, item) =>
+														sum +
+														item.cost *
+															item.quantity,
+													0
+												)
+												.toFixed(2);
+											setTotalCost(totalPrice);
+										}
+									);
+								}}
 							>
 								-
 							</button>
@@ -70,15 +93,30 @@ const ShoppingCart = ({ tg }) => {
 							<button
 								className={styles.order_button}
 								onClick={() => {
-									let foodCopy = {...food};
+									let foodCopy = { ...food };
 									foodCopy.id = food.dish_id;
-									updateItem(true, foodCopy, tg, (quantity) => {
-										let numbers_local = [...numbers];
-										numbers_local[index] = quantity;
-										setNumbers(numbers_local);
-									})
-								}
-								}
+									updateItem(
+										true,
+										foodCopy,
+										tg,
+										(quantity) => {
+											let numbers_local = [...numbers];
+											numbers_local[index] = quantity;
+											setNumbers(numbers_local);
+
+											let totalPrice = data
+												.reduce(
+													(sum, item) =>
+														sum +
+														item.cost *
+															item.quantity,
+													0
+												)
+												.toFixed(2);
+											setTotalCost(totalPrice);
+										}
+									);
+								}}
 							>
 								+
 							</button>
@@ -87,7 +125,7 @@ const ShoppingCart = ({ tg }) => {
 				))}
 			</div>
 			<div className={styles.order_total}>
-				<span>Total sum: {totalPrice} rub</span>
+				<span>Total sum: {totalCost} rub</span>
 			</div>
 			<div className={styles.button}>
 				<Link to="/checkout">
@@ -99,3 +137,5 @@ const ShoppingCart = ({ tg }) => {
 };
 
 export default ShoppingCart;
+
+

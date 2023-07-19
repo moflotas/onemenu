@@ -24,7 +24,7 @@ function App(tg) {
         <Route path='/choose-address-home' element={<HomeAddress />} />
         <Route path='/choose-address-restaurant' element={<RestaurantAddress />} />
         <Route path='/shopping-cart' element={<ShoppingCart tg={tg} />} />
-        <Route path='/checkout' element={<Checkout />} />
+        <Route path='/checkout' element={<Checkout tg={tg} />} />
       </Routes>
     </div>
   );

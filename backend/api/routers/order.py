@@ -41,18 +41,17 @@ async def update_item(
     order_item: schemas.OrderItem,
     db: AsyncSession = Depends(get_session),
 ) -> schemas.OrderItem | bool:
-    
     if order_item.revision_id is None:
         db_dish = await crud_dish.get(db, order_item.dish_id)
         print("Clown", db_dish)
         order_item.revision_id = db_dish.revision_id
 
     db_order_item = await crud.get_item(db, order_item.dish_id, order_item.order_id)
-    
+
     if db_order_item is None:
         if order_item.quantity <= 0:
             return False
-        
+
         db_order_item = schemas.OrderItem.to_orm(order_item)
         db_order_item = await crud.add_item(db, db_order_item)
 
@@ -62,7 +61,7 @@ async def update_item(
         status = await crud.remove_item(db, db_order_item.id)
 
         return status
-    
+
     db_order_item.quantity = order_item.quantity
     db_order_item = await crud.update_item(db, db_order_item)
     return schemas.OrderItem.from_orm(db_order_item)
@@ -84,3 +83,12 @@ async def get_order(
 ) -> schemas.Order:
     db_order = await crud.get_active_order(db, customer_id)
     return schemas.Order.from_orm(db_order)
+
+
+@order_router.get("/all", response_model=list[schemas.Order])
+async def get_orders(
+    db: AsyncSession = Depends(get_session),
+) -> list[schemas.Order]:
+    db_orders = await crud.get_all(db)
+    print("Aboba", len(db_orders))
+    return [schemas.Order.from_orm(db_order) for db_order in db_orders]

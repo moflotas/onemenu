@@ -198,7 +198,7 @@ const Popup = ({ popupItem, togglePopup, tg }) => {
 								-
 							</button>
 							<span className={styles.footer_number}>
-								{number}
+								{number > -1 ? number : 0}
 							</span>
 							<button
 								className={styles.footer_button}

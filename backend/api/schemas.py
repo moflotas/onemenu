@@ -305,6 +305,7 @@ class User(Base):
     def to_orm(schema):
         return models.User(
             name=schema.name,
+            id=schema.id,
         )
 
     @staticmethod
@@ -340,6 +341,7 @@ class Customer(User):
     @staticmethod
     def to_orm(schema):
         return models.Customer(
+            id=schema.id,
             name=schema.name,
             birthday=schema.birthday,
             addresses=[Address.to_orm(address) for address in schema.addresses],

@@ -16,7 +16,6 @@ async def get_active_order(
     db: AsyncSession,
     customer_id: UUID | int,
 ) -> models.Order | None:
-    
     query = select(models.Order).filter(
         models.Order.customer_id == customer_id,
         models.Order.status == models.OrderStatus.IN_PROGRESS,
@@ -40,7 +39,9 @@ async def get_item(
     dish_id: UUID | int,
     order_id: UUID | int,
 ) -> models.OrderItem | None:
-    query = select(models.OrderItem).filter(models.OrderItem.dish_id == dish_id, models.OrderItem.order_id == order_id)
+    query = select(models.OrderItem).filter(
+        models.OrderItem.dish_id == dish_id, models.OrderItem.order_id == order_id
+    )
     return (await db.execute(query)).scalars().unique().first()
 
 
@@ -73,14 +74,18 @@ async def update_status(
     db: AsyncSession,
     model: models.Order,
 ) -> models.Order:
-    
-    query = update(models.Order).filter(
-        models.Order.id == model.id,
-    ).values(status= model.status)
+    query = (
+        update(models.Order)
+        .filter(
+            models.Order.id == model.id,
+        )
+        .values(status=model.status)
+    )
     await db.execute(query)
     await db.commit()
 
     return await get(db, model.id)
+
 
 async def add_item(
     db: AsyncSession,
@@ -112,3 +117,10 @@ async def remove_item(
     await db.commit()
 
     return deleted == 1
+
+
+async def get_all_orders(
+    db: AsyncSession,
+) -> list[models.Order]:
+    query = select(models.Order)
+    return (await db.execute(query)).scalars().all()
