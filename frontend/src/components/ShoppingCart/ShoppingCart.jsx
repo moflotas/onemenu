@@ -17,25 +17,27 @@ const ShoppingCart = ({ tg }) => {
 	// 	setTotalCost(totalPrice);
 	// }
 
-    useEffect(() => {
-        axios
-          .get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
-          .then((r) => r.data)
-          .then((order) => {
-            setData(order.items);
-            const numbers = order.items.map((item) => item.quantity);
-            setNumbers(numbers);
-          })
-          .catch((e) => console.log(e));
-      }, []);
-    
-      useEffect(() => {
-        const totalPrice = data.reduce(
-          (sum, item, index) => sum + item.dish.cost * numbers[index],
-          0
-        );
-        setTotalCost(totalPrice.toFixed(2));
-      }, [data, numbers]);
+	useEffect(() => {
+		if (Object.keys(tg.tg.initDataUnsafe).length !== 0) {
+			axios
+				.get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
+				.then((r) => r.data)
+				.then((order) => {
+					setData(order.items);
+					const numbers = order.items.map((item) => item.quantity);
+					setNumbers(numbers);
+				})
+				.catch((e) => console.log(e));
+		}
+	}, []);
+
+	useEffect(() => {
+		const totalPrice = data.reduce(
+			(sum, item, index) => sum + item.dish.cost * numbers[index],
+			0
+		);
+		setTotalCost(totalPrice.toFixed(2));
+	}, [data, numbers]);
 
 	return (
 		<div className={styles.cart}>
@@ -137,5 +139,3 @@ const ShoppingCart = ({ tg }) => {
 };
 
 export default ShoppingCart;
-
-

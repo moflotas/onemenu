@@ -63,34 +63,44 @@
 .textCard {
     width: 100%;
     background-color: $secondary_bg_color;
-    height: 40px;
+    height: 45px;
     margin-bottom: 10px;
     border-radius: 10px;
     display: flex;
+    gap: 2%;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
 }
 
 .textCard_title {
+    width: 58%;
     font-size: 15px;
     letter-spacing: 5%;
     color: $text_color;
+    max-height: 40px;
+    overflow-y: hidden;
 }
 
 .textCard_content {
+    width: 40%;
     display: flex;
     align-items: center;
 }
 
+.textCard_content span {
+    text-align: right;
+}
 
 .textCard_content span {
     color: $hint_color;
     padding-right: 10px;
+    width: 70%;
 }
 
 .textCard_content button {
-    width: 53px;
+    // width: 53px;
+    width: 30%;
     height: 30px;
     border: none;
     border-radius: 5px;

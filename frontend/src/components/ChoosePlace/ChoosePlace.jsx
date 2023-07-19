@@ -6,13 +6,16 @@ import { ORDER, USER } from "../../api";
 import axios from "axios";
 
 const ChoosePlace = ({ tg }) => {
-
+	
 	useEffect(() => {
-		axios
+		if (Object.keys(tg.tg.initDataUnsafe).length !== 0) {
+		  axios
 			.get(USER + "/login/" + tg.tg.initDataUnsafe.user.id)
 			.then((r) => r.data)
 			.catch((e) => console.log(e));
-	}, []);
+		}
+	  }, [tg]);
+
 
 	function createOrder() {
 		axios
@@ -23,10 +26,6 @@ const ChoosePlace = ({ tg }) => {
 			})
 			.catch((e) => console.log(e));
 	}
-
-	// function fuck() {
-	// 	window.Telegram.WebApp.sendData("Fuck everyone!");
-	// }
 
 	return (
 		<div className={styles.block}>

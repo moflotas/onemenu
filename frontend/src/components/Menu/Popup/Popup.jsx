@@ -8,7 +8,7 @@ import { getQuantity, updateItem } from "../../../updateItem";
 
 const Popup = ({ popupItem, togglePopup, tg }) => {
 	let [order, setOrder] = useState(undefined);
-	let [number, setNumber] = useState('Wait');
+	let [number, setNumber] = useState("Wait");
 
 	// function updateItem(isAdd, item) {
 	// 	axios
@@ -43,19 +43,23 @@ const Popup = ({ popupItem, togglePopup, tg }) => {
 	// }
 
 	useEffect(() => {
-		getOrder().then((order) => {
-			setNumber(getQuantity(popupItem.id, order));
-		});
+		if (Object.keys(tg.tg.initDataUnsafe).length !== 0) {
+			getOrder().then((order) => {
+				setNumber(getQuantity(popupItem.id, order));
+			});
+		}
 	}, []);
 
 	function getOrder() {
-		return axios
-			.get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
-			.then((r) => r.data)
-			.then((order) => {
-				setOrder(order);
-				return order;
-			});
+		if (Object.keys(tg.tg.initDataUnsafe).length !== 0) {
+			return axios
+				.get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
+				.then((r) => r.data)
+				.then((order) => {
+					setOrder(order);
+					return order;
+				});
+		}
 	}
 
 	return (
@@ -187,12 +191,7 @@ const Popup = ({ popupItem, togglePopup, tg }) => {
 								className={styles.footer_button}
 								type="button"
 								onClick={() =>
-									updateItem(
-										false,
-										popupItem,
-										tg,
-										setNumber
-									)
+									updateItem(false, popupItem, tg, setNumber)
 								}
 							>
 								-
@@ -204,12 +203,7 @@ const Popup = ({ popupItem, togglePopup, tg }) => {
 								className={styles.footer_button}
 								type="button"
 								onClick={() =>
-									updateItem(
-										true,
-										popupItem,
-										tg,
-										setNumber
-									)
+									updateItem(true, popupItem, tg, setNumber)
 								}
 							>
 								+

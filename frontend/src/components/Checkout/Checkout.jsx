@@ -6,7 +6,7 @@ import CheckoutContainer from "./CheckoutContainer";
 import { ORDER } from "../../api";
 import axios from "axios";
 
-const Checkout = ( {tg} ) => {
+const Checkout = ({ tg }) => {
 	let [cData, setData] = useState();
 	let data = {
 		address: "54, Volga street, Innocity",
@@ -23,15 +23,17 @@ const Checkout = ( {tg} ) => {
 	};
 
 	useEffect(() => {
-        axios
-          .get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
-          .then((r) => r.data)
-          .then((order) => {
-            setData(order.items);
-			console.log(cData)
-          })
-          .catch((e) => console.log(e));
-      }, []);
+		if (Object.keys(tg.tg.initDataUnsafe).length !== 0) {
+			axios
+				.get(ORDER + "/active/" + tg.tg.initDataUnsafe.user.id)
+				.then((r) => r.data)
+				.then((order) => {
+					setData(order.items);
+					console.log(cData);
+				})
+				.catch((e) => console.log(e));
+		}
+	}, []);
 
 	let total =
 		data.food.reduce((sum, item) => sum + item.price * item.amount, 0) +
