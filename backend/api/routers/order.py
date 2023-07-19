@@ -44,6 +44,7 @@ async def update_item(
     
     if order_item.revision_id is None:
         db_dish = await crud_dish.get(db, order_item.dish_id)
+        print("Clown", db_dish)
         order_item.revision_id = db_dish.revision_id
 
     db_order_item = await crud.get_item(db, order_item.dish_id, order_item.order_id)

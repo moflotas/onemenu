@@ -22,7 +22,7 @@ app.include_router(employee_router)
 @app.on_event("startup")
 async def startup(db: AsyncSession = Depends(get_session)):
     await _db_recreate()
-    await fill_with_data(db)
+    await fill_with_data()
 
 
 def start():

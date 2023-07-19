@@ -232,13 +232,13 @@ class OrderOptional(Base):
 
 class OrderItem(Base):
     id: Optional[UUID] = None
-    order_id: UUID
+    order_id: Optional[UUID] = None
     dish_id: UUID
     revision_id: Optional[UUID] = None
     quantity: int
-    cost: Decimal
-    image_url: str
-    name: str
+    cost: Optional[float] = 0
+    image_url: Optional[str] = "https://http.cat/200"
+    name: Optional[str] = "Kish"
     status: models.OrderItemStatus = models.OrderItemStatus.IN_PROGRESS
     start_date: Optional[datetime] = None
     end_date: Optional[datetime] = None

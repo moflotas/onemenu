@@ -1,0 +1,2872 @@
+{
+	"id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+	"title": "Кафе-кондитерская \"Cup&cake\"",
+	"description": "Приготовим, бережно упакуем и передадим вам в руки. Большие фотографии в меню помогут определиться с заказом",
+	"menu": [
+		{
+			"id": "1254d205-78d8-486c-9ee0-28cc8cdb900b",
+			"revision_id": "343b04ea-8448-478f-9129-77c4cc808a0b",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Предзаказ. Пряный кекс",
+			"description": "Начинка: кофейный ганаш, вяленая клюква и чернослив",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ervnaophop-matggnpiir-5WVDSxNWpkqT3H65ttsoV.jpg",
+			"cost": "850",
+			"category": "На праздник",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "f29ab95e-6bc3-4514-b285-1d4ed3870fd7",
+			"revision_id": "e126f47d-482d-4327-8966-b52fd8503089",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Предзаказ. Кекс \"Гранд шоколад\"",
+			"description": "Миндально-фундучное пралине, шоколад тёмный, карамелизованные орехи миндаль и фундук.\nПокрыт глазурью гурмэ с фундуком на молочном шоколаде",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ervnaophop-lddzpaabyz-uS9iQMw9FqLoWlFeZ-rFU.jpg",
+			"cost": "900",
+			"category": "На праздник",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "d4e5bf69-380f-4d8f-918a-b17d40d9477b",
+			"revision_id": "d7895ec3-7844-446a-810e-f1842b6ae3bf",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Наличие. Шоколад ручной работы",
+			"description": "Молочный шоколад со взрывной карамелью",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ervnaophop-xpb-pgbvir-trmQbgPLcSF8DlMmryXJz.jpg",
+			"cost": "390",
+			"category": "На праздник",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "258359ed-939d-41af-86af-f1fb444b744d",
+			"revision_id": "76d6e7e8-4d73-48ab-a234-821cccf9a541",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Наличие. Шоколад ручной работы",
+			"description": "Темный шоколад",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ervnaophop--ntfibsre--kb-3A1Ofa6MPkHo4_K59R.jpg",
+			"cost": "380",
+			"category": "На праздник",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "0632b596-0642-4a6b-9d38-b2245e7249c2",
+			"revision_id": "b0ba966c-a8d0-4946-880d-71399fdc0712",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Наличие. Молочный шоколад",
+			"description": "Молочный шоколад ручной работы",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ervnaophop-jxpcacdypm-3DqA8ZFWJRKgRJv_aGAN_.jpg",
+			"cost": "360",
+			"category": "На праздник",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "6e699b9b-1424-494f-94b9-1f79a002583d",
+			"revision_id": "22d5f187-aeeb-46a9-b153-7af87205ed4b",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Предзаказ за 1 день. Бенто-торт на 1-2 человек",
+			"description": "Бисквит на выбор: ванильный, шоколадный\nКрем-чиз\nНачинка: карамель, соленая карамель с арахисом, манго, клубника, вишня",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ervnaophop-sh-fhzdxko-MIQdp3fN9TJWc2U_roweL.jpg",
+			"cost": "890",
+			"category": "На праздник",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "f596bc1f-921d-470c-a2d1-799bb99a0cbb",
+			"revision_id": "2f36db89-891b-4438-9022-25c4076a33a8",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Меренговый рулет",
+			"description": "Предзаказ за 2 дня",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ervnaophop-myxeqmtqhf-9cvnPclN0CPqOpOZbe35N.jpg",
+			"cost": "850",
+			"category": "На праздник",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "e090b52b-0f77-485f-942a-58342b731874",
+			"revision_id": "bf3cdf2a-a4c2-4901-add5-f578b6da353a",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Выгодное комбо дня:\nСалат Греческий + Борщ + Шницель куриный с пюре\n Напиток в подарок!",
+			"description": "Подаем в зале с 12.15 до 16.00\nДоставка с 12.15 до 16.00\nПолноценный обед от наших мастеров-поваров.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-wtepyvjfrp-spsdliqzdq-Q7JCQ0L838Xz6PI6YxdLx.jpg",
+			"cost": "525",
+			"category": "Домашний обед",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "94f389a9-3e39-4c25-bbdd-93c3d44c3af2",
+					"name": "Сметана к супу ",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "952c6024-bd52-4537-9da0-efd708950e5a",
+					"name": "Зелень к супу",
+					"is_default": false,
+					"cost": "10"
+				},
+				{
+					"id": "3cf42316-6e85-49db-82b8-86444824eff2",
+					"name": "Хлеб ржаной",
+					"is_default": true,
+					"cost": "10"
+				},
+				{
+					"id": "3a8a40dd-ebfa-4641-bee5-206253b30309",
+					"name": "Хлеб пшеничный",
+					"is_default": false,
+					"cost": "10"
+				}
+			]
+		},
+		{
+			"id": "904a373d-d718-4a53-b440-9db27718c1b4",
+			"revision_id": "2b4d5d8c-6333-46f1-813a-7eda76ba5389",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Салат Греческий + Борщ",
+			"description": "Доставка с 12.15 до 16.00\nПолноценный обед от наших мастеров-поваров.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-wtepyvjfrp-mdwyjecewo-gWHmiHSZMKt7EGIWENcdt.jpg",
+			"cost": "235",
+			"category": "Домашний обед",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "b6533686-6d82-4acf-8f30-45d3a033b80e",
+					"name": "Сметана к супу ",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "a8362639-cb1b-45a7-8219-a11e29e1e382",
+					"name": "Зелень к супу",
+					"is_default": false,
+					"cost": "10"
+				},
+				{
+					"id": "d1318c8b-b11e-4c8c-9c00-c7fe91266f55",
+					"name": "Хлеб пшеничный",
+					"is_default": true,
+					"cost": "10"
+				},
+				{
+					"id": "8dca41ac-95cb-4f3b-9d44-d6f6b025dae1",
+					"name": "Хлеб ржаной",
+					"is_default": true,
+					"cost": "10"
+				}
+			]
+		},
+		{
+			"id": "10c063b6-2e59-4c86-96db-b8788b5836fe",
+			"revision_id": "ee76e7b0-d482-4c4c-b248-242482685265",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Салат греческий + Шницель куриный с пюре",
+			"description": "Доставка с 12.15 до 16.00\nПолноценный обед от наших мастеров-поваров.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-wtepyvjfrp-bwslytpgbx-tBKYl26l04ow7btyF0W30.jpg",
+			"cost": "380",
+			"category": "Домашний обед",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "50ef3974-de01-4c70-b27c-7e8c7d2b436c",
+					"name": "Хлеб ржаной",
+					"is_default": true,
+					"cost": "10"
+				},
+				{
+					"id": "18811c6a-2289-4145-b804-08054877f1dd",
+					"name": "Хлеб пшеничный",
+					"is_default": true,
+					"cost": "10"
+				}
+			]
+		},
+		{
+			"id": "2356a6d1-75bf-4c64-89e5-24f608f699eb",
+			"revision_id": "8320e21b-b98d-4269-9643-e15c555e0246",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Борщ + Шницель куриный с пюре",
+			"description": "Доставка с 12.15 до 16.00\nПолноценный обед от наших мастеров-поваров.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-wtepyvjfrp--hmmflreqq-XPWiUg_B4HxOUDpxnhZaI.jpg",
+			"cost": "435",
+			"category": "Домашний обед",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "7e379b3e-3102-428a-bf31-44ee33158417",
+					"name": "Сметана к супу ",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "97453fd8-a24a-41bf-8a55-06bef227f6fb",
+					"name": "Зелень к супу",
+					"is_default": false,
+					"cost": "10"
+				},
+				{
+					"id": "a8ae72b3-a32c-419c-b0ec-04d7bfab1e49",
+					"name": "Хлеб ржаной",
+					"is_default": false,
+					"cost": "10"
+				},
+				{
+					"id": "098997cb-c1bc-4109-9550-671546037aec",
+					"name": "Хлеб пшеничный",
+					"is_default": false,
+					"cost": "10"
+				}
+			]
+		},
+		{
+			"id": "b2166517-2dce-469c-9fd9-38ec14fb03cc",
+			"revision_id": "0fd24399-86ba-4f8f-84aa-f2514adddcba",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Еженедельная подписка на Домашние обеды",
+			"description": "Традиционные блюда (салаты: оливье, столичный, мимоза и т.д.; супы - борщ, лапша, гречневый и т.д., вторые блюда - овощные рагу, шницели с гарниром, голубцы и т.д.)\nДоставляем или подаем к определенному Вами времени ежедневно по будням с 12.10 до 16.00",
+			"image_url": "https://http.cat/200",
+			"cost": "2450",
+			"category": "Подписка на Домашние обеды",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "2a920370-faed-4a2c-b5f2-fde4ba52e336",
+			"revision_id": "41052ed9-dda0-4b4f-baaa-c24b93f6ab9c",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Ежемесячная подписка на Домашние обеды",
+			"description": "Традиционные блюда (салаты: оливье, столичный, мимоза и т.д.; супы - борщ, лапша, гречневый и т.д., вторые блюда - овощные рагу, шницели с гарниром, голубцы и т.д.)\nДоставляем или подаем к определенному Вами времени ежедневно по будням с 12.10 до 16.00",
+			"image_url": "https://http.cat/200",
+			"cost": "9800",
+			"category": "Подписка на Домашние обеды",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "7c56c52f-95fe-4def-bda4-4ac73ac0deab",
+			"revision_id": "2e5441c9-987f-4dc6-9764-7a36d48df4c6",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Мороженое \"Шоколадный пломбир\"",
+			"description": "Мороженое собственного производства без красителей и консервантов",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-abwqkakywg-npq-eyaztj-jWpw_3Zkv902okQltNe0K.jpg",
+			"cost": "145",
+			"category": "Мороженое",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "74f94dc5-696d-478e-9f6a-370dcf7da70d",
+			"revision_id": "2a88832c-2d65-47c6-8369-37758e4a0bfd",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Мороженое \"Пломбир\"",
+			"description": "Мороженое собственного производства без красителей и консервантов",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-abwqkakywg-ln-coyps-p-WlFpckPmzLp2UC4vQY_Qx.jpg",
+			"cost": "140",
+			"category": "Мороженое",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "f43da2a0-e60f-4bbe-b8e1-6a60ca2074dd",
+			"revision_id": "28abf432-1131-400b-86c4-8e59bf7ad4f2",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Cake to go - Тортик в стакане",
+			"description": "Шоколадный бисквит, карамель , арахис😋",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-bvxbqefxjp-dMvM__RI-u6WFC5cMVNah.jpg",
+			"cost": "300",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "8c66881e-f391-49c8-abde-e6cff75e1bd0",
+			"revision_id": "7087ea79-9d03-427e-b896-8dcc66b938e1",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Cake to go - Тортик в стакане",
+			"description": "Шоколадный бисквит, карамель, арахис 😋",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-uqd-kkfhjn-29ihyeC9bs4EyVxDuRX_-.jpg",
+			"cost": "300",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "66c12b04-e52b-4a80-b4bb-45386dab193d",
+			"revision_id": "06c9f192-0b6e-4f84-879c-b677372d2ec4",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Cake to go - Тортик в стакане (пчёлка)",
+			"description": "Ванильный бисквит и апельсиновая карамель с грецким орехом😋",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-pqvkushowx-j3jIQ1bKGlfzpvS4QMmMy.jpg",
+			"cost": "300",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "c6f892ba-07b8-4d60-9b78-ca7828d52470",
+			"revision_id": "7795a923-b164-44b0-b22d-249f8847a255",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Муссовый торт \"Малина-пломбир\"",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-iww-dtrjtk-12Uf4bvhdK5NcBH1uRZq4.jpg",
+			"cost": "205",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "31a9d48b-9982-4453-9b58-1fac147dbbc4",
+			"revision_id": "186164b9-6e3a-43f5-81fa-7cb6c986651e",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Торт \"Агнес Бернауэр\"",
+			"description": "Тягучие миндальные коржи с какао и корицей. Шелковистый кофейный крем и хрустящие лепестки миндаля. Идеально сбалансирован по текстуре, сладости и вкусу.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-tzsikhqvpz-SNTTn4WC0ypIpre3qb5fG.jpg",
+			"cost": "205",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "b60c67ff-6709-474b-9bd3-ec872a7573bc",
+			"revision_id": "412df003-243e-4005-a016-97e30af57c6b",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Торт \"Наполеон\"",
+			"description": "Лакомство это представляет собой воздушный торт из многих листов тонкого и хрустящего теста, прослоенных кремом дипломат.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-sadhnaaxmk-AQ2n9KC4my1NCyq__opAA.jpg",
+			"cost": "205",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "b88273bc-b629-4c08-8363-b18081e4cf91",
+			"revision_id": "bb43c338-321c-43d4-a6c6-3262c25ff45b",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Торт \"Морковный\"",
+			"description": "Нежный морковно-апельсиновый бисквит с грецким орехом, лёгкий йогуртовый крем",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-bzz--yxumq-zjrAFQwkOoy_OriSLDzVs.jpg",
+			"cost": "205",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "7ac57891-5a7c-4ccd-9381-2b808a1e5154",
+			"revision_id": "bee24ee6-d5a8-4816-9866-9a9ad35bc9f9",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Торт \"Медовик\"",
+			"description": "Классические медовые коржи из мёда с экологически чистой пасеки, сливочно-сметанный крем, акцент - вишнёвое конфи",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-pallg-ywsa-rdMPh2Y1rHMLCcGXQBAC4.jpg",
+			"cost": "230",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "d2abe650-ca0a-4ff0-b007-6bd42bb1159b",
+			"revision_id": "5753a458-7897-49d0-af8c-aa4b9d78fbb6",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Торт \"Фисташка-клубника\"",
+			"description": "Фисташковый бисквит, клубничый крем, крем-чиз с добавлением фисташковой пасты",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-veowwdedhd-xNV1efCMWEIq54DQuT_jD.jpg",
+			"cost": "225",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "c7d125de-1fe7-4126-8d82-10ac1f0e3597",
+			"revision_id": "db852e54-34f3-4c5a-b960-37f0c3a2c35e",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Торт \"Лавандовый\"",
+			"description": "Лавандовый масляный бисквит, крем-чиз на сливках, черничное конфи",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-mft-laoj-j-esHia8FfaSYUFVcjAoJU-.jpg",
+			"cost": "205",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "62ae5f60-1a25-4c3a-952e-73a3145ccb72",
+			"revision_id": "e8902755-b87d-4b3b-b688-8b67b3227ac9",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Торт \"Маковый Флай\"",
+			"description": "Лимонно-маковый бисквит, крем-чиз, соус с чёрной смородиной",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-kqtidkbtlw-u--cy-ymw--U9rK9UOqSKsWEmwcwh9Es.jpg",
+			"cost": "195",
+			"category": "Торты порционные",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "403c2df2-e50d-4199-968c-3aa4f5df266e",
+			"revision_id": "86714345-dbb7-4bba-b5fa-00c0d425b1c8",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Трубочки с вареной сгущенкой и орешками",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-vmdbqaokgo-fCZqjx9pQcwlbzSfnVZbn.jpg",
+			"cost": "105",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "a8fc16d3-be3a-431c-a919-06377815b8a6",
+			"revision_id": "26a17140-fd04-43bc-848d-9bdf47f1d503",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Баноффи",
+			"description": "Английский десерт. В основе песочный тарт, наполнение: карамель, банан и воздушный сливочно-кофейный крем",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-qlgezqwlnl-OluBnAT16GVrvnySVhIK9.jpg",
+			"cost": "180",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "1c9509e5-3ff2-40f9-adbf-cfe5968f03b7",
+			"revision_id": "beb7cb38-2f11-4c8d-a42f-68f56dce55b2",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Эклер \"Заварной\"",
+			"description": "Заварное тесто, заварной крем",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-xrtasjsrxv-INLjWCrtTe00Rewq0ywn9.jpg",
+			"cost": "100",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "898af498-5efb-4d8b-b8ea-69d8487e2580",
+			"revision_id": "7f4bf4ca-10a4-4339-8a05-8981e8e04dfc",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Эклер \"Арахисовый\"",
+			"description": "Заварное тесто, арахисовый ганаш, шоколадная глазурь",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-vhmzirklwy-UEXDJBIMYTOZFAsIU6X46.jpg",
+			"cost": "100",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "62474012-4d69-4c82-9585-679069ea659f",
+			"revision_id": "e615189f-04dc-4585-856b-964f9402af78",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Эклер \"Малиновый\"",
+			"description": "Заварное тесто, малиновый ганаш, шоколадная глазурь",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-joowf-ohen-v9lZgUew1pAET00-r7z0G.jpg",
+			"cost": "120",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "cf479385-d0cd-466d-a135-96331b1f3464",
+			"revision_id": "9f66bda9-539a-4b39-baa7-57d9cf307cfd",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное \"Пари-Брест\"",
+			"description": "Воздушное заварное тесто с миндальными лепестками, крем муслин с миндальным пралине",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-ceqbgfrjmt-sXjEWYDWUr1nGpY8ONn0D.jpg",
+			"cost": "140",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "eae70102-5268-4a33-b211-ead1c03c4c2d",
+			"revision_id": "5071eb5d-6023-4b27-9ca0-47ea1b42a852",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное \"Жан Поль\"",
+			"description": "Лимонно-фундучный финансье\nЛимонный штрейзель\nВишнёвое компоте\nШоколадно-фундучный мусс\nГлазурь гурме с фундуком\nФундучный ганаш\nЛучше попробовать, чем прочитать описание🤗",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-futuunkmpw-m1d2nQVCcSfj-KBUhQ42I.jpg",
+			"cost": "195",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "0565deb5-addf-4628-bae7-3a6f7069dec4",
+			"revision_id": "9d9abe95-22f9-4345-aec7-89305d3f37a7",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное \"Jackie\"",
+			"description": "Рисово-фисташковый бисквит\nГанаш Фисташковый с васаби\nМармелад апельсин/мандарин/лайм\nФисташково-лаймовое суфле\nБез глютена",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-kxlzxivskf-zvPP4GvffjVJqb9-m5YZc.jpg",
+			"cost": "240",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "360456c3-9c99-4fae-bd6c-b13971113b5d",
+			"revision_id": "fbe05fe6-072a-4d66-8dae-fe0c139cf2ff",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Трайфл \"Тирамису с шоколадной карамелью\"",
+			"description": "Бисквит савоярди, сыр маскарпоне, сливки, кофейная пропитка, шоколадная карамель, какао-порошок",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-tdcrngksec-L8pN_KlP5v5Q3IwMkSaFa.jpg",
+			"cost": "245",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "298658bb-3ddf-4546-951f-6730bd7554b2",
+			"revision_id": "351fdbb2-3a10-4be1-8ced-406c2d775ced",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Трайфл \"Мусс манго-маракуйя\"",
+			"description": "Сливки, пюре манго, пюре маракуйя",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-crlilbrgia-q-jm3jElhCxoEDaxgbwoV.jpg",
+			"cost": "235",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "898160a0-fd6a-4468-b89a-a743ff54904e",
+			"revision_id": "ec928d50-e36a-4e6a-90cf-b33d6df8081d",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Трайфл \"Мусс клубника\"",
+			"description": "Легкий, воздушный десерт. В составе: Сливки, пюре клубники, желатин.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-mgvslmrptp-1PBzfYpjdOpNJx7a604Ff.jpg",
+			"cost": "215",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "227e7458-20c1-4d11-9fed-5613061948c0",
+			"revision_id": "14b856ed-5aea-42f0-afdd-5bea5678169b",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Тарт \"Клубничный\"",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-n-buf-bazb-HKjCMAa3iwNPAwcln9G3A.jpg",
+			"cost": "165",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "f06b726e-7281-4831-b3e6-1865c5f9275a",
+			"revision_id": "3d2c8774-ef6b-457d-9d39-e616a157e041",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Тарт \"Шоколадный\"",
+			"description": "Тесто с добавлением миндальной муки, шоколадный ганаш",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-zduejypgry-4A6OG3cgKLc6YRVHnONEb.jpg",
+			"cost": "170",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "c4de8583-6efa-4165-8a93-5d021db41e53",
+			"revision_id": "a92bbcda-cafc-4285-8769-f03d561e80fc",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Тарт \"Темный шоколад\" с фундуком",
+			"description": "Шоколадное сабле, сливки, масло сливочное, темный шоколад, фундук",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-uqfxybkdvw-VOUA2Em_qj0dBfegYzPAq.jpg",
+			"cost": "175",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "4eee58a0-0d2c-4eab-ad9c-04996826d099",
+			"revision_id": "d60dd29b-9b01-421b-8f9d-34fbb5e9431f",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Тарт \"Лимонный\"",
+			"description": "Песочное тесто с добавлением миндальной муки, лимонное кремё",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-zuggzvjime-sUad1lwG6Q73cyXyAc8pV.jpg",
+			"cost": "150",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "e75a936c-1acc-4814-9df9-2bc2f0721852",
+			"revision_id": "4146df56-6f10-4154-afcd-a7270343e290",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное \"Sheron\"",
+			"description": "Сложный десерт, сочетающий в себе различные текстуры: миндальный бисквит с сыром маскарпоне; хрустящий слой - крустилант - микс рисовой и миндальной муки; крем-брюле с малиной под глазурью гурме. При декорировании использован нежнейший крем шантийи",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-yem-a-leuu-qDlvxo-2-dVBf-d-QM75B.jpg",
+			"cost": "195",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "57859b11-8b16-4973-986b-c18c01f13f05",
+			"revision_id": "85dda45d-eb11-4028-b48d-56bd2595b4cc",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное \"Penelope\"",
+			"description": "Миндально-шоколадный бисквит Крамбл со специями (имбирь, корица, кардамон, гвоздика, кориандр, мускатный орех), Крем из красного апельсина и манго, с кайенским перцем чили, Манговый мармелад, Карамельный взбитый ганаш",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-hhyvng-tac-7HRAVgvHXrCOcaWeIdjLk.jpg",
+			"cost": "195",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "f86831b2-c0ad-47d2-b8fa-d54f120ec8c8",
+			"revision_id": "690733c7-6c17-4034-8e3e-36901f9f993e",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное \"Arnold\"",
+			"description": "Безглютеновый бисквит с бананом на тёмном шоколаде Карамель тоффи Кранч (хрустящий слой) с арахисом, Кофейный мусс, Ганаш арахисовый на белом шоколаде",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-wknsosfwkc-lWNBMdgT2DOF5eyhZ8soH.jpg",
+			"cost": "195",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "1b14f99c-a0b8-4c34-8ccf-4af9eb733081",
+			"revision_id": "ecc790c9-2a1e-4ec2-97e7-d9f1744a3a42",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Чизкейк \"Манго\"",
+			"description": "Основа из ванильного бисквита, творожный сыр, сливки, пюре из манго",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-hxuufjetgu-pDL8LiNuxEySUF5V_0k6b.jpg",
+			"cost": "198",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "18afe6d0-9654-491d-9624-96a859c1387b",
+			"revision_id": "e09e2bb3-0e0a-4559-8649-e04a2b0b6da4",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Чизкейк \"Черника\"",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-mdhocmzrnb-aY-62gn2jjX8tVuJZHy8E.jpg",
+			"cost": "189",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "d695ba29-631d-4729-9b5e-79e530909a45",
+			"revision_id": "5adf1424-fadc-41b9-a9df-10014971a0c4",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное \"Картошка\"",
+			"description": "Шоколадный бисквит, масляный крем",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-mtgpnyoyde-mTU3ryiWhxFvlihpjAs12.jpg",
+			"cost": "69",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "1e1779c8-5cb7-4795-8376-754bf0846d41",
+			"revision_id": "f3a9b8cd-478d-480b-bdeb-b82a55aa58d1",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное \"Картошка в шоколаде\" с миндалем",
+			"description": "Ванильный бисквит, миндаль, молочный шоколад",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-gqlclaaxfs-rlgmuqxHHT8f-dULbLQyD.jpg",
+			"cost": "105",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "079726ce-248a-4d46-af39-7469d35b0394",
+			"revision_id": "82127c50-3201-4133-8490-493fad934b2b",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Кейк-попс",
+			"description": "Шоколадный бисквит, глазурь шоколадная",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie-yjrqumntjf-WRTHSKqlv3r3GIwlzdoUV.jpg",
+			"cost": "85",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "a6f9fea4-f9d8-449c-941b-2025cdecb213",
+			"revision_id": "01417074-45e4-4682-afb7-0b88a297bcf0",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное муссовое \"Эскимо\"",
+			"description": "Мусс вишневый, шоколадная глазурь.\nЦвет шоколадной глазури может отличаться от изображения на фото.",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qlhwinhvie--sibqfxgtr-46Xp9MOXR_zM71UVhtztv.jpg",
+			"cost": "185",
+			"category": "Десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "e04b2008-b373-45d6-881a-71af025db7ef",
+			"revision_id": "0a2f22b1-a8e2-498a-8b51-f452723267f4",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное \"кокосовая нежность\"",
+			"description": "Кокосовый урбеч, кокосовое масло, кокосовое молоко, сироп топинамбура, финики, семечки подсолнечника",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb--ntmakx-nk-lnrgod-hkc-NWr9tNADAyCmkRcfhdAgt.jpg",
+			"cost": "195",
+			"category": "Десерты vegan",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "c68b8a7d-74a1-4632-8399-c74574aea44e",
+			"revision_id": "7390f07d-7cf2-4ac7-89e1-1f267fa1da6f",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Пирожное \"Лимонный взрыв\"",
+			"description": "Курага, лимон, финики, кокосовая стружка, миндаль",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb--ntmakx-nk-mnznhktscr-vUy2gDX_19QCjOJ1vhaj4.jpg",
+			"cost": "155",
+			"category": "Десерты vegan",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "f26b808d-e858-4ac0-863f-f86162402072",
+			"revision_id": "c567bc59-df35-495c-a136-a22561d8da4b",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Печенье шоколадное \"Мраморное\"",
+			"description": "Песочно-бисквитное тесто с добавлением какао",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ka-hvzmqwj-yql-lydltx-C4C3LT7CI0pkVpDyZtcN0.jpg",
+			"cost": "55",
+			"category": "Печенье",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "8ad0e509-8745-4f52-864b-ebdf8625c2b9",
+			"revision_id": "77832d19-abe4-44b9-a69f-ebe7a2c1f8db",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Печенье песочное с арахисом",
+			"description": "Песочное тесто, арахис",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ka-hvzmqwj-vdhwpzkmji-eMp2bExS2YtTZsSQmH2gY.jpg",
+			"cost": "55",
+			"category": "Печенье",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "851374a2-39d7-41da-8092-f04d1fe1dfe7",
+			"revision_id": "ea322c73-dd20-4b6f-bccb-15173547a249",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Сырники",
+			"description": "Творог 9%, сахар, крупа манная, мука пшеничная, масло подсолнечное, яйцо куриное, ванилин. Творожные сырники - вкусное блюдо на завтрак, роскошное начало дня!",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-jgcsiqsitn-QOK5fcpGHNf8yqCiRMLlX.jpg",
+			"cost": "185",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "df70dbb5-2f2f-4fc2-b6ff-373dee11db0b",
+					"name": "Сметана",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "85797eea-bace-4248-a3ab-a62f7341545c",
+					"name": "Карамель",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "24935481-584b-4928-84fb-127206424663",
+					"name": "Лесные ягоды",
+					"is_default": true,
+					"cost": "30"
+				},
+				{
+					"id": "a80e5ad4-ad72-4f56-8d0a-11cce6a12e44",
+					"name": "Сгущённое молоко",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "aafcb66a-10ca-477b-a5dc-de06a5edfff7",
+					"name": "Мёд",
+					"is_default": true,
+					"cost": "30"
+				}
+			]
+		},
+		{
+			"id": "994fb13a-57d3-4f08-8678-7f2769f1182b",
+			"revision_id": "a8485a50-132e-4d8c-901f-d055d86796b3",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Греча с копченой курочкой и вялеными томатами",
+			"description": "Отварная греча с пассировкой из лука и моркови, вялеными томатами и копченой курочкой",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-eqxdhxnuli-7Kjys2812dF-7NOcuL-t4.jpg",
+			"cost": "295",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "bfee1b67-4969-4e2e-bb0e-791553618dfe",
+			"revision_id": "f6f2b3f1-da21-4fa9-8243-fa9cb4babe30",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Греча с сыром и вялеными томатами",
+			"description": "Греча со сливками, вялеными томатами, моцарелой и посыпкой пармезаном.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-bmb-rhaenn-bgnQMr-pOqhBnxanVAMKL.jpg",
+			"cost": "310",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "d9269cd1-1b42-4bb1-80f6-2d262798799f",
+			"revision_id": "fb58a419-773d-4aa5-80fd-ada5486771bf",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Каша рисовая \"Карамель\"",
+			"description": "Рисовая каша, сваренная на коровьем или альтернативном молоке. Подается с карамельным топпингом. Декор орехи или цукаты - на Ваш выбор.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-dudpbkabs--FUqQs_c9b1gTd1Iu1rfVD.jpg",
+			"cost": "175",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "55181132-8fc6-4c28-a839-3d9d9c7c19ff",
+					"name": "Без декора",
+					"is_default": false,
+					"cost": "0"
+				},
+				{
+					"id": "e8b799a2-eb2e-4563-8ab0-93524417bb56",
+					"name": "Орехи",
+					"is_default": false,
+					"cost": "0"
+				},
+				{
+					"id": "b11da640-b3e4-4826-97cd-1fb5c8d21352",
+					"name": "Цукаты",
+					"is_default": false,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "c1bb4cf3-8f69-4d19-910c-db8493db07cf",
+			"revision_id": "525f3adc-e861-4338-a49e-65a52fba70af",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Каша рисовая \"Манго-маракуйя\"",
+			"description": "Рисовая каша, сваренная на коровьем или альтернативном молоке, с добавлением натурального пюре манго и маракуйи. Подается с клубничным топпингом. Декор орехи или цукаты - на Ваш выбор.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-rsralntxbd-NubYfOv7tdo5knJe7SAAV.jpg",
+			"cost": "175",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "c168d501-b7d1-40b7-9cb2-0c19a1bc690b",
+					"name": "Кокосовое",
+					"is_default": true,
+					"cost": "50"
+				},
+				{
+					"id": "19758710-ae15-4eb9-9b5f-577da2ad64d3",
+					"name": "Миндальное",
+					"is_default": false,
+					"cost": "50"
+				}
+			]
+		},
+		{
+			"id": "d52b10f1-ebe7-4032-8a52-bed4421f6d7c",
+			"revision_id": "51cad6c8-417c-4a82-bec0-3a313ae9d7ab",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Каша овсяная",
+			"description": "Каша овсяная приготовлена на растительных сливках. Подается с печеньем Савоярди и сезонными ягодами. Энергетическая ценность рассчитана на всё блюдо, включая элементы подачи",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-d-xy-vklye-ug8xAhHROISP_Kho5xdsI.jpg",
+			"cost": "145",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "10e544a3-5200-4601-90ca-75c1ab0bfeb3",
+			"revision_id": "da281891-445c-446b-8d77-3ded0f776464",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Гранола с фруктами",
+			"description": "Запеченные до хрустящей корочки овсяные хлопья с добавлением мёда, орехов: кешью, миндаль и семечек подсолнечника. Подается с натуральным йогуртом, вишневым вареньем, свежими и мелко порезанными грушей и бананом",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-slcb-ihikt-UsHU774nvmFP7Pyf6feSH.jpg",
+			"cost": "185",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "e34bae84-9168-48b2-8e7c-d634cb0fe78c",
+			"revision_id": "1dc46ee7-7903-4572-8966-07d7ca0a58a5",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Английский завтрак с колбаской Мергез (говядина, баранина)",
+			"description": "Глазунья из двух яиц, колбаска Мергез, бекон, шампиньоны на гриле, белая фасоль в томатном соусе, свежие помидорки черри, сыр чеддер, тостовый хлеб на гриле",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-mfg-jybish-_hVGRFqbbaHYmdkLYQBne.jpg",
+			"cost": "525",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "20308176-ee5d-4ea4-9983-7f0f0da48300",
+					"name": "Пшеничный хлеб",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "b2f2a281-c32a-4be0-a50f-2d7d6ec500f1",
+					"name": "Ржаной хлеб",
+					"is_default": true,
+					"cost": "15"
+				}
+			]
+		},
+		{
+			"id": "1a370c01-ec75-4f19-a9f9-a703880d4b61",
+			"revision_id": "6cec7503-afa6-4422-852d-2a63443a94ea",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Английский завтрак с баварской колбаской (свинина, филе грудки цыпленка)",
+			"description": "Глазунья из двух яиц, колбаска Баварская, бекон, шампиньоны на гриле, белая фасоль в томатном соусе, свежие помидорки черри, сыр чеддер, тостовый хлеб на гриле",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-cskxikzjnf-O-QXBY-LgrlQp8S7qt6HG.jpg",
+			"cost": "505",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "348b7844-6b30-4e91-92ac-09079a35185c",
+			"revision_id": "7365fa62-2cb6-43ab-ba91-1e67d97248ab",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Английский завтрак с дачной колбаской (свинина, говядина)",
+			"description": "Глазунья из двух яиц, колбаска Дачная, бекон, шампиньоны на гриле, белая фасоль в томатном соусе, свежие помидорки черри, сыр чеддер, тостовый хлеб на гриле",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-yafnuwjnph-z80Jeb4I6taITBGQ50YfH.jpg",
+			"cost": "450",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "681ef395-1cee-4c3a-8379-09feea3defc3",
+			"revision_id": "1202c0c1-9be5-4705-803a-252f9f90be8c",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Собери сам",
+			"description": "Предлагаем Вам самим собрать свой завтрак из предложенных ингредиентов. \nБаза: яичница глазунья из 2-х яиц на сливочном масле с посыпкой из свежего зелёного лука. Остальные позиции по выбору ( не менее 3-х)",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-cfayqxlosl-SR0Z6PPOEiOJPFxtsNfnY.jpg",
+			"cost": "170",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "c7953923-9731-4adf-b40c-d6a9a1a853c9",
+					"name": "Сыр Чеддер",
+					"is_default": true,
+					"cost": "80"
+				},
+				{
+					"id": "dcd07618-52b1-420e-a621-e754a74d4c72",
+					"name": "Белая фасоль в томатном соусе",
+					"is_default": false,
+					"cost": "40"
+				},
+				{
+					"id": "59751d75-f3b7-41c3-8966-328adada1755",
+					"name": "Шампиньоны на гриле",
+					"is_default": false,
+					"cost": "65"
+				},
+				{
+					"id": "046959ce-ef49-49d0-bfc8-424cd65fc2fe",
+					"name": "Бекон на гриле",
+					"is_default": false,
+					"cost": "60"
+				},
+				{
+					"id": "f6f1472f-ab91-473f-9b88-e125446bd1af",
+					"name": "Авокадо",
+					"is_default": false,
+					"cost": "50"
+				},
+				{
+					"id": "61ab375c-e8a5-481a-b38a-54e16e843504",
+					"name": "Свежие помидорки Черри",
+					"is_default": false,
+					"cost": "75"
+				},
+				{
+					"id": "63c0ca78-e2d6-450a-a932-f8d25450b930",
+					"name": "Салат микс с заправкой бальзамическим уксусом и оливковым маслом",
+					"is_default": false,
+					"cost": "80"
+				},
+				{
+					"id": "b9f9327d-4707-4d74-a1dd-ea9a80f8843d",
+					"name": "Хлеб Тостовый пшеничный",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "beaf78e1-fb63-438f-b2f4-32f81c6c9e5d",
+					"name": "Хлеб ржаной",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "7a9294fc-c80d-405b-9abb-68968106222b",
+					"name": "Колбаска Дачная (свинина, говядина, шпик)",
+					"is_default": false,
+					"cost": "105"
+				},
+				{
+					"id": "6999e228-eb2e-41ff-a1bc-4b0d60873568",
+					"name": "Колбаска Мергез (говядина, баранина)",
+					"is_default": false,
+					"cost": "150"
+				}
+			]
+		},
+		{
+			"id": "81fd40d4-496c-4ea1-9aa3-2d55b9deddc1",
+			"revision_id": "8218d1b9-5da1-48d1-9d9a-ce7d03d27507",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Бенедикт с беконом",
+			"description": "Яйцо пашот под голландским соусом на брусктетте из пшеничного или ржаного хлеба на выбор, покрытой творожным сыром. Подается со спелым авокадо, беконом на гриле и микс-салатом, заправленным соусом из бальзамического уксуса и оливкового масла",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-ofcofvdzvd-GRIv6u9d1mOtlIAjpWXKD.jpg",
+			"cost": "405",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "783fd691-1ddb-4ddc-a599-fdfe9c453eae",
+					"name": "Яйцо Пашот",
+					"is_default": false,
+					"cost": "40"
+				},
+				{
+					"id": "c570b121-9c08-4817-931a-39110c7b7d32",
+					"name": "Бекон",
+					"is_default": false,
+					"cost": "70"
+				},
+				{
+					"id": "9ee3a3a3-374d-45de-abc9-0c0da2e8b7b9",
+					"name": "Авокадо",
+					"is_default": false,
+					"cost": "70"
+				}
+			]
+		},
+		{
+			"id": "3308b1c8-4fa4-4249-a40c-a7fc1e678db7",
+			"revision_id": "9dd0cb01-82e4-4bb6-bf9f-ad9c05012cf4",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Бенедикт с лососем",
+			"description": "Хлеб ржаной или пшеничный, сёмга слабосоленая, соус голландский, яйцо пашот, микс-салат с черри, творожный сыр, авокадо",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-zmo-sw-pyl-qB2uwwxOJSpoWHFudTdAI.jpg",
+			"cost": "430",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "68363ff5-f34d-4b6c-a050-fd803c794609",
+					"name": "Яйцо Пашот",
+					"is_default": true,
+					"cost": "40"
+				},
+				{
+					"id": "ffd712f5-4e13-4e1a-8695-92e6aa517d71",
+					"name": "Бекон",
+					"is_default": false,
+					"cost": "70"
+				},
+				{
+					"id": "84de2096-58fc-47d2-be4f-fb2a62103ee2",
+					"name": "Авокадо",
+					"is_default": true,
+					"cost": "70"
+				}
+			]
+		},
+		{
+			"id": "d4f33f14-5873-4c0c-989a-ac0570d0e5cd",
+			"revision_id": "f25d0c2f-0520-49d5-8858-94d8976f94e6",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Омлет с моцареллой и томатами",
+			"description": "Омлет с моцареллой и томатами. Блюдо можно сделать сытнее, добавив дополнительные ингредиенты из модификатора",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-pscmzmvryg-fcpfwmdsg--YFeueD6oQy_MFlvvgy2bN.jpg",
+			"cost": "305",
+			"category": "Завтрак",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "636bc258-5b4f-4a02-9420-9bfd91cbc078",
+					"name": "Колбаска Мергез (говядина, баранина)",
+					"is_default": false,
+					"cost": "150"
+				},
+				{
+					"id": "1483ad52-8885-4d2b-a421-ff8d6086223a",
+					"name": "Колбаска Дачная (свинина, говядина)",
+					"is_default": false,
+					"cost": "105"
+				},
+				{
+					"id": "326481f6-50d5-4be2-9d4f-dd00b116f7f4",
+					"name": "Колбаска Баварская (свинина, филе грудки цыпленка)",
+					"is_default": false,
+					"cost": "130"
+				},
+				{
+					"id": "b00e55d2-2f72-4eeb-8da5-4299e427d7e7",
+					"name": "Белая фасоль в томатном соусе",
+					"is_default": false,
+					"cost": "40"
+				},
+				{
+					"id": "d8007296-09d5-42dc-b222-8c4540fbf4cb",
+					"name": "Сыр Чеддер",
+					"is_default": true,
+					"cost": "80"
+				},
+				{
+					"id": "ba2fe974-3dce-474b-b59e-d99cdbf8f97c",
+					"name": "Шампиньоны на гриле",
+					"is_default": false,
+					"cost": "65"
+				},
+				{
+					"id": "3401a412-a46a-4a3d-ac4d-713a2c8cdc59",
+					"name": "Бекон на гриле",
+					"is_default": false,
+					"cost": "70"
+				},
+				{
+					"id": "81613db2-20a8-41c7-a494-b24466f1fbc0",
+					"name": "Авокадо",
+					"is_default": false,
+					"cost": "70"
+				},
+				{
+					"id": "1d15efc4-1e98-4795-bc22-2377f5bd288b",
+					"name": "Свежие помидорки Черри",
+					"is_default": false,
+					"cost": "75"
+				},
+				{
+					"id": "4c4eaaa6-248c-4029-a156-bbd583412db8",
+					"name": "Салат микс с заправкой бальзамическим уксусом и оливковым маслом",
+					"is_default": true,
+					"cost": "80"
+				},
+				{
+					"id": "09f0ed81-b305-4d0c-b556-b8c981992d38",
+					"name": "Хлеб Тостовый пшеничный",
+					"is_default": true,
+					"cost": "15"
+				},
+				{
+					"id": "5d84d028-1f64-43c8-9339-291dfe17f6d4",
+					"name": "Хлеб ржаной",
+					"is_default": false,
+					"cost": "15"
+				}
+			]
+		},
+		{
+			"id": "0e41b70d-73a1-411f-9591-ef3ff9fdc9da",
+			"revision_id": "f190801d-33fb-4fbc-a480-ff9144b39ba2",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Блинчики с лососем и творожным сыром",
+			"description": "Блинчики с начинкой из лосося слабого посола и творожного сыра с укропом",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ttjapyygnv-sfqrafqbrs-4Vi41AcYWmnjlqX-qPI9B.jpg",
+			"cost": "340",
+			"category": "Блинчики",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "0f47b970-dc25-4708-9349-a040e45731cf",
+			"revision_id": "def5b665-9240-444d-a362-1fc4258c8b2c",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Блинчики с начинкой \"Шоколад-банан\"",
+			"description": "Мука, яйцо, сахар, молоко, масло растительное, шоколадная паста, банан. Декор: коктейльная вишня, сахарная пудра",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ttjapyygnv-brjacy-nnw-PcfCjJzAzp4OiTnbFjB6P.jpg",
+			"cost": "200",
+			"category": "Блинчики",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "bba6f671-2249-4055-b834-f1020f0af1ec",
+			"revision_id": "417d4672-8e5c-4144-9831-e70bc1fb20cc",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Блинчики \"Цезарь\"",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ttjapyygnv-przykxempq-Ap9ioqBbzBgvA66BmaTeB.jpg",
+			"cost": "210",
+			"category": "Блинчики",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "06260cfe-c09d-4677-853c-a4c4292e8050",
+			"revision_id": "3a50cca3-8a24-4812-b4bc-f9d6304fdd60",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Блинчики с сыром и ветчиной",
+			"description": "2 блинчика с сыром Моцарелла и ветчиной в начинке",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ttjapyygnv-dovtwqrbje-vm6UX84xjsB4USppfLBU7.jpg",
+			"cost": "200",
+			"category": "Блинчики",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "4ee4ede2-e5db-4c72-8092-1c12e4d40aeb",
+			"revision_id": "6c6b1b29-b7b3-4993-b497-7dde1f80c14f",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Блинчики классические",
+			"description": "Мука, яйцо, сахар, молоко, соль, масло растительное",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ttjapyygnv-lf-uticqmm-onN-891RKzCiwj5NaWeWD.jpg",
+			"cost": "100",
+			"category": "Блинчики",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "e808c36e-7bbc-45c0-9935-4176a880350b",
+					"name": "Лесные ягоды",
+					"is_default": true,
+					"cost": "30"
+				},
+				{
+					"id": "9051b1db-2118-470d-abd0-428786f73335",
+					"name": "Клубника",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "a774c0da-e4c9-4bb0-b62d-c1dda2775371",
+					"name": "Карамель",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "deca7c3c-90eb-4bd6-a12b-5788a01bfafc",
+					"name": "Сметана",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "ee3f5b10-cb66-44e7-8d75-c2581a82acab",
+					"name": "Мёд",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "4b075b78-1c00-4a72-bb9a-69ed95d10432",
+					"name": "Сгущеное молоко",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "9c3bce30-36ed-490f-a170-47215e430c5f",
+					"name": "Кленовый сироп",
+					"is_default": true,
+					"cost": "30"
+				}
+			]
+		},
+		{
+			"id": "924a52a2-9a1e-4ad5-a94d-a42276effc77",
+			"revision_id": "10f9000a-c218-4fd1-9df7-ce4449857c4e",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Чиа-пудинг с манго",
+			"description": "Семена чиа, кокосовое молоко, пюре манго",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-faq-oespyk-urffqayrso-LuOWig68t0T1sZ631w0Rb.jpg",
+			"cost": "185",
+			"category": "Пудинги и фруктовые десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "ce1b6693-f9a9-49ca-95e3-aae2a952be92",
+			"revision_id": "2c2ebed5-d4e4-47dd-a03f-9866ad8158a7",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Чиа-пудинг с малиной и чёрной смородиной",
+			"description": "Семена чиа, кокосовое молоко, малина, чёрная смородина",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-faq-oespyk-vcdfaknseu-Cv6hqFwIVuQlupIlCCeyW.jpg",
+			"cost": "185",
+			"category": "Пудинги и фруктовые десерты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "b93983ca-5b98-4db1-b17a-8a1b916812d4",
+			"revision_id": "9b06fc5b-982b-4b5d-830a-b05bdef7fed6",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Круассан с красной рыбкой и творожным сыром",
+			"description": "Круассан собственного производства. Начинка из взбитого творожного сыра со сливками и красная рыбка особого фирменного посола",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-zwulkkzafk-slxgztdpsh-A-su-B5CQZKVrpfIHBaJ6.jpg",
+			"cost": "270",
+			"category": "Круассаны",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "f3254c08-8054-448c-a08e-201fc41e3d90",
+			"revision_id": "2cdb4fb8-27f7-45b8-8fc4-bb8836bbee98",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Круассан с шоколадно-миндальным кремом",
+			"description": "Круассан собственного производства и приготовления. Начинка шоколадный крем на основе натурального темного шоколада и миндальной пасты, приготовленной из цельных орехов. Украшение из сублимированной клубники, лепестков арахиса и свежей голубики",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-zwulkkzafk-swvrxyur-f-qb5wxfc5RJTiWTl0-QnlK.jpg",
+			"cost": "210",
+			"category": "Круассаны",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "d2b4ec76-494d-4a02-b884-5d4ce75c7919",
+			"revision_id": "98113cd0-e03f-485f-bb7c-6f4d90f3091e",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Мини-круассан с клубникой",
+			"description": "Круассан собственного производства с клубничной начинкой , декором из шоколада и воздушного риса.",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-zwulkkzafk-tsdmbt--ul-d1bcUkMqhdUKyBZYBI6x0.jpg",
+			"cost": "165",
+			"category": "Круассаны",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "53a5c3f6-f020-477e-b7ee-7f826e04c147",
+			"revision_id": "9f36b011-bba2-4a7b-b1e2-03ed027c146b",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Круассан классический",
+			"description": "Собственное производство. Мука, сахар, дрожжи хлебопекарные",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-zwulkkzafk-jjqghftk-o-XC1ZbnHA3s287hN1swkZI.jpg",
+			"cost": "105",
+			"category": "Круассаны",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "4d769885-50bd-4a74-91d8-82a725f69ae3",
+			"revision_id": "29406046-8c21-4b78-a383-ad8198c18b05",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Сэндвич \"Сыр-ветчина\"",
+			"description": "Тостовый хлеб, ветчина, творожный сыр, огурец, салат пекинский, лук красный, помидоры",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-vffnzsrwdk-fggdeecgpu-oP5IlD_9jNCkuJfv-tA_L.jpg",
+			"cost": "235",
+			"category": "Сэндвичи",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "25ad5878-6868-41ee-a196-bc19f09691ef",
+			"revision_id": "fee3a9fb-36c4-441f-82d5-807956d25884",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Сэндвич Цезарь",
+			"description": "Тостовый хлеб, запечённое куриное филе, соус цезарь, пармезан, салат пекинский, помидоры",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-vffnzsrwdk-xjcpsfmxkk-L3W2VeAfPzzTazqdzq2ex.jpg",
+			"cost": "245",
+			"category": "Сэндвичи",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "894b2748-380e-46ef-897d-97e0ed1d379a",
+			"revision_id": "ead78a01-fef8-4296-aede-a696ca3702a3",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Сэндвич с красной рыбкой",
+			"description": "Пшеничный Тостовый хлеб, огурец, салат Майский, сливочный сыр, слабосоленый лосось.",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-vffnzsrwdk-axojyunvju-xKi_g543i3TAH84WeSGe2.jpg",
+			"cost": "245",
+			"category": "Сэндвичи",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "98f314f9-e8f5-4692-affc-1f35628cfe6a",
+			"revision_id": "9182f0d5-2c17-4717-9ce5-ec4e588d5382",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Брускетта с беконом",
+			"description": "Ломтик обжаренного зернового хлеба: с фирменным соусом Цезарь, листьями салата Романо и мелко нарубленным хрустящим беконом с посыпкой сыром Пармезан",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-yleijvvaqk-zs-aihlaav-2GLdFyTUiefNNYSbqYZ_x.jpg",
+			"cost": "180",
+			"category": "Брускетты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "bc0ab4f8-efb5-46ce-96da-13357b713f31",
+			"revision_id": "426906fd-93a5-406d-bca1-447a46e0d5b8",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Брускетта с лососем",
+			"description": "Ломтик обжаренного зернового хлеба с творожным сыром и цедрой апельсина, с огурчиком и лососем слабого посола",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-yleijvvaqk-bdeneg-qyw-4oqaatfRUn2IS36Agf9Ii.jpg",
+			"cost": "200",
+			"category": "Брускетты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "38c9bc56-ad13-4d79-8134-61e194f88b0b",
+			"revision_id": "0a2a0768-145a-4c45-b97c-51cc76fa220b",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Салат с рукколой, креветками и ореховым соусом",
+			"description": "",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-rautufcken-wttafyqcvh-P5v0S4IqXBKFN1v7BlRTj.jpg",
+			"cost": "415",
+			"category": "Салаты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "246a0f5f-6382-49e9-b04f-64d2929325fb",
+					"name": "Пшеничный тостовый",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "860cd3bb-6628-43f8-b065-da7cb0c53de6",
+					"name": "Ржаной тостовый",
+					"is_default": false,
+					"cost": "15"
+				}
+			]
+		},
+		{
+			"id": "220faa20-e7db-487d-942a-f52eddd1236e",
+			"revision_id": "ae4a5274-f58d-4b39-b0a7-a80ab1e62240",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Салат \"Цезарь\"",
+			"description": "Пышные листья салата романо, филе куриной грудки, помидорки черри, сыр пармезан, чесночные пшеничные сухарики, традиционный соус Цезарь",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-rautufcken-vltiqm-nau-ilp01NvIZYVa-4RllnldH.jpg",
+			"cost": "325",
+			"category": "Салаты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "16c8a1e5-078d-4a0b-acdb-18acdfac0caf",
+			"revision_id": "db26410e-476a-42eb-b78f-df381db58d4a",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Тёплый салат с баклажанами",
+			"description": "Баклажаны во фритюре, помидоры, фасоль красная, устричный соус, соус тайский чили, кунжутное масло, кунжут, кинза",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-rautufcken-ororrpokln-zNmdy7UOTCGobDMUDhg72.jpg",
+			"cost": "290",
+			"category": "Салаты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "9ff71d67-b028-49af-a7f1-c5cc4d0d0b79",
+					"name": "Пшеничный тостовый",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "d0543148-0ca8-434b-a971-1c260f496845",
+					"name": "Ржаной тостовый",
+					"is_default": true,
+					"cost": "15"
+				}
+			]
+		},
+		{
+			"id": "8d0da643-e8d6-423b-87e2-ea3505f9ca81",
+			"revision_id": "70b00f80-2ba9-43bb-b2c2-5058b6b4c0cd",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Салат с томатами, оливками и фетой",
+			"description": "Легкий салат со свежими томатами и салатом Айсберг, нежным сыром фета, оливками и традиционным итальянским соусом Песто.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-rautufcken-ouidsbgmiz-3LXw_yosWQ7pqSHaHOJK-.jpg",
+			"cost": "220",
+			"category": "Салаты",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "5ea9b847-f098-4563-8188-c985af95f9c2",
+			"revision_id": "e612dbd1-eb40-4ca8-810e-71b6a0439ad8",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Крем-суп с морепродуктами",
+			"description": "Наваристый и насыщенный крем-суп с интересным сочетанием сливок, кукурузы и морепродуктов послужит главным блюдом морозного дня.\nПодаем с поджаренным пшеничным тостом.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmrxj-lxlr-yhiajupspn-cglXizTnQEqODN_6DPB5J.jpg",
+			"cost": "435",
+			"category": "Суп",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "c7f4cf5c-64e9-40e4-ac83-542f430b4303",
+			"revision_id": "4513546c-27f4-4a8e-a6b9-2f6f86c6e93d",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Грибной крем-суп",
+			"description": "Крем-суп из микса лесных грибов и шампиньонов, с добавлением сливок, молока, трюфельного масла. Подается с гренками из ржаного хлеба",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmrxj-lxlr-xnderozfaa-5CPfXuUQKon7FcquHyJ25.jpg",
+			"cost": "189",
+			"category": "Суп",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "8c0324dd-c747-4ead-961d-ed5ac301099d",
+					"name": "Пшеничный тостовый",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "cff9c9c3-fb8c-4579-acbe-b4d3546da8c2",
+					"name": "Ржаной тостовый",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "8430889a-a930-4336-b153-b3ef58789e70",
+					"name": "Добавить соль и перец в индивидуальной упаковке",
+					"is_default": true,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "2d0d81b0-53ea-4400-91c3-a1c4c3883125",
+			"revision_id": "02670abd-ecb4-40b8-9dec-59ad29adf37e",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Том Ям с креветками и кальмарами",
+			"description": "Кисло-острый суп с креветками и бланшированными кальмарами. Кокосовое молоко, сливки, креветки, кальмары, помидоры черри, шампиньоны, рис. Подается с рисом.",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmrxj-lxlr-drf-efgpwr-7kNRYXdM8WaBc9yaXCaBZ.jpg",
+			"cost": "405",
+			"category": "Суп",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "1c3df20b-5b0e-4564-bfea-3856c313db99",
+					"name": "Пшеничный тостовый",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "0555ac37-1f94-4821-98b6-ee8afc3ea5d1",
+					"name": "Ржаной тостовый",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "06f25f57-00d1-4971-a4be-95cce4672e67",
+					"name": "Добавить соль и перец в индивидуальной упаковке",
+					"is_default": false,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "c8ae21a1-abdc-40e0-9c93-5903d9902732",
+			"revision_id": "d128c125-14db-4651-b4b4-aa684d4e024f",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Куриный Суп-лапша с пшеничными сухариками",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmrxj-lxlr-bcyaljyeox-uWHl53qZpjvmCcN-laQN-.jpg",
+			"cost": "149",
+			"category": "Суп",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "2f67083c-21dc-49ee-ad61-153e8a2ca162",
+			"revision_id": "f5a1f958-b1c8-4167-887d-b9d24009ce5d",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Андалузский Гаспачо с тигровой креветкой",
+			"description": "Холодный испанский крем-суп из томатов",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmrxj-lxlr-txpmiknbws-SEsS71FHoD3sYXv9_Aeii.jpg",
+			"cost": "385",
+			"category": "Суп",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "5c014367-14bd-4c8a-9b00-f7a3d0f90fb4",
+			"revision_id": "c21e13d7-a2b6-46d2-848b-9c5275bd63c7",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Паста \"Телятина с белыми грибами в сливочном соусе\"",
+			"description": "Спагетти из твердых сортов пшеницы, говяжья вырезка, белые грибы, сливки, сыр Пармезан, петрушка",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qqgxwafmgf-birtef-u-n-4yETqfNEFNnStuSYODp0f.jpg",
+			"cost": "380",
+			"category": "Паста",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "f91e1bb6-b29a-4326-920a-5f2e9af89fe2",
+			"revision_id": "73be1077-9c84-4bf7-9350-c5c8dc3849dd",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Паста Песто с курочкой",
+			"description": "Спагетти из твердых сортов пшеницы, куриная грудка, фирменный соус Песто, сыр Пармезан, сыр Сиртаки, кедровые орешки",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qqgxwafmgf-vla-joiv-t-zwXOnt3iM2TXUNPB6C3fO.jpg",
+			"cost": "340",
+			"category": "Паста",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "f7ae12ee-6c9b-4b59-aee4-134fa419b8a0",
+			"revision_id": "079657d4-2427-4d56-8c8c-80d6b6ec32db",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Паста Песто вегетарианская",
+			"description": "Спагетти из твердых сортов пшеницы,  фирменный соус Песто, сыр Пармезан, сыр Сиртаки, кедровые орешки",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qqgxwafmgf-zrsiviieff-XLn0FL_gnl-kSxGY3DiAQ.jpg",
+			"cost": "320",
+			"category": "Паста",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "d50fd1d6-9716-4bf8-b08a-654f2a7dbe0d",
+			"revision_id": "f3ae4193-c129-4189-8943-4519284615ab",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Паста \"Карбонара\"",
+			"description": "Паста карбонара - это очень сытное и ароматное блюдо, которое по праву является настоящей классикой итальянской кухни. В составе: спагетти из твердых сортов пшеницы, мелкие ломтики обжаренного бекона, нежный сырно-яичный соус",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-qqgxwafmgf-tndkiqiekw-wjEHLC3OPZJt87bwN5-DP.jpg",
+			"cost": "315",
+			"category": "Паста",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "20600a66-6085-428a-8fa3-b895474746f2",
+			"revision_id": "a2dcf749-af42-420e-b0bb-98592608343e",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Лосось на пару и булгур с овощами",
+			"description": "Сочный стейк лосося приготовленный самым бережным способом - на пару. Гарнир - булгур с овощами. Подаем с соусом Берблан.\nСытный и правильный ужин.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ggj-vynfuh-itgdis-qyk-04T7SKqJ-fCncLUppJECq.jpg",
+			"cost": "730",
+			"category": "Основные блюда",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "cfc64025-9b70-41af-a665-da6f5764b785",
+			"revision_id": "78ba5f6f-8fec-4350-892d-ef7d83e5534d",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Лосось с овощами на пару",
+			"description": "Стейк из свежайшего лосося, цветная капуста и брокколи. Способ приготовления: на пару.\nПодаем с соусом Берблан (соус отдельно).\nИдеальный ужин.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ggj-vynfuh-bpjjwehqan-oPJj6qm_XfVcR4yQ03ePt.jpg",
+			"cost": "710",
+			"category": "Основные блюда",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "607b097c-eb04-4a8d-9f3b-3d6cc91c69b8",
+			"revision_id": "2c75da39-b2fb-444f-889b-da69f732aa7a",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Шашлычок из индейки и картофель фри",
+			"description": "Сочный шашлычок из индейки и классический картофель фри.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ggj-vynfuh-myexzxlhra-g473A1OKFCL3kVkcf7Dwa.jpg",
+			"cost": "380",
+			"category": "Основные блюда",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "ff41e122-9774-4d7c-b58f-107d2b1c1ff9",
+					"name": "Барбекю",
+					"is_default": true,
+					"cost": "50"
+				},
+				{
+					"id": "7d10cedd-fc7b-4285-baa0-18fdbaa3ea52",
+					"name": "Сырный",
+					"is_default": false,
+					"cost": "50"
+				},
+				{
+					"id": "fbfffa66-4bee-4546-9760-596c85650731",
+					"name": "Кетчуп",
+					"is_default": false,
+					"cost": "50"
+				},
+				{
+					"id": "50af8a6d-0a2b-4b21-855f-55ac49d3c7be",
+					"name": "Свит Чили",
+					"is_default": true,
+					"cost": "50"
+				}
+			]
+		},
+		{
+			"id": "d8e3f669-67ef-4fab-a776-dbdb3435692f",
+			"revision_id": "48809e1c-831c-4977-bf91-90a7b76bb4ac",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Шашлычок из индейки и запеченый картофель беби",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ggj-vynfuh-jdpwkkeplq-ckKppNBcro9jAy24wJBYQ.jpg",
+			"cost": "380",
+			"category": "Основные блюда",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "1cad5d55-10b3-4a23-b0b3-fb08b09fa5ac",
+			"revision_id": "7040edc6-f7cc-48fe-a1bb-ca369d0428ed",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Куриная грудка с овощами",
+			"description": "Отварное филе куриной грудки под сладким соусом чили, гарнир из овощей (цветная капуста, брокколи, лук) в сливочно-чесночном соусе",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ggj-vynfuh-kayahgglyv-6UCmDypfWww9uxG6N0DpG.jpg",
+			"cost": "350",
+			"category": "Основные блюда",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "a2f8b108-d1b7-4977-9f78-2e8936cf5b89",
+					"name": "Пшеничный тостовый",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "e462a70c-f066-45e8-acec-e15bc2c3b8ad",
+					"name": "Ржаной тостовый",
+					"is_default": true,
+					"cost": "15"
+				},
+				{
+					"id": "e6752630-11c3-4424-afaa-aca07d8cffc8",
+					"name": "Добавить соль и перец в индивидуальной упаковке",
+					"is_default": true,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "02144cd5-895d-49a5-af5d-d86bff826eaf",
+			"revision_id": "94cbb7f3-5ccd-452c-a32f-4597f7ab5904",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Шницель из индейки с молодым картофелем под грибным соусом",
+			"description": "Шницель из эскалопа индейки в панировке, подаётся со сладким соусом чили. Гарнир из молодого обжаренного картофеля под грибным соусом",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ggj-vynfuh--dnny-qqju-PDkp6sbSzRuHoxIlL2te_.jpg",
+			"cost": "495",
+			"category": "Основные блюда",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "ff0520f0-7fb4-47a7-9ebb-937ecb210cce",
+					"name": "Пшеничный тостовый",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "7d344b4a-2e3e-4b63-81c4-9214fccc292c",
+					"name": "Ржаной тостовый",
+					"is_default": false,
+					"cost": "15"
+				}
+			]
+		},
+		{
+			"id": "572d69d7-af92-48d8-8ac5-a044dfb05794",
+			"revision_id": "6d0c31ca-59a8-459d-8d8e-bbe01a1c4058",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Тяхан",
+			"description": "Рис, филе куриной грудки, красный лук, морковь, шампиньоны, соус соевый, соус сладкий чили, кунжут",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-ggj-vynfuh-lyjfb-qefk-b-8SLJP0UG5T7rTQ-uszO.jpg",
+			"cost": "320",
+			"category": "Основные блюда",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "61e53a65-a5e3-49c1-9ff9-51a277565370",
+					"name": "Пшеничный тостовый",
+					"is_default": true,
+					"cost": "15"
+				},
+				{
+					"id": "918737c6-3ec4-43e6-9685-e256ba4ff459",
+					"name": "Ржаной тостовый",
+					"is_default": false,
+					"cost": "15"
+				},
+				{
+					"id": "474be794-8f82-47f8-8c5e-ebe4f9783787",
+					"name": "Добавить соль и перец в индивидуальной упаковке",
+					"is_default": true,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "9aaaab62-095c-4cb3-9b1b-b8a2e9194a78",
+			"revision_id": "27a0f33b-f584-4ae5-87dc-8e042388b2b9",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Фри Ассорти",
+			"description": "Наггетсы, сырные палочки, картофель фри",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-rgckxswlwo-xqgbtvtjwd-ks9Datc-ywOWojYMSkhH2.jpg",
+			"cost": "320",
+			"category": "Снэки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "ba5868df-f8bf-4c44-b00f-2cb0014df271",
+					"name": "Барбекю",
+					"is_default": false,
+					"cost": "50"
+				},
+				{
+					"id": "7ab2d068-5cd5-4fc0-8fc2-83241e314a5e",
+					"name": "Кетчуп",
+					"is_default": false,
+					"cost": "50"
+				},
+				{
+					"id": "70ad7ddb-0bcd-46e1-ab2b-29d422d9620a",
+					"name": "Свит Чили",
+					"is_default": false,
+					"cost": "50"
+				}
+			]
+		},
+		{
+			"id": "ff62af48-6dea-4b4a-a9b9-03d4d182d816",
+			"revision_id": "451d1786-3313-4c79-bc18-c243cef33c3f",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Сырные палочки",
+			"description": "Сыр моцарелла в панировке, обжаренные во фритюре",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-rgckxswlwo-bcec-leosj-T9Xuhhl9azn2vP6Qp8IY6.jpg",
+			"cost": "180",
+			"category": "Снэки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "d97e09f5-d60d-41c6-8a31-7a6bac860f6c",
+					"name": "Барбекю",
+					"is_default": false,
+					"cost": "50"
+				},
+				{
+					"id": "8649588f-db4f-4887-9b4b-9e0f462226df",
+					"name": "Кетчуп",
+					"is_default": false,
+					"cost": "50"
+				},
+				{
+					"id": "60949dfd-7c36-4f90-aac0-5cb92799bd2c",
+					"name": "Свит Чили",
+					"is_default": false,
+					"cost": "50"
+				}
+			]
+		},
+		{
+			"id": "59b59de5-9dcc-41eb-bd5d-e3df0ba21e3f",
+			"revision_id": "0886a71f-a5de-4429-9275-47f0ab808975",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Американо",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-gvooqv-dvb-bldqgbhqhr-flXmuUDZ87oMLkVE0W70V.jpg",
+			"cost": "100",
+			"category": "Кофе",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "f95282d2-a6a6-4707-a2ae-b93dd8fd768d",
+					"name": "Сахар 5 гр",
+					"is_default": true,
+					"cost": "0"
+				},
+				{
+					"id": "60eabd00-1a02-41ae-96a3-7c293745df80",
+					"name": "Корица",
+					"is_default": false,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "cd191efa-2706-43ca-abcf-af7b65b32256",
+			"revision_id": "6dd84f9c-b813-4f83-b9c7-ede24d6d028b",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Капучино",
+			"description": "Можем приготовить на альтернативном молоке",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-gvooqv-dvb-nnlvdzdbkc-3Cip44lF_eOgUtyC7c4K4.jpg",
+			"cost": "140",
+			"category": "Кофе",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "ea2d8859-87bb-4a99-adcf-bdc1c1685494",
+					"name": "Лаванда (20 мл.)",
+					"is_default": true,
+					"cost": "30"
+				},
+				{
+					"id": "7fc8b694-6dfc-4c92-ba76-041d04691d7f",
+					"name": "Лесной орех (20 мл.)",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "2ab839bb-0fc3-4c1f-a2dd-b7d7e8a988da",
+					"name": "Мята (20 мл.)",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "a774779d-22c4-46a3-980a-e39546fefbe2",
+					"name": "Банан",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "4b14561d-9fa2-421b-9480-3fe1b164c28a",
+					"name": "Апельсин",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "99f1bae6-ceb3-4dc3-b238-5937a78ce8f0",
+					"name": "Карамель",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "7a84741d-cdd2-4651-bebd-945e3026bfa7",
+					"name": "Соленая карамель",
+					"is_default": true,
+					"cost": "30"
+				},
+				{
+					"id": "8fa5eceb-8f33-44a0-b63e-05065c9f805c",
+					"name": "Ваниль",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "0db45ecb-b6b5-43ed-81ea-d3da5c559690",
+					"name": "Брауни",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "c45be8bd-c876-44da-b0c4-f0f26b0b8978",
+					"name": "Сахар 5 г.",
+					"is_default": false,
+					"cost": "0"
+				},
+				{
+					"id": "35776549-0d7e-4ba9-a309-98f0e397a17d",
+					"name": "Корица",
+					"is_default": false,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "21f38287-9d05-4769-92cb-8c54a556c713",
+			"revision_id": "7a425c45-10c4-4c8d-9ad0-007db95350c1",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Капучино",
+			"description": "Можем приготовить на альтернативном молоке",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-gvooqv-dvb-gifokp-mgu-O7b0AKEBTv5rjuK3ens3q.jpg",
+			"cost": "180",
+			"category": "Кофе",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "1864fe6f-f20c-45fa-8e47-1412ac11ad90",
+					"name": "Лаванда (20 мл.)",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "339bd341-e649-4643-9fd2-dcb666661d0e",
+					"name": "Лесной орех (20 мл.)",
+					"is_default": true,
+					"cost": "30"
+				},
+				{
+					"id": "3106d01f-bf9b-46b4-84f7-e08a38763f35",
+					"name": "Мята (20 мл.)",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "e360b500-2f0d-4ed7-b419-9169a394cbbe",
+					"name": "Банан",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "4fd1fc92-cf20-482a-bc65-1f33aae5dfdd",
+					"name": "Зелёное яблоко",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "c01e4aaf-fa6d-439f-8ecf-f30792eeafdc",
+					"name": "Карамель",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "230f647a-9ecb-4bc2-978f-b558df2f0c39",
+					"name": "Соленая карамель",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "dfef065b-06b3-40a0-af3d-dd1de5fa70c7",
+					"name": "Ваниль",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "1810e3f0-cb7a-41a7-a6e7-ce815415e2ad",
+					"name": "Брауни",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "3a134e8b-37d9-4133-b9ef-5df0751285c1",
+					"name": "Сахар 5 гр.",
+					"is_default": false,
+					"cost": "0"
+				},
+				{
+					"id": "89868d12-4fae-443b-8d6a-5c0f3fa4c723",
+					"name": "Корица",
+					"is_default": false,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "80cccd7c-003d-48e2-920f-5047d38a3d3e",
+			"revision_id": "cf792344-d112-4b90-8683-91a25139098e",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Латте",
+			"description": "Можем приготовить на альтернативном молоке",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-gvooqv-dvb-zklrninhhw-dSLcjJgQ10dujFCqTaSi_.jpg",
+			"cost": "180",
+			"category": "Кофе",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "8ae8f6f5-8a7c-4b09-8bef-f851e691d070",
+					"name": "Лаванда (20 мл.)",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "d54037c9-f9b4-4489-a01f-0998a5daf119",
+					"name": "Лесной орех (20 мл.)",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "f6291633-535d-42fa-ad1a-d243ea61e79d",
+					"name": "Мята (20 мл.)",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "f1da4a1e-48cb-4258-86bf-4fca2e7749bc",
+					"name": "Банан",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "dcc084ff-a77e-4363-910a-8462311ebbcb",
+					"name": "Зелёное яблоко",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "2b0e3853-3874-4363-acdb-08dda8a141ef",
+					"name": "Карамель",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "e5de04a2-a1e6-460b-8d0b-cd6ec6429256",
+					"name": "Соленая карамель",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "6e44b39b-7f90-469a-8129-c19e4dc4e724",
+					"name": "Ваниль",
+					"is_default": true,
+					"cost": "30"
+				},
+				{
+					"id": "703a971f-9deb-41ae-ae66-3ac87f3db44a",
+					"name": "Брауни",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "794ef3a6-3897-4952-8138-915c73b52f8f",
+					"name": "Сахар 5 гр.",
+					"is_default": false,
+					"cost": "0"
+				},
+				{
+					"id": "4c1b5694-29ad-4ae5-9de2-364d23540dbf",
+					"name": "Корица",
+					"is_default": false,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "812a17e8-8f60-4f7e-a264-3c02b62ed189",
+			"revision_id": "176d0fa5-14be-43d6-8d72-63a5528afd76",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Раф",
+			"description": "Можем приготовить на альтернативном молоке",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-gvooqv-dvb-iumpvholsp-lCYq5XzuMJ8wl8YyMb7dk.jpg",
+			"cost": "220",
+			"category": "Кофе",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "1af5aaa0-e131-4ab8-87fd-e9e8cef96dff",
+					"name": "Сахар 5 гр.",
+					"is_default": true,
+					"cost": "0"
+				},
+				{
+					"id": "6fd62e2e-5e1a-41fa-9327-982d3548cde8",
+					"name": "Корица",
+					"is_default": false,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "bb93ab12-0321-4655-a48c-07a4244ee204",
+			"revision_id": "686e9965-8cca-4a74-a6af-9f2563f47a43",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Флет Уайт",
+			"description": "Можем приготовить на альтернативном молоке",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-gvooqv-dvb-xeiuogvqxa-67hLkrOj3LMXLxoO4rPdu.jpg",
+			"cost": "160",
+			"category": "Кофе",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "655d2118-0b12-41d4-a199-7fba611144df",
+					"name": "Лаванда (20 мл.)",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "8fff4c7d-ce96-4c99-b888-6075578ad92c",
+					"name": "Лесной орех (20 мл.)",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "9e898924-81dd-40a2-a331-c065a3a2eeaa",
+					"name": "Бабл гам (20 мл.)",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "1d0d2a2e-5543-45fe-8d38-596ecb7ffb87",
+					"name": "Мята (20 мл.)",
+					"is_default": true,
+					"cost": "30"
+				},
+				{
+					"id": "54595d52-7077-49de-84d7-94badefd0557",
+					"name": "Банан",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "c70609de-f2e3-45a4-8815-f9b71b1a1ed4",
+					"name": "Зелёное яблоко",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "abc5cd05-abee-44a2-83f4-b33d0787dfa8",
+					"name": "Карамель",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "e4a794aa-cd41-4db3-a8a9-7ef261198eb7",
+					"name": "Соленая карамель",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "c3a19816-18b5-4e47-8a2b-dcccd0c8256a",
+					"name": "Ваниль",
+					"is_default": true,
+					"cost": "30"
+				},
+				{
+					"id": "48b59577-45dc-4184-a64a-7a89c231a26b",
+					"name": "Брауни",
+					"is_default": false,
+					"cost": "30"
+				},
+				{
+					"id": "d2802ad4-ff79-4102-9f92-c241927e46db",
+					"name": "Сахар 5 гр.",
+					"is_default": true,
+					"cost": "0"
+				},
+				{
+					"id": "794cf0fa-d054-4cd4-9fe7-3377f7ef5391",
+					"name": "Корица",
+					"is_default": false,
+					"cost": "0"
+				}
+			]
+		},
+		{
+			"id": "ff7e46a3-2409-4d46-a348-6bc48cd0d54a",
+			"revision_id": "22807454-13bc-451d-83f1-bb6a2e80308f",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Чай черный с облепихой",
+			"description": "Черный цейлонский чай в дополнении плодов облепихи, листа смородины и лепестков календулы создают головокружительный аромат.\n\nТемный, как ночь чай, красиво приправлен оранжево-желтыми ягодами и лепестками. Коктейль выглядит манящим и притягательным.\n\nВторит этому и непревзойденный аромат облепихи. Насыщенная горечь и терпкость черного чая прекрасно вписывается в кислинку облепихи. Лепестки календулы и листья смородины дарят чудесное бархатистое послевкусие.\n\nПольза облепихи неоценима в холодный период, она согреет тело и душу, справится с любыми простудными проявлениями.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-mkzietbhwm-oqaxrfwigf-ab77BxVg7jOqWokI1lKiO.jpg",
+			"cost": "120",
+			"category": "Чай",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "4c4f1fde-5c6f-49ef-a51a-f7e5485e0f37",
+					"name": "Печенье шоколадное мраморное",
+					"is_default": false,
+					"cost": "55"
+				},
+				{
+					"id": "10d1c2f8-2836-474b-b1d8-7d5929218e3b",
+					"name": "Печенье песочное с арахисом",
+					"is_default": false,
+					"cost": "55"
+				}
+			]
+		},
+		{
+			"id": "6fc509ac-aa50-4d05-b6db-460d4bb1f369",
+			"revision_id": "2d72df66-1197-4e0b-b156-f702add11302",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Чай зеленый \"Японская липа\"",
+			"description": "Легкая чайная композиция составлена из зеленого китайского чая Сенча, приправленного цедрой апельсина, дополненного цветками липы и ромашки. Лепестки календулы завершают композицию, насыщенную ярким ароматом лимона и лайма.\n\nКаждый глоток готового напитка наполнен цитрусовой свежестью с травянистыми и цветочными нотками",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-mkzietbhwm-qfvtnpdr-b-DE-mQkqXKRE6oodAUZ7oN.jpg",
+			"cost": "120",
+			"category": "Чай",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "aa618f31-ed2f-4026-9155-a8a1f5147e48",
+					"name": "Печенье шоколадное мраморное",
+					"is_default": false,
+					"cost": "55"
+				},
+				{
+					"id": "51ee7792-d156-49f1-9c4a-7b3cdb29f34e",
+					"name": "Печенье песочное с арахисом",
+					"is_default": false,
+					"cost": "55"
+				}
+			]
+		},
+		{
+			"id": "75a40c54-21f2-4aff-ad3c-9ec8fd8662ca",
+			"revision_id": "c27050b4-e1cf-4441-abf7-5dcbb9e33021",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Улун с жасимном (Китай).\nЧайник объемом 500 мл. или большего объема по вашему желанию.",
+			"description": "Невероятно ароматный чай с бутонами жасмина. Листья готового сбора туго скручены в плотный шарик. Насыщенно-изумрудный. \n\nУлун отличается очень тонким, нежным и мягким ароматом. Ярко выражены цветочные нотки с примесью запаха свежей листвы. Готовый напиток очень освежает, обладает бодрящим и тонизирующим эффектом. Послевкусие мягкое, немного сладковатое.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-mkzietbhwm-xtscsu-siw-28wJ57c-x9IPIjq6A000E.jpg",
+			"cost": "120",
+			"category": "Чай",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "311ad599-6445-4c52-b25d-e8e2c3ed967f",
+					"name": "Печенье шоколадное мраморное",
+					"is_default": false,
+					"cost": "55"
+				},
+				{
+					"id": "1862eb25-18c1-40a9-abf1-a6e2bb8550fd",
+					"name": "Печенье песочное с арахисом",
+					"is_default": false,
+					"cost": "55"
+				}
+			]
+		},
+		{
+			"id": "f7ad8133-312a-4021-be1f-c7780ce34199",
+			"revision_id": "92723e5f-76e4-45cc-8b6c-331d18b6b9ba",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Асам Хармутти (Индия). Чайник объемом 500 мл. или большего объема по вашему желанию.",
+			"description": "Классический черный чай",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-mkzietbhwm-ty-ktgjwyo-gXXPu5Pxm4ZZ1IdjFRuSU.jpg",
+			"cost": "120",
+			"category": "Чай",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "32129ac7-5e40-458a-b84d-df17b44af206",
+					"name": "Печенье шоколадное мраморное",
+					"is_default": false,
+					"cost": "55"
+				},
+				{
+					"id": "a7ac94e4-7fa2-48ab-9149-c27e71ca5c47",
+					"name": "Печенье песочное с арахисом",
+					"is_default": false,
+					"cost": "55"
+				}
+			]
+		},
+		{
+			"id": "b8d64cc0-3b46-4df8-86ef-0002bf3736ea",
+			"revision_id": "6c5e55df-f1a2-48b5-b65c-b060127bc55a",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Чай улун (Китай) клубника со сливками. Чайник 500 мл. или большего объема по вашему желанию.",
+			"description": "Популярный полуферментированный чай, относящийся к категории Улунов в сочетании с кусочками клубники.\n\n\nАромат клубники и сливок обволакивает мягкий деликатный вкус улуна с ягодной сладостью клубники.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-mkzietbhwm-veje-wbywz-3lolmzs9BWAjGLV9CV0P9.jpg",
+			"cost": "120",
+			"category": "Чай",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "16b6e52b-aeee-4c1d-b6af-e28b6a2ab1b6",
+					"name": "Печенье шоколадное мраморное",
+					"is_default": false,
+					"cost": "55"
+				},
+				{
+					"id": "16818b04-aa37-4180-9100-5c401e07d662",
+					"name": "Печенье песочное с арахисом",
+					"is_default": true,
+					"cost": "55"
+				}
+			]
+		},
+		{
+			"id": "2173fdbf-8d4b-448e-93c5-298bfecbd6c2",
+			"revision_id": "8fa31f3e-439b-4553-aa08-c20800ce52eb",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Чай фруктовый. Чайник объемом 500 мл. или большего объема по Вашему желанию.",
+			"description": "Неповторимо богатая композиция создается кусочками спелого ананаса, яблока, цельными плодами шиповника и красным изюмом. В дополнение композиции гибискус.\n\nОригинальная смесь розовых, желтых, белых и коричневых кусочков в сухом виде обладает непревзойденным магнетизмом запаха.\nСостав: Каркадэ, кусочки яблок, кусочки ананаса, изюм красный, плоды шиповника целые, аромат дикой вишни и корицы.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-mkzietbhwm-gxuqcxplwp-I62BFaZJrGJzSwJBN8r66.jpg",
+			"cost": "120",
+			"category": "Чай",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "d9c8fb58-de66-4b07-9b3d-54c9003876c7",
+					"name": "Печенье шоколадное мраморное",
+					"is_default": true,
+					"cost": "55"
+				},
+				{
+					"id": "e0909116-523b-4644-9183-62c16620b908",
+					"name": "Печенье песочное с арахисом",
+					"is_default": false,
+					"cost": "55"
+				}
+			]
+		},
+		{
+			"id": "5ca722c3-fe29-4018-ac49-8b6004503e1a",
+			"revision_id": "f401ff4f-d349-44b3-9b73-64043fdfa5a3",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Татарский. Чайник объемом 500 мл. или большего объема по вашему желанию.",
+			"description": "Для настоящих ценителей насыщенного чая с ярко выраженным ароматом чабреца и мяты.\n \nСостав: чай черный, чай зеленый, чабрец, цветы ромашки, мята, зверобой, липа, лепестки сафлора.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-mkzietbhwm-woudhbareo-FbcJlR01bPuMzMJY5kBqd.jpg",
+			"cost": "120",
+			"category": "Чай",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "d26883cc-f107-4778-8eea-ce05bf57ec32",
+					"name": "Печенье шоколадное мраморное",
+					"is_default": true,
+					"cost": "55"
+				},
+				{
+					"id": "8962be1a-5b73-400e-a678-f45227fcb8c8",
+					"name": "Печенье песочное с арахисом",
+					"is_default": true,
+					"cost": "55"
+				}
+			]
+		},
+		{
+			"id": "cda17ef7-c05f-4286-9b22-a3c534e37814",
+			"revision_id": "52df9010-b517-40bf-a983-3c55f684382f",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Монастырский Премиум. Чайник объемом 500 мл. или большего объема по вашему желанию.",
+			"description": "Оригинальный чайный купаж, сочетающий в себе легендарный чай Да Хун Пао, традиционный русский напиток Иван Чай и множество ароматных трав.\nСостав: чай китайский Да Хун Пао ( большой красный халат ), иван чай, шиповник измельченный, мята, чабрец, лемонграсс, цветы ромашки, крапива, листья ежевики, душица, липа, листья ежевики, лепестки василька, лепестки календулы, листья толокнянки.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-mkzietbhwm-rontyncxx--7lJAEJwm9H3fYMZmlVbfr.jpg",
+			"cost": "120",
+			"category": "Чай",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "438fae9d-90af-4b86-af2b-49b532132e47",
+					"name": "Печенье шоколадное мраморное",
+					"is_default": false,
+					"cost": "55"
+				},
+				{
+					"id": "4e5665d8-62a8-487a-9c94-37d0be748fc0",
+					"name": "Печенье песочное с арахисом",
+					"is_default": false,
+					"cost": "55"
+				}
+			]
+		},
+		{
+			"id": "c9c20173-9673-41db-a8fc-3805aeaf6ded",
+			"revision_id": "0a4975d7-a8c1-410c-ba49-34f754070f5d",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Чай красный Джи Джу Мей",
+			"description": "Если выбирать между эксклюзивными и качественными сортами красного китайского чая, то Джи Джу Мей будет на вершине хит-парада. Он универсален в употреблении: его можно принимать как утром, для того, чтобы взбодриться, так и перед сном, чтобы получить максимальное расслабление и отправиться спать в хорошем расположении духа.\nДля приготовления отбираются только молодые чайные листья. Именно поэтому данный сорт имеет такой манящий аромат и изысканный вкус. Ферментированные чаинки скручены в жгутики и принимают приятный светло-коричневый цвет.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-mkzietbhwm-wywic-lats-qYcWw1NqrloG5glrM2C-A.jpg",
+			"cost": "150",
+			"category": "Чай",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": [
+				{
+					"id": "0ebb39f1-0dec-4523-941c-2be0c4ce6036",
+					"name": "Печенье шоколадное мраморное",
+					"is_default": true,
+					"cost": "55"
+				},
+				{
+					"id": "c774cf05-2c6e-4860-b348-ad2349eda76c",
+					"name": "Печенье песочное с арахисом",
+					"is_default": false,
+					"cost": "55"
+				}
+			]
+		},
+		{
+			"id": "3cd457f4-cdc1-4d0a-819d-2c6df0470c1c",
+			"revision_id": "4be71c21-3b23-46a7-8299-e60d4c8764db",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Горячий шоколад",
+			"description": "Можем приготовить на альтернативном молоке",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-nor-ha-wmj-lstwhktq-d-pPnPdVLhLs-oUzke2p6aq.jpg",
+			"cost": "150",
+			"category": "Горячие напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "50bcb9d5-494a-4da9-97fe-6819c90d6b54",
+			"revision_id": "bf660457-57d9-428b-b824-b4a37493bb28",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Какао",
+			"description": "Можем приготовить на альтернативном молоке",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-nor-ha-wmj-aifhily-ok-vfp3o600KLvQx1DMP4v5C.jpg",
+			"cost": "160",
+			"category": "Горячие напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "20a944fc-f053-4b6b-b9b0-4f5c5ffb2ae3",
+			"revision_id": "b5f10607-7014-4ef5-8830-652c60ca14a2",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Глинтвейн (безалкогольный)",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-nor-ha-wmj-wwwudrdkye-RS5kdRgSXAVKFWlKZbVO0.jpg",
+			"cost": "180",
+			"category": "Горячие напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "ed5fd8b9-3625-4b42-8501-0804b6d8a7f6",
+			"revision_id": "d20ca19b-cc92-4e07-a49a-97fe6c6a2b86",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Апельсиновый фреш",
+			"description": "Апельсин и ничего более👌",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmizxayhmb-euubyclere-byZpQ2pa2A0nHlFyNSSd8.jpg",
+			"cost": "205",
+			"category": "Холодные напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "cfa1aeaa-9c5b-4bd4-9372-cb371aeae488",
+			"revision_id": "e33d4225-6514-4002-93d2-a400c7f43be9",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Молочный коктейль \"Банан-Карамель\"",
+			"description": "Банан, мороженое собственного производства, молоко, сироп ваниль",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmizxayhmb-oxkxtqngro-uimQLmvzKj4GFiTsEkK-R.jpg",
+			"cost": "180",
+			"category": "Холодные напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "fd93d2a1-94d0-4e87-94dc-105731100e97",
+			"revision_id": "9328a67e-17e2-4d37-9181-e6b09b91ac6d",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Молочный коктейль \"Клубника-ваниль\"",
+			"description": "Клубника, мороженое собственного производства, молоко, сироп карамель",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmizxayhmb-g-cywnhppr-i4rCGLVupmsg0p-kmYK3N.jpg",
+			"cost": "180",
+			"category": "Холодные напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "b8e8f58c-a37c-407d-a23a-79a2dbb8762d",
+			"revision_id": "6e87ff0c-058f-44f5-be84-74fc1fa6d8c7",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Лимонад газированный в асс.",
+			"description": "Летний освежающий напиток со льдом",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmizxayhmb-hmkzsjjysb-vW3CsyCxIHb8iF31fMeGS.jpg",
+			"cost": "165",
+			"category": "Холодные напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "59f4dac5-ab1b-4a61-93c9-ccdcadc89601",
+			"revision_id": "4f335337-628f-4dec-94cb-c52da574c1b7",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Лимонад \"Мохито\" безалкогольный",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmizxayhmb-pzrtozxiny-1moMri9pASoSbbFK4e6VE.jpg",
+			"cost": "135",
+			"category": "Холодные напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "67969848-40b2-4365-b594-bc6d00e7e1cd",
+			"revision_id": "61e98755-b996-467f-a091-b5e3dfa83129",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Лимонад газированный",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmizxayhmb-mjckcdf-mx-lWLh7DLTG8pANVOG0-o8o.jpg",
+			"cost": "110",
+			"category": "Холодные напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "097789cd-852a-4921-b706-132ca0690b78",
+			"revision_id": "4361ffff-4fc0-41db-b112-d4cd4e3c7f62",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Клюквенный морс",
+			"description": "Собственное производство",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmizxayhmb-gaiiwfylux-Ue3ikT7JC2kWnxwVhmsn6.jpg",
+			"cost": "80",
+			"category": "Холодные напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "75df9d3a-64c4-4b4c-b235-97f1751bf6af",
+			"revision_id": "02bcec94-821e-4e87-ae00-6bb8304e318a",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Лимонад",
+			"description": "Лимонад собственного производства. Негазированный",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmizxayhmb-xeiaiwewye-xWhdeVLz2Qfpz2kJZcVaD.jpg",
+			"cost": "80",
+			"category": "Холодные напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "837cde12-8779-487a-8f78-48015d93d438",
+			"revision_id": "0c8fe376-93f5-4061-9d6e-400dc34aa905",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Вода",
+			"description": "",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-tmizxayhmb-mkuvpcjagz-oXHXaxOL9BwlT5jgmu1f5.jpg",
+			"cost": "60",
+			"category": "Холодные напитки",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "9bd0785b-3448-4faa-ae9a-4862261843f6",
+			"revision_id": "b234253e-d00b-4bb5-9f6c-0ccc3c74fc57",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Меренговый рулет \"Малина\"",
+			"description": "Нежный и воздушный, словно сделан из облаков.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-ihyjoqradi-jD_Smo3y21Ovd6Yz1WoVR.jpg",
+			"cost": "850",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "3b9fb8c3-03d8-4eef-afbd-0f005c682385",
+			"revision_id": "909816c4-51fe-44b2-9693-57915d941ef5",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Меренговый рулет \"Маракуйя\"",
+			"description": "Нежный и воздушный, словно сделан из облаков.",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-qjvns-jdcv-BsPXxW5MAJ-BjMs-lQqf7.jpg",
+			"cost": "680",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "71f8608a-e7c6-4b51-8daf-c5ed063e876a",
+			"revision_id": "e467cf00-9a6a-4a16-baae-b3382f3a3db0",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Профитроли со сливочно-карамельным кремом",
+			"description": "",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-wdc-i-wpbl-nIV28s80vAG5hhYvyLDCu.jpg",
+			"cost": "220",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "848140f7-8a4b-4025-bc28-095d1d4c0e1a",
+			"revision_id": "99190b84-c708-46a3-a67b-fb739b3f81dc",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Малиновая карамель",
+			"description": "Послужит бомбическим дополнением к блинам, панкейкам и тостам. А можно прямо ложкой из банки😋🤗\nДелаем сами👌",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-evocz-fkdr-m0OBOiKu5F0ezPa5CtS9_.jpg",
+			"cost": "390",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "9ccc259d-b2e0-4d0f-b78a-8a3660084c4f",
+			"revision_id": "6e5627fe-c9b5-47bc-abbc-859d759ffbed",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Карамель \"тоффи\"",
+			"description": "Соленая карамель с темным шоколадом\nПослужит бомбическим дополнением к блинам, панкейкам и тостам. А можно прямо ложкой из банки😋🤗\nДелаем сами👌",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-rwtnidwvqg-dEqbyrFCCQ8sGuFCY1uMX.jpg",
+			"cost": "340",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "34e12bf0-928b-403f-9bb9-5cb48c1834c9",
+			"revision_id": "17170461-ba14-41f0-8ca3-f8cf02936569",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Солёная карамель",
+			"description": "Послужит бомбическим дополнением к блинам, панкейкам и тостам. А можно прямо ложкой из банки😋🤗\nДелаем сами👌",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-ozzsrjptvi-2lZpTwajBZfAfWXVvqjop.jpg",
+			"cost": "320",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "0e65b8ee-2473-45c3-a771-a70001fe5d20",
+			"revision_id": "12e59613-f74d-4ea9-8b45-4ca4b9f46784",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Карамель \"Апельсиновая\"",
+			"description": "Послужит бомбическим дополнением к блинам, панкейкам и тостам. А можно прямо ложкой из банки😋🤗\nДелаем сами👌",
+			"image_url": "https://foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-sduqfipxok-s9H2vxZnn_BtAX94eAwAT.jpg",
+			"cost": "390",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "e5ce12cd-e772-44c3-bffe-c76287fbb87e",
+			"revision_id": "a27fbf01-8e79-4e38-8118-40f3ee1e5cca",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Мармелад Гигантская яичница. Цена за 100 гр.",
+			"description": "",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-zhuhz-pdao-I4kavqDqFiu3JCVr0WJ5b.jpg",
+			"cost": "125",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "7d1dd103-f206-457c-b5a4-77227e366ff6",
+			"revision_id": "21c93fde-ef98-4204-96df-3d7d324006db",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Мармелад \"Гигантские палочки Клубника\"",
+			"description": "",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-hnis-mdpzp-Lzv7-ioajyaB2FtXx1F15.jpg",
+			"cost": "75",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "beaba4b5-a61b-4bb2-a037-8202dad0c011",
+			"revision_id": "4aecac28-9ac9-4756-925c-ef1d8b1605c2",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Трость \"Клубника\"",
+			"description": "",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-oxzyxnesni-37iOVCdFRm2nD7p4X7st0.jpg",
+			"cost": "95",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "123c2952-4a28-418b-961f-401afe339f76",
+			"revision_id": "8f1ba579-d56f-4f67-b52b-145824d31254",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Драже \"Ассорти 36 вкусов\"",
+			"description": "",
+			"image_url": "https://static.foodeon.com/assets/uploaded-media/product-media/kafe-konditerskaya-cupandcake-sdjb-whpbfm--hg-qbcohmnnjd-zccSvMf7HUNowjS5XceNr.jpg",
+			"cost": "200",
+			"category": "Магазин сладостей",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		},
+		{
+			"id": "1e444e27-ae19-45b6-b248-9e93baf9c6c1",
+			"revision_id": "d2177b5d-39fb-447f-9a0d-43713e6962c6",
+			"cafe_id": "f5e74564-abe7-414e-b5ee-02c840b479f6",
+			"name": "Лосось слабого посола (солим сами)",
+			"description": "Принимаем заказы до 14.00 среды, выдача после 12.00 пятница.\nСвежайшая охлажденная рыба приезжает от поставщика каждый четверг. \nЦена указана за 100 гр.",
+			"image_url": "https://http.cat/200",
+			"cost": "280",
+			"category": "Делаем сами",
+			"traits": [],
+			"mandatory_ingredients": [],
+			"optional_ingredients": []
+		}
+	]
+}

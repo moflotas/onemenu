@@ -56,7 +56,7 @@ async def update_item(
     await db.execute(query)
     await db.commit()
 
-    return await get_item(db, model.dish_id)
+    return await get_item(db, model.dish_id, model.order_id)
 
 
 async def create(

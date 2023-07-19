@@ -15,6 +15,11 @@ const ShoppingCart = ({ tg }) => {
 			.then((r) => r.data)
 			.then((order) => {
 				setData(order.items);
+				let numbers = [];
+				for (let item of order.items) {
+					numbers.push(item.quantity);
+				}
+				setNumbers(numbers);
 			})
 			.catch((e) => console.log(e));
 	}, []);
@@ -27,7 +32,7 @@ const ShoppingCart = ({ tg }) => {
 		<div className={styles.cart}>
 			<div className={styles.title}>Your order</div>
 			<div className={styles.dishes}>
-				{data.map((food) => (
+				{data.map((food, index) => (
 					<div className={styles.order} key={food.id}>
 						<div className={styles.order_description}>
 							<img
@@ -45,19 +50,33 @@ const ShoppingCart = ({ tg }) => {
 						<div className={styles.order_number}>
 							<button
 								className={styles.order_button}
-								onClick={() =>
-									updateItem(false, food, tg, setNumber)
+								onClick={() => {
+									let foodCopy = {...food};
+									foodCopy.id = food.dish_id;
+									updateItem(false, foodCopy, tg, (quantity) => {
+										let numbers_local = [...numbers];
+										numbers_local[index] = quantity;
+										setNumbers(numbers_local);
+									})
+								}
 								}
 							>
 								-
 							</button>
 							<span className={styles.order_number}>
-								{food.quantity}
+								{numbers[index]}
 							</span>
 							<button
 								className={styles.order_button}
-								onClick={() =>
-									updateItem(true, food, tg, setNumber)
+								onClick={() => {
+									let foodCopy = {...food};
+									foodCopy.id = food.dish_id;
+									updateItem(true, foodCopy, tg, (quantity) => {
+										let numbers_local = [...numbers];
+										numbers_local[index] = quantity;
+										setNumbers(numbers_local);
+									})
+								}
 								}
 							>
 								+

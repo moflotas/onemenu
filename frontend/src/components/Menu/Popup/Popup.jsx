@@ -8,7 +8,7 @@ import { getQuantity, updateItem } from "../../../updateItem";
 
 const Popup = ({ popupItem, togglePopup, tg }) => {
 	let [order, setOrder] = useState(undefined);
-	let [number, setNumber] = useState(0);
+	let [number, setNumber] = useState('Wait');
 
 	// function updateItem(isAdd, item) {
 	// 	axios
