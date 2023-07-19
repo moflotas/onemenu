@@ -121,6 +121,13 @@ async def remove_item(
 
 async def get_all(
     db: AsyncSession,
+    offset: int = 0,
+    limit: int = 50,
 ) -> list[models.Order]:
-    query = select(models.Order)
+    query = (
+        select(models.Order)
+        .order_by(models.Order.start_date)
+        .offset(offset=offset)
+        .limit(limit=limit)
+    )
     return (await db.execute(query)).scalars().unique().all()

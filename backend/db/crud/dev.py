@@ -22,9 +22,9 @@ async def fill_with_data():
     # Generating users
     users = {
         "grisha": 612665336,
-        # "nikita": 872105135,
-        # "pasha": 537671685,
-        # "timofey": 685437812,
+        "nikita": 872105135,
+        "pasha": 537671685,
+        "timofey": 685437812,
     }
     model_users = [
         schemas.Customer.to_orm(schemas.Customer(id=telegram_id, name=name))

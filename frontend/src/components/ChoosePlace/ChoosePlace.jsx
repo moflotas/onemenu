@@ -36,7 +36,7 @@ const ChoosePlace = ({ tg }) => {
 							<path d={restaurant} fill="currentColor" />
 						</svg>
 						<button className={styles.button_text}>
-							In restaurant <br/> {Object.keys(tg.tg.initDataUnsafe).length !== 0 && tg.tg.initDataUnsafe.user.id}
+							In restaurant
 						</button>
 					</Link>
 				</div>

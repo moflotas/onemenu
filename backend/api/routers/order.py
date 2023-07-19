@@ -86,7 +86,13 @@ async def get_order(
 
 @order_router.get("/stats/all", response_model=list[schemas.Order])
 async def get_orders(
+    offset: int = 0,
+    limit: int = 50,
     db: AsyncSession = Depends(get_session),
 ) -> list[schemas.Order]:
-    db_orders = await crud.get_all(db)
+    db_orders = await crud.get_all(
+        db,
+        offset=offset,
+        limit=limit,
+    )
     return [schemas.Order.from_orm(db_order) for db_order in db_orders]

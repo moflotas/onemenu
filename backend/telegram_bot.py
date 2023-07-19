@@ -11,7 +11,11 @@ from pyrogram.types import (
     ReplyKeyboardRemove,
 )
 import dotenv
-from db.session import get_session
+from db.session import async_session
+import db.crud.customer as customer_crud
+import db.models as models
+from pyrogram.enums import ParseMode
+
 dotenv.load_dotenv()
 
 api_id = int(os.environ.get("API_ID"))
@@ -27,7 +31,7 @@ app = Client("onemenu", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 # Define a handler function for the /start command
 @app.on_message(filters.command("start"))
-async def start_handler(client: Client, message):
+async def start_handler(client: Client, message: Message):
     # Send a welcome message to the user
     await client.send_message(
         message.chat.id,
@@ -38,13 +42,35 @@ async def start_handler(client: Client, message):
     )
 
 
+@app.on_message(filters.command("ask"))
+async def start_handler(client: Client, message: Message):
+    # Send a welcome message to the user
+    text = (
+        "Sorry, cannot answer on empty messages. \nTry /ask __you question here__"
+        if not message.command[1:]
+        else "BIBA"
+    )
+    await client.send_message(
+        message.chat.id,
+        text=text,
+        parse_mode=ParseMode.MARKDOWN,
+    )
+
+
 @app.on_message()
-async def webapp_handler(client: Client, message: Message):
+async def forward_message_handler(client: Client, message: Message):
     # await client.send_message(message.chat.id, message.text)
-    if message.chat.id in [685437812]:
-        for user_id in user_ids:
+    if message.chat.id not in [685437812]:
+        await client.send_message(
+            chat_id=message.chat.id,
+            text="Sorry, I don't understand you \nPerhaps, you wanted to execute /ask command",
+        )
+        return
+
+    async with async_session() as session:
+        for user in await customer_crud.get_all(session):
             await client.copy_message(
-                chat_id=user_id,
+                chat_id=user.id,
                 from_chat_id=message.chat.id,
                 message_id=message.id,
             )

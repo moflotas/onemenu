@@ -44,3 +44,10 @@ async def remove(
     await db.commit()
 
     return deleted == 1
+
+
+async def get_all(
+    db: AsyncSession,
+) -> list[models.Customer]:
+    query = select(models.Customer)
+    return (await db.execute(query)).scalars().unique().all()

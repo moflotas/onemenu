@@ -16,13 +16,35 @@
     justify-content: space-between;
 }
 
+.info_new {
+    width: 80%;
+    max-width: 80%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    display: flex;
+    gap: 5px;
+
+}
+
 .info_dish {
     color: $text_color;
 }
 
+.info_name {
+    width: 90%;
+    color: $text_color;
+    overflow-x: hidden;
+}
+
+.info_price {
+    text-align: right;
+    width: 30%;
+    color: $text_color;
+}
+
 .info_amount {
+    width: 10%;
     color: $hint_color;
-    margin-left: 5px;
 }
 
 .bold {
